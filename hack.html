@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Chernowii</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div id="wrapper"><!-- #wrapper -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) return;
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+             fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));</script>
+	<header><!-- header -->
+		<h1><a href="#">Chernowii</a></h1>
+		<h2>Konrad Iturbe</h2>
+		<img src="images/headerimg.jpg" width="940" height="200" alt=""><!-- header image -->
+	</header><!-- end of header -->
+	
+	<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+					<li><a href="index.html">Home</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="photos.html">Photos</a></li>
+				<li><a href="app.html">App</a></li>
+                <li><a href="diy.html">DIY</a></li>
+                <li><a href="hack.html">GoPro Hack Center</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="aboutme.html">About me</a></li>
+					</ul>
+		</div>
+	</nav><!-- end of top nav -->
+	
+	<center><p>
+   <style type="text/css">
+
+body {
+	background-color:black;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 24px;
+}	
+h4 {
+	font-size: 21px;
+}
+
+h5 {
+	font-size: 14px;
+	color: black;
+}
+
+h6 {
+	font-size: 16px;
+	color: blue;
+}
+
+h8 {
+	font-size: 9px;
+	color: black
+}
+</style>
+</head>
+<body>
+<title></title>
+<h3>GoPro Hack Center</h3>
+<p><h6 style="color:#01DF74;">Here you can find some ways to use your camera in an unofficial way, by HACKING IT!</h2>
+    <p><strong><big><b style="color:red">INDEX:</b></big></strong>
+        </center>
+    <center>
+        <div>
+            <table border="0.7">
+                <tr>
+        <tr><td><a href="#autoexec">Autoexec RTOS Hacking</a></td></tr>
+       <tr> <td><a href="#herobus">Hero Bus Hacking</a></td></tr>
+        <tr><td><a href="#wifi">WiFi Hacking</a></td></tr>
+        <tr><td><a href="#megalapse">The MegaLapse Project</a></td></tr>
+        
+        
+                </table>
+        </div>
+
+        </center>
+    <center>
+<p><hr>
+<center><h2 style="background-color:red;"><a id="autoexec">RTOS GoPro Commands</a></h2><p></td></tr><h3 style="color:red;">USE THE COMMANDS AT YOUR OWN RISK. THERE IS A RISK OF BRICKING YOUR CAMERA</h3><p></td></tr><p><big></big></td></tr><h5 style="color:black;">
+    <p><table border="3">
+        <tr><td style="background-color:cyan"><big><a href="https://github.com/KonradIT/autoexechack" target="_blank">Checkout my GitHub for autoexec files!</a></big></td></tr></table><iframe src="http://ghbtns.com/github-btn.html?user=KonradIT&repo=autoexechack&type=fork"
+            allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+    <p>
+    <br>
+    <br>
+    <p><big>TABLE OF COMMANDS</big>
+    <hr>
+    <p><big style="background-color:red">HERO3 Black/HERO3Plus Black</big>
+    <table border="0.7">
+        <tr>
+            <td style="background-color:yellow"><h6>Button control</h6></td><td style="background-color:yellow"></tr><tr>
+                <td style="background-color:cyan">t app button: shutter/power/wifi -P = Press, R = Release PR = Press and Release (click)</td> <td style="background-color:cyan">Example: t app button shutter PR</td></tr>
+            <tr><td style="background-color:yellow"><h6>Time between actions</h6></td><td style="background-color:yellow"></tr>
+            <tr><td style="background-color:cyan">sleep: time in seconds</td>  <td style="background-color:cyan">Example: sleep 6</td></tr>
+            <tr><td style="background-color:yellow"><h6>Camera Modes</h6></td><td style="background-color:yellow"></tr>
+            <tr><td style="background-color:cyan">t app appmode: video/photo/photo_burst (Burst) /photo_pes (Timelapse) /settings</td> <td style="background-color:cyan">Example: t app appmode photo_burst</td></tr>
+            <tr><td style="background-color:yellow"><h6>Custom text on LCD</h6></td><td style="background-color:yellow"></tr>
+            <tr><td style="background-color:cyan">t app fp_show 4<p>sleep 2<p>t app fp_string 'custom text here'<p><small><i>t app fp_show 4 will show a blank screen before the text</i></small></td> <td style="background-color:cyan">Example: t app fp_show 4<p>sleep 2<p>t app fp_string 'i will kill you'</td></tr>
+
+            
+            <tr><td style="background-color:yellow"><h6>LEDs Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app led_count: 4/2/0</td>    <td style="background-color:cyan">Example: t app led_count 0</td></tr>
+            
+            
+            <tr><td style="background-color:yellow"><h6>LED control</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app led: red_front/red_top_bottom/red_back/ {on/off}</td>    <td style="background-color:cyan">Example: t app led red_front on </td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Video Format</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app video_format: ntsc/pal</td>    <td style="background-color:cyan">Example: t app video_format pal</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>One Button Mode</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app obm: on/off</td>    <td style="background-color:cyan">Example: t app obm on</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>White Balance</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app white_balance: auto/3000/5500/6500/camraw</td>    <td style="background-color:cyan">Example: t app white_balance 3000</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Loop</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">d:\autoexec.ash
+                <p>REBOOT yes</td>    <td style="background-color:cyan">Example: <p>sleep 1
+                    <br>t app appmode photo
+                    <br>sleep 120
+                    <br>t app button shutter PR
+                    <br>d:\autoexec.ash
+                    <br>REBOOT yes</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Protune</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app protune: on/off</td>    <td style="background-color:cyan">Example: t app protune on</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Video Loop</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app video_looping: off/max/5/20/60/120</td>    <td style="background-color:cyan">Example: t app video_looping max</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Video+Photo</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app video_photo: off/5/10/30/60</td>    <td style="background-color:cyan">Example: t app video_photo 5</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Spot Meter</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app spot_meter: on/off</td>    <td style="background-color:cyan">Example: t app spot_meter on</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Mirror Flip</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app flip_mirror: enable=1/disable=0</td>    <td style="background-color:cyan">Example: t app flip_mirror 1</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Timelapse Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app pes_settings: 0.5/1/2/5/10/20/60</td>    <td style="background-color:cyan">Example: t app pes_settings 5</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Burst Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app burst_settings: 3-1/5-1/10-1/10-2/30-1/30-2/30-3</td>    <td style="background-color:cyan">Example: t app burst_settings 30-2</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Continuous Photo Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app sps_settings: single=1/3/5/10</td>    <td style="background-color:cyan">Example: t app sps_settings 10</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Photo Resoultion</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app photo_size: 12W/7M/7W/5M</td>    <td style="background-color:cyan">Example: t app photo_size 7W</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Video Resolution</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app video_settings: res/fps/fov</td>    <td style="background-color:cyan">Example: t app video_settings 1080 60 W</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Rotation /basic/</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app test vin_rotate: 0/90/180/270</td>    <td style="background-color:cyan">Example: t app test vin_rotate 90</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Rotation /advanced/</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app test rec_fmt_rotate: Normal=0x01/Flip&Horizontal=0x02/<p>Rotate180=0x03/Flip&Vertical=0x04/Transpose=0x05/<p>Rotate90=0x06/Transverse=0x07/Rotate270=0x08</td>    <td style="background-color:cyan">Example: t app test rec_fmt_rotate 0x04</td></tr>
+
+<tr><td style="background-color:yellow"><h6>Key</h6><td style="background-color:yellow"></td></tr>
+<tr><td style="background-color:cyan">t app key: up/up_rel/down/down_rel/left/left_rel/right/right_rel/zoomin/zoomin_rel/<p>zoomout/zoomout_rel/set/focus/focus_rel/shutter/shutter_rel/record/<p>mode/menu/power/del/format/copydir/switchosd</td>  <td style="background-color:cyan">Example: t app key zoomin</td></tr>
+
+
+
+            <tr><td style="background-color:yellow"><h6>Default mode</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app default_mode: last/video/photo/photo_burst(Burst)/photo_pes (Timelapse)</td>  <td style="background-color:cyan">Example: t app default_mode photo</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Auto-power off</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app shutdown_mode: manual/60/120/300<p></td>
+            <td style="background-color:cyan">Example: t app shutdown_mode 120<p></td></tr>
+          
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Power 0ff</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">poweroff yes reboot yes</td>    <td style="background-color:#2EFE9A">Example: poweroff yes reboot yes</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Boss Boot</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app test boss_boot: enable=1/disable=0</td>    <td style="background-color:#2EFE9A">Example: t app test boss_boot 1</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black SB sensor</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app sensor_sb: enable/disable</td>    <td style="background-color:#2EFE9A">Example: t app sensor_sb enable</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Photo Resolution</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app photo_size: 12W/10W/7M/7W/5M</td>    <td style="background-color:#2EFE9A">Example: t app photo_size 10W</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black LCD Images</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app test fp_display: splash_screen.bmp/video.bmp/photo.bmp/one_button.bmp/<p>blank.bmp/background.bmp
+</td>    <td style="background-color:#2EFE9A">Example: t app test fp_display video.bmp</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Rotation</h6><td style="background-color:#D8D8D8"></td></tr>
+<tr><td style="background-color:#2EFE9A"> t app test vin_rotate: 0/90/180/270/flip_h/flip_v</td>    <td style="background-color:#2EFE9A">Example: t app test vin_rotate 270</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black HDMI Settings (PES)</h6><td style="background-color:#D8D8D8"></td></tr>
+<tr><td style="background-color:#2EFE9A"> t app hdmi_set_pes: none/10%/20%/30%</td>    <td style="background-color:#2EFE9A">Example: t app hdmi_set_pes 10%</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black HDMI Settings (PIV)</h6><td style="background-color:#D8D8D8"></td></tr>
+<tr><td style="background-color:#2EFE9A"> t app hdmi_set_pib: 0mA/0.6mA/1.2mA/1.8mA</td>    <td style="background-color:#2EFE9A">Example: t app hdmi_set_piv 1.3mA</td></tr>
+
+<tr><td style="background-color:white"><h6>Video/Photo Digital Filters</h6><td style="background-color:white"></td></tr>
+<tr><td style="background-color:red">t cal -de: 1/2/3/4/5/6/7/8/9/10<ul>
+<br><li>1: Art effect</li>
+<li>2: Sepia Effect</li>
+<li>3: Negative Effect</li>
+<li>4: Black White Effect</li>
+<li>5: Vivid Effect</li>
+<li>6: 70s Film Effect</li>
+<li>7: Punk Effect</li>
+<li>8: Popart Effect</li>
+<li>9: Wedding Effect</li>
+<li>10:Pinhole Effect</li>
+</ul>
+</td>
+<td style="background-color:red">Example: t cal -de 4</td></tr>
+
+    </table>
+    <br>
+    <hr>
+    <br>
+    <p><big style="background-color:red">HERO3+ Silver</big>
+    <p style="background-color:cyan">All the commands of the HERO3 Black and HERO3 + Black work with the HERO3+ Silver.</p>
+    <br>
+    <hr>
+    <br>
+    <p><big style="background-color:red">HERO2</big>
+    <table border="0.3"><tr><td style="background-color:#81F781"><h6>Key</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t app key: up/up_rel/down/down_rel/left/left_rel/right/right_rel/zoomin/zoomin_rel/<p>zoomout/zoomout_rel/set/focus/focus_rel/shutter/shutter_rel/record/<p>mode/menu/power/del/format/copydir/switchosd</td>  <td style="background-color:#F7BE81">Example: t app key zoomin</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Shutter button</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 43 sw out0 / 1</td>  <td style="background-color:#F7BE81">t gpio 43 sw out0<br>Note:<i>Start Recording: t gpio 43 sw out0<p>Stop Recording: t gpio 43 sw out1<br>t gpio 43 sw out0<br>Take Picture: t gpio 43 sw out0</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Turn Off</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 48 sw out0
+    <br>sleep 3
+    <br>t gpio 43 sw out0</td>  <td style="background-color:#F7BE81">Example: t gpio 48 sw out0
+    <br>sleep 3
+    <br>t gpio 43 sw out0</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Front-Back LEDs</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 37 sw out0/1, 0 = ON, 1 = OFF</td>  <td style="background-color:#F7BE81">Example: t gpio 37 sw out0<br>sleep 8<br>t gpio 37 sw out1</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Top-Bottom LEDs</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 46 sw out0/1, 1 = ON, 0 = OFF</td>  <td style="background-color:#F7BE81">Example: t gpio 37 sw out1<br>sleep 8<br>t gpio 37 sw out0</td></tr>
+    
+    </table>
+    <br>
+    <hr>
+    <p style="background-color:cyan">GoPro HERO Autoexec.ash Hacking</p>
+    <br><iframe src="//player.vimeo.com/hubnut/album/2611773?color=44bbff&amp;background=ffffff&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <p style="background-color:cyan">Video Digital Filters Demo Videos</p>
+    <br><iframe src="//player.vimeo.com/hubnut/album/2660479?color=44bbff&amp;background=ffffff&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <br>
+    <big>THANKS TO EVILWOMBAT!!!</big>
+    <p><table border="3">
+    <tr><td style="background-color:cyan"><big><a href="http://chernowii.com/autoexechack" target="_blank">Checkout my GitHub AutoexecHack Page!</a></big></td></tr></table>
+    
+    
+                </td></tr></h5>
+                <p><h2 style="background-color:red;"><a id="herobus">HERO BUS HACKS</a></h2>
+                <p><h5 style="color:green;">All GoPro HERO cameras have a bus to connect "BacPacs", accesories that improve the camera by attaching them onto the back of the camera.
+                <p>But that bus lend us a new way to use the camera. To make new BacPacs! (RC Wired/Wireless remotes, Sensorial Triggering, etc...)</h3>
+                <p><h4><hr>BUY CONNECTORS</hr></h4>
+                <p><h5 style="color:red;"><a href="http://cam-do.com/GoProConnectors.html" target="_blank">Cam-Do Connectors</a></h5>
+                <p><h5 style="color:red;"><a href="http://www.chargeconverter.com/" target="_blank">ChargeConverter Connectors</a></h5>
+                <p><hr>
+                <p><h4>LIST OF PINS</h4>
+                <p><img src="images/herobus.jpg">
+                <p><h5 style="color:black;">THE CONNECTORS HAVE 30 PINS
+                <p>HERE ARE THE FUNCTIONS OF EACH PIN:</h5>
+                <p><h5 style="color:blue;"> <table border="0"><tr><td>1 GND</tr></td>
+                        <tr><td>2 R video out - component Pb/Cb or composite </tr></td>
+                        <tr><td>3 G video out - component Y </tr></td>
+                        <tr><td>4 B video out - component Pr/Cr </tr></td>
+                        <tr><td>5 USB +5V USB power </tr></td>
+                        <tr><td>6 USB +5V USB power </tr></td>
+                        <tr><td>7 USB DP-B USB data line D+ </tr></td>
+                        <tr><td>8 USB DM-B USB data line D- </tr></td>
+                        <tr><td>9 GND </tr></td>
+                        <tr><td>10 HPR audio out right channel</tr></td>
+                        <tr><td>11 HPL audio out left channel</tr></td>
+                        <tr><td>12 PWR/MODE power/mode button</tr></td>
+                        <tr><td>13 V3.6 ? </tr></td>
+                        <tr><td>14 IN1R audio in right channel</tr></td>
+                        <tr><td>15 IN1L audio in left channel</tr></td>
+                        <tr><td>16 IR IN input IR receiver </tr></td>
+                        <tr><td>17 TRIG ? </tr></td>
+                        <tr><td>18 GND </tr></td>
+                        <tr><td>19 ID1 digital input</tr></td>
+                        <tr><td>20 ID2 digital input</tr></td>
+                        <tr><td>21 ID3 digital input</tr></td>
+                        <tr><td>22 ID4 digital input</tr></td>
+                        <tr><td>23 ADAPTER output - power for ext. adapter?</tr></td> 
+                        <tr><td>24 ADAPTER output - power for ext. adapter? </tr></td>
+                        <tr><td>25 WBAT+ input - ext. power for camera? </tr></td>
+                        <tr><td>26 WBAT+ input - ext. power for camera? </tr></td>
+                        <tr><td>27 GND </tr></td>
+                        <tr><td>28 DATA interface I2C</tr></td> 
+                        <tr><td>29 CLK interface I2C </tr></td>
+                    <tr><td>30 GND</h5></tr></td>
+                </table>
+<hr>
+<p><h5 style="color:green;">Examples:
+<p>Pin 30 + Pin 1 = PWR/MDE Button, Turn on the camera by connecting those pins for 2 secs, To start recording / take pictures / record a timelapse NOTE: ONE BUTTON MODE Must be ON.                
+<p>Pin 2: Composite/Red RGB. Composite is output when Pin 20+21 are tied to the GND
+<p>Pin 5: External 5 volt power supply. Apply the external power to this pin. We’re not dependent on internal camera power supply, but can run for hours with the external power.
+<p>Pin 23: Connect this to the ground using a LED and a 150-ohm resistor, and the LED will light up when the camera is turned on.
+<hr>
+<p>You can find more about the connectors, and ask/discuss in the <h5 style="color:green;"><a href="http://goprouser.freeforums.org/the-gopro-hero-hd-bus-interface-moved-see-last-post-t797-50.html" target="_blank">GoPro User Free Forum</a></h5>         
+<p><h2 style="background-color:red;"><a id="wifi">WiFi Commands, WiFi Live Preview, WiFi Server</a></h2>
+<p><a style="background-color:cyan" href="https://github.com/KonradIT/goprowifihack" target="_blank">WiFi Commands and Live Preview code on my GitHub repo</a>
+<p>The GoPro HERO cameras have a extraordinary WiFi server, you can browse media, live preview what your GoPro sees, or control all the settings of your camera.
+<table border="0">
+<p><h4>LIVE PREVIEW</h4>
+<tr><td>1. Turn the WiFi of your camera in GOPRO APP mode
+<tr><td>2. In your computer, connect to the GoPro's WiFi
+<tr><td>3. Go here in your browser: http://10.5.5.9:8080
+<tr><td>4. Go to Live
+<tr><td>5. You should see a file called "amba.m3u8" (If not, wait and refresh browser)
+<tr><td>6. Open VLC media player
+<tr><td>7. File > Open network
+<tr><td>8. Write this in the text field: http://10.5.5.9:8080/live/amba.m3u8
+<tr><td>9. Now, you have the preview.</table>
+<p><hr>
+<p>EMBEDDED PREVIEW
+<p>You can embed a preview for Windows using VLC WEBplugin:</h5>
+
+<p><xmp style="background-color:cyan"><embed type="application/x-vlc-plugin"
+
+         name="video1"
+
+         autoplay="no" loop="yes" width="400" height="300"
+
+         target="http://10.5.5.9:8080/live/amba.m3u8" />
+
+<br />
+
+  <a href="javascript:;" onclick='document.video1.play()'>Play video1</a>
+
+  <a href="javascript:;" onclick='document.video1.pause()'>Pause video1</a>
+
+  <a href="javascript:;" onclick='document.video1.stop()'>Stop video1</a>
+
+  <a href="javascript:;" onclick='document.video1.fullscreen()'>Fullscreen</a></xmp>
+
+
+  <p><h6>Alternatively, you can embed the preview using JW Player.</h6>
+  <p><h6 style="color:black;">write this in your head tag:</h6>
+<br>
+<xmp style="background-color:cyan"><script src="http://jwpsrv.com/library/9Xd9rv1IEeKDbSIACusDuQ.js"></script></xmp>
+<br>
+
+<big>Customizable JW Player:</big>
+<br>
+<br>
+<xmp style="background-color:cyan"><div id='playernPcydqsAvglZ'></div>
+<script type='text/javascript'>
+jwplayer('playernPcydqsAvglZ').setup({
+file: 'http://10.5.5.9:8080/live/amba.m3u8',
+
+title: 'GoPro HERO Live Stream',
+width: '100%',
+aspectratio: '16:9',
+fallback: 'false',
+autostart: 'true'
+});
+</script></xmp>
+<br>
+<br>
+<p><h4>WIFI COMMANDS</h4>
+<p><h5 style="color:black">URL structure: <p style="background-color:cyan">http://10.5.5.9/camera or bacpac/COMMAND?t=PASSWORD&p=%NUMBER</h5>
+<p>PASSWORD: Replace by your camera's WiFi Password
+<p>Example: http://10.5.5.9/bacpac/SH?t=PASSWORD&p=%01
+<p><b>FULL LIST OF COMMANDS:</b>
+<table border="0">
+<tr><td>Basics:</tr></td>
+<tr><td>bacpac PW - 00 Turn GoPro OFF</td></tr>
+<tr><td>bacpac PW - 01 Turn GoPro ON</td></tr>
+
+<tr><td>bacpac SH - 01 Shutter</td></tr>
+<tr><td>bacpac SH - 00 Stop</td></tr>
+
+<tr><td>camera PV - 02 Preview ON</td></tr>
+<tr><td>camera PV - 00 Preview OFF</td></tr>
+<tr><td>Mode</tr></td>
+<tr><td>camera CM - 00 Video Mode</td></tr>
+<tr><td>camera CM - 01 Photo Mode</td></tr>
+<tr><td>camera CM - 02 Burst Mode</td></tr>
+<tr><td>camera CM - 03 Timelapse Mode</td></tr>
+<tr><td>camera CM - 04 Timer Mode (no longer exists)</td></tr>
+<tr><td>camera CM - 05 Play HDMI</td></tr>
+<tr><td>Orientation</tr></td>
+<tr><td>camera UP - 00 Orientation UP</td></tr>
+<tr><td>camera UP - 01 Orientation DOWN</td></tr>
+
+<tr><td>video resolutions HERO2 and HERO3 silver:</td></tr>
+
+<tr><td>camera VR - 00 WVGA 60</td></tr>
+<tr><td>camera VR - 01 WVGA 120</td></tr>
+<tr><td>camera VR - 02 720 30</td></tr>
+<tr><td>camera VR - 03 720 60</td></tr>
+<tr><td>camera VR - 04 960 30</td></tr>
+<tr><td>camera VR - 05 960 48</td></tr>
+<tr><td>camera VR - 06 1080 30</td></tr>
+
+<tr><td>video resolutions Black edition:</td></tr>
+<tr><td>NOTE: SOME BUTTONS LEAD DIFFERENT RESOLUTIONS!</td></tr>
+
+<tr><td>camera VR - 03 2.7kCin24</td></tr>
+<tr><td>camera VR - 05 1080 25<span class="Apple-converted-space"> </span></td></tr>
+<tr><td>camera VR - 03 720 60</td></tr>
+<tr><td>camera VR - 06 960 48</td></tr>
+
+<tr><td>Fov:</td></tr>
+
+<tr><td>camera FV - 00 wide</td></tr>
+<tr><td>camera FV - 01 medium</td></tr>
+<tr><td>camera FV - 02 narrow</td></tr>
+
+<tr><td>Photo resolution HERO2 and HERO3 silver:</td></tr>
+
+<tr><td>camera PR - 00 11mpW</td></tr>
+<tr><td>camera PR - 01 8mpM</td></tr>
+<tr><td>camera PR - 02 5mpW</td></tr>
+<tr><td>camera PR - 03 5mpM</td></tr>
+
+<tr><td>Timelapse Interval:</td></tr>
+
+<tr><td>camera TI - 00 0,5 sec</td></tr>
+<tr><td>camera TI - 01 1sec</td></tr>
+<tr><td>camera TI - 05 5sec</td></tr>
+<tr><td>camera TI - 0a 10sec</td></tr>
+<tr><td>camera TI - 1e 30sec</td></tr>
+<tr><td>camera TI - 3c 60sec</td></tr>
+
+<tr><td>Volume:</td></tr>
+
+<tr><td>camera BS - 00 no sound</td></tr>
+<tr><td>camera BS - 01 70%</td></tr>
+<tr><td>camera BS - 02 100%</td></tr>
+
+<tr><td>White Balance HERO3 "ONLY IF Protune ON"</td></tr>
+
+<tr><td>camera WB - 00 auto</td></tr>
+<tr><td>camera WB - 01 3000k</td></tr>
+<tr><td>camera WB - 02 5500k</td></tr>
+<tr><td>camera WB - 03 6500k</td></tr>
+<tr><td>camera WB - 04 CAMRAW</td></tr>
+
+<tr><td>Continuous Shot (HERO3):</td></tr>
+
+<tr><td>camera CS - 00 Single</td></tr>
+<tr><td>camera CS - 03 3SPS</td></tr>
+<tr><td>camera CS - 05 5SPS</td></tr>
+<tr><td>camera CS - 0a 10SPS</td></tr>
+
+<tr><td>Burst Rate HERO3:</td></tr>
+
+<tr><td>camera BU - 00 3/1s</td></tr>
+<tr><td>camera BU - 02 10/1s</td></tr>
+<tr><td>camera BU - 03 10/2s</td></tr>
+<tr><td>camera BU - 04 30/1s</td></tr>
+<tr><td>camera BU - 05 30/2s</td></tr>
+<tr><td>canera BU - 06 30/3s</td></tr>
+
+<tr><td>Loop Video HERO3:</td></tr>
+
+<tr><td>camera LO - 00 OFF</td></tr>
+<tr><td>camera LO - 01 5min</td></tr>
+<tr><td>camera LO - 02 20Min</td></tr>
+<tr><td>camera LO - 03 60Min</td></tr>
+<tr><td>camera LO - 05 Max</td></tr>
+
+<tr><td>Protune ON/OFF:</td></tr>
+
+<tr><td>camera PT - 01 ON</td></tr>
+<tr><td>camera PT - 00 OFF</td></tr>
+
+<tr><td>Delete:</td></tr>
+
+<tr><td>camera DL (no number) last</td></tr>
+<tr><td>camera DA (no number) all</td></tr>
+
+<tr><td>Photo resolution Black ed:</td></tr>
+
+<tr><td>camera PR - 05 12mpW</td></tr>
+<tr><td>camera PR - 04 7mpW</td></tr>
+<tr><td>camera PR - 06 7mpM</td></tr>
+<tr><td>camera PR - 03 5mpM</td></tr>
+
+<tr><td>Leds:</td></tr>
+
+<tr><td>bacpac LB - 00 no leds</td></tr>
+<tr><td>camera LB - 01 2 leds</td></tr>
+<tr><td>camera LB - 02 4 leds</td></tr>
+
+<tr><td>Spot Meter:</td></tr>
+
+<tr><td>camera EX - 00 OFF</td></tr>
+<tr><td>camera EX - 01 ON</td></tr>
+
+<tr><td>One Button Mode:</td></tr>
+
+<tr><td>camera OB - 00 OFF</td></tr>
+<tr><td>camera OB - 01 ON</td></tr>
+
+<tr><td>Protune Resolutions HERO2 and HERO3 silver:</td></tr>
+
+<tr><td>camera VR - 07 1080 30 Protune</td></tr>
+<tr><td>camera VR - 08 1080 24 Protune</td></tr>
+<tr><td>camera VR - 11 1080 25 Protune</td></tr>
+<tr><td>camera VR - 09 960 60 Protune</td></tr>
+
+<tr><td>Protune Resolutions HERO3 black ONLY IF PROTUNE IS ON:</td></tr>
+<tr><td>NOTE: SOME BUTTONS LEAD DIFFERENT RESOLUTIONS!</td></tr>
+
+<tr><td>camera VR - 02 4kCin12T</td></tr>
+<tr><td>camera VR - 03 2.7kCin24T</td></tr>
+<tr><td>camera VR - 06 720 60T</td></tr>
+<tr><td>camera VR - 07 960 100T</td></tr>
+<tr><td>camera VR - 08 1080 60T</td></tr>
+
+<tr><td>Auto Power Off:</td></tr>
+
+<tr><td>camera AO - 00 NEVER</td></tr>
+<tr><td>camera AO - 01 60s</td></tr>
+<tr><td>camera AO - 02 120s</td></tr>
+<tr><td>camera AO - 03 300s</td></tr>
+
+<tr><td>Default Mode:</td></tr>
+
+<tr><td>camera DM - 00 Video</td></tr>
+<tr><td>camera DM - 01 Photo</td></tr>
+<tr><td>camera DM - 02 Burst</td></tr>
+<tr><td>camera DM - 03 Timelapse</td></tr>
+
+<tr><td>OnScreen Display:</td></tr>
+
+<tr><td>camera OS - 00 OFF</td></tr>
+<tr><td>camera OS - 01 ON</td></tr>
+
+<tr><td>Locate:</td></tr>
+
+<tr><td>camera LL - 01 Start</td></tr>
+<tr><td>camera LL - 00 Stop</td></tr>
+
+<tr><td>Video Mode:</td></tr>
+<tr><td>camera VM - 00 NTSC</td></tr>
+<tr><td>camera VM - 01 PAL</td></tr>
+</table>
+<p><h2 style="background-color:red;"><a id="megalapse">MegaLapse</a></h2>
+<br><big>MegaLapse is an autoexec.ash that allows GoPro HERO cameras to shoot <i>long timelapses</i> using <i>higher intervals</i>
+<p><big><a href="http://chernowii.com/megalapse" target="_blank">Go to MegaLapse page</a></big>
+<br>
+<iframe src="//player.vimeo.com/video/81871611?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+            <br>
+            <p>
+            <br>
+    
+
+</center>
+
+
+		<footer>
+		<section id="footer-area">
+
+			<section id="footer-outer-block">
+					<aside class="footer-segment">
+                    <h4>GoPro Links</h4>
+                    <ul>
+                    <li><a href="http://gopro.com" target="_blank">GoPro.com</a></li>
+                    <li><a href="http://cam-do.com" target="_blank">Unofficial GoPro Accesories</a></li>
+                    <li><a href="http://camarush.com" target="_blank">Extreme GoPro Accesores page #1</a></li>
+                    <li><a href="http://xsories.com" target="_blank">Extreme GoPro Accesores page #2</a></li>
+                    </ul>
+					</aside><!-- end of #first footer segment -->
+                    
+					
+
+					<aside class="footer-segment">
+							<h4>Other Interesting Links</h4>
+								<ul>
+									<li><a href="http://videolan.org">VideoLAN</a></li>
+									<li><a href="http://getawaymoments.com">GetawayMoments</a></li>
+									<li><a href="http://apple.com">Apple</a></li>
+								</ul>
+					</aside><!-- end of #second footer segment -->
+
+					
+					
+					<aside class="footer-segment">
+							<h4>----</h4>
+                            <p>&copy; 2013 <a href="#">chernowii.com</a> Copyright 2013 Chernowii.com by Konrad Iturbe</td></tr> <div class="social">
+                                <a href="https://www.facebook.com/konrad.iturbe" target="_blank"><img src="images/facebook.png" alt=""></a>
+                                <a href="https://vimeo.com/chernowiivvcc/" target="_blank"><img src="images/vimeo.png" width="27" height="27" alt=""></a>
+                                <a href="http://instagram.com/konrad_iturbe_chernowii" target="_blank"><img src="images/instagram.png" width="27" height="27" alt=""></a>
+                                <a href="https://twitter.com/konrad_it" target="_blank"><img src="images/twitter.png" width="28" height="28" alt=""></a>
+                                <a href="github.html"><img src="images/github.png" width="27" height="27" alt=""></a>
+                                
+                                <a href="http://about.me/konraditurbe" target="_blank"><img src="images/aboutme.png" width="27" height="27" alt=""></a>
+                            </div>
+                            <script src="js/jquery.min.js"></script>
+                            <script src="js/slider.min.js"></script>
+                            <script>
+                                $(function () {
+                                  
+                                  // Slideshow 1
+                                  $("#slider").responsiveSlides({
+                                                                maxwidth: 800,
+                                                                speed: 800
+                                                                });
+                                  
+                                  });
+                                </script>
+					</aside><!-- end of #fourth footer segment -->
+
+			</section><!-- end of footer-outer-block -->
+
+		</section><!-- end of footer-area -->
+	</footer>
+	
+</div><!-- #wrapper -->
+<!-- Free template created by http://freehtml5templates.com -->
+</body>
+</html>

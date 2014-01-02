@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MegaLapse</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+</style>
+</head>
+
+<body>
+<center>
+<font face="lucida console" color="white">
+<img src="headerimg.png" width="544" height="123"/>
+<h4 style="color:white">Hack for GoPro HERO cameras to use long intervals in timelapse</h4>
+<p><h2 style="color:white">What is MegaLapse?</h2>
+<p><h5 style="color:white">MegaLapse is a file that allows GoPro cameras to shoot longer timelapses with higher intervals (from 2 min to 45 min intervals!)
+    <p>It works with HERO3 Black cameras, HERO3 Plus Black cameras and <b style="color:yellow">HERO3 Plus Silver cameras:</b> <b style="color:cyan">The strings from the HERO3 Black/HERO3+Black firmware that make MegaLapse work were in the firmware of the HERO3 Plus Silver, I dont own a HERO3 Plus Silver, If you own one, please test MegaLapse :) If works, send me an <a href="mailto:mail@chernowii.com">email</a></b>.
+<p>MegaLapse is free and open-source, feel free to contribute!</h5>
+<p><h2 style="color:white">How it works?</h2>
+<p><h5 style="color:white">MegaLapse is a file called autoexec.ash, GoPro cameras recognize autoexec.ash files as executable files.
+<p>It works because it repeats the file, infinite loop! 
+<p><big>Code:</big>
+<p><table border="4">
+<tr><td>sleep 1
+<br>t app appmode photo
+<br>sleep X
+<br>t app button shutter PR
+<br>d:\autoexec.ash
+<br>REBOOT yes</td></tr>
+</table>
+<p><i>X is the interval in seconds. In GitHub, there are folders with interval files, aditionally, you can set your own interval.</i>
+<p><p><h2>Download MegaLapse</h2></b>
+<p><h4>MegaLapse can be found in <a style="color:white"  href="https://github.com/KonradIT/autoexechack/tree/GoPro/MegaLapse" target="_blank">GitHub</a></h4>
+<p><h2>Installation</h2>
+<p><h4>When you have downloaded the file from GitHub, just drag it to the root level of the sd, where DCIM and MISC are.
+<p><br><p><h2>VIDEOS</h2><table border="4">
+    <tr><td><iframe src="//player.vimeo.com/hubnut/album/2649104?color=ffffff&amp;background=000000&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></td></tr></table>
+<p style="background-color:cyan"><b style="color:black">I recommend to use a modified USB cable to charge the gopro during the time is shooting when is in its housing.</b></p>
+<br><p><p><h3>Contact</h3>
+<p><big><a style="color:white" href="mailto:mail@chernowii.com">MAIL ME</a></big>
+<p><br><small>MegaLapse is a creation of <a style="color:white" href="http://chernowii.com">Konrad Iturbe</a></small>
+</font>
+</body>
+</html>
