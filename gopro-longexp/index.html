@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url('http://i.imgur.com/WhQM23S.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        #box {
+            background-color: white;
+            color: black;
+            width: 50%;
+            height: auto;
+            position: absolute;
+            left: 20%;
+            padding-left: 10%;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <title>GoPro Long Exposure Hack</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <font face="Arial" color="black">
+
+        <div id="box">
+            <h2>GoPro Long Exposure pictures/timelapse hack</h2>
+            Get those awesome long exposure timelapses or pictures with your GoPro HERO3 Black or Plus Black using this hack.
+
+            <br>To use it, first download it to the gopro sd card, change the parameters and save it. <br>Go to the github repo hack <a href="https://github.com/KonradIT/autoexechack/tree/GoPro/LongExpTimeLapse" target="_blank">here</a>
+            <br><a href="https://gist.github.com/KonradIT/ce55b04ab4ad10592ebf/#file-autoexechack-md" target="_blank">Here is a guide on how to download the hack to your gopro</a>
+            <br>The hack will take a picture every A (+2) seconds. Is a timelapse.
+            <br>The code looks like this
+            <br><br><code>
+<br>t app appmode photo
+<br>sleep 1
+<br>t ia2 -ae still_exp P X Y
+<br>sleep 1
+<br>t app button shutter PR
+<br>sleep A
+<br>d:\autoexec.ash
+<br>REBOOT yes
+</code>
+            <p>Key: <br><b>P</b>: ISO <br><b>X</b>: Exposure time <br><b>Y</b>: Iris (exposure time also?)<br><b>A</b>: timelapse interval</p>
+            <h3>Exposure time/iris number codes:</h3>
+            <p>Write the number corresponding to desired exposure time in the autoexec.ash file</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Value (number to write in hack file)</th>
+                        <th>Exposure Time (seconds)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>8,5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>7,7</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>7,3</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>7,1</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>6,9</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>6,8</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>6,4</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>6,3</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>6,2</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>6,1</td>
+                    </tr>
+                    <tr>
+                        <td>75</td>
+                        <td>5,3</td>
+                    </tr>
+                    <tr>
+                        <td>85</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>95</td>
+                        <td>4,7</td>
+                    </tr>
+                    <tr>
+                        <td>99</td>
+                        <td>4,6</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>4,6</td>
+                    </tr>
+                    <tr>
+                        <td>130</td>
+                        <td>3,9</td>
+                    </tr>
+                    <tr>
+                        <td>160</td>
+                        <td>3,3</td>
+                    </tr>
+                    <tr>
+                        <td>200</td>
+                        <td>2,7</td>
+                    </tr>
+                    <tr>
+                        <td>255</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>400</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>0,56</td>
+                    </tr>
+                    <tr>
+                        <td>600</td>
+                        <td>0,33333</td>
+                    </tr>
+                    <tr>
+                        <td>1000</td>
+                        <td>0,000158328</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Pictures taken by users:</h3>
+            <br><img src="http://i.imgur.com/x4D32WS.jpg" width="70%"><br>
+            <br><img src="http://i.imgur.com/DoIqBc8.jpg" width="70%"><br>
+            <br>
+            <a href="http://imgur.com/a/iszxQ"><img src="http://i.imgur.com/RBb4Y28.jpg" width="70%"></a><br>
+            <br>
+            <a href="http://imgur.com/a/I53AT"><img src="http://i.imgur.com/I8L9PS4.jpg" width="70%"></a><br>
+            <br><img src="http://i.imgur.com/0kIowN7.jpg" width="70%"><br>
+
+
+        </div>
+
+</body>
+
+</html>

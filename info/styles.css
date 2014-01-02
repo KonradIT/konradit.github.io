@@ -1,0 +1,10 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (min-width: 700px) {
+    #content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

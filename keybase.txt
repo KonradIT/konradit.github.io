@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/konraditurbe
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://konraditurbe.dev
+  * I am konraditurbe (https://keybase.io/konraditurbe) on keybase.
+  * I have a public key with fingerprint C3B2 8DC5 06B0 0294 BF6B  716D F4A8 3E52 CF2B 880C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fd0e0bc7af9023eda98594f262ca0e1ebb96bfcfc226156b525a9fa45261e9b40a",
+      "fingerprint": "c3b28dc506b00294bf6b716df4a83e52cf2b880c",
+      "host": "keybase.io",
+      "key_id": "f4a83e52cf2b880c",
+      "kid": "010104c07d67fded67a868b801420e3911574c1917c60d52f8b52035645496a7f2600a",
+      "uid": "c3fc9167208a930dc77a0647e0f0ea19",
+      "username": "konraditurbe"
+    },
+    "service": {
+      "hostname": "konraditurbe.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1619899686,
+  "expire_in": 157680000,
+  "prev": "eefd65c8d27be610a10ccbf3dd088dc862344709d06a24dff39fa395ef7404a4",
+  "seqno": 67,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMJdAnicbVJbbBVFGD6HYpGqTQ2mJdBgmEhFaXB2dnZmZxOxJEgMfQJTUCSscy2b
+tmcPe7bVUtpwUSMUEhUe+lLbtAEx2ARbeDIqEEmgNNaHYqKJBJ9IwyXlYiIBUmcb
+eWMmmcnM//3ffN/8/y8vlOUq8vdPrNk0uerz5/OXzw225z48fKauC4hYdYKgC7To
+uU23Kl1Kw5ZIgQBAB0GjoIZCUm4YRK5WnPkewwYRJDnUjhaCEWGkkQgRxyPCQx5n
+hmPPHjUTGHJQD0xUaNZJMYkKqaWVrkC+kh4kAkLEsDBEUIcog7nvag9Jg4TvQ2kT
+d8SlLMOKE7ykV0exvbOHcE7eU/BPdNuJJaSKUKO0XblPfOFDByOoXeY4HsXSYQ6V
+BCoPGd/Khq5HsIcZ4dS6g3O62+fopGskcwhF0OfMhUpSyiHBVEMDNXdYBizppMDb
+dKY1LiRcRWl7IjTorgc20hFJnX1u5uYpqNVKd1iOYhKnsYxbbXRHmhZLQZaddhYz
++EdahP8ThSIqKPufNqNDJ6UoLoDAsUiZRhmzQxzmM0Z8Ug/0x8Uo0WGUITxKfGhH
+9o59LgBaG0U86StEhSYO5A6UUhhXKejb6vgEuRhTyBQkHGFljGvL6jJPG4oh5hhk
+1nYWYhAQanXyZstZipoL3Hqyxs+f3TY/l6/IlT8zL2u0XMXCqiftd/XegtmoNtwe
+nByY/1Lf5UMDf6cPd9+6duvi+vszpzqX7Nq8YvnG7d9de3ntiqavGm4sG2n9o2a4
+7vummfDH/kev0+lXah8E07g/ufLGZNWBV2c+BZXPja1rZ1982aAXb246+2JFyw/1
+71/5h4/99QEYH5yeqF637d/HZa339pSP7n/34PjJC929i45e/ww8O1X2dvnskutT
+y1Zeqqvee7jqnXxY7H1tYvJU9eDyAdZ0s2dLTePGLd1r/xyp/P2T0YmeeRdOvLev
+baxnb+PQRO2bP/UeX3/k9K5fjwSrbnwb9s00vnVspL/y+N2pDcNVo11bl64kv00N
+f901dPD2nUs1fRfbrp4rl+Oz3+y7+TPZk2/4D/9bREs=
+=sDJo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/konraditurbe
+
+==================================================================

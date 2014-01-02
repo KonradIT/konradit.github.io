@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <title>Konrad Iturbe: Projects</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div id="header">
+        <a id="header_link" href="index.html">HOME</a>
+        <a id="header_link" href="media.html">MEDIA</a>
+        <a id="header_link" href="hacking.html">HACKING</a>
+        <a id="header_link" href="projects.html">PROJECTS</a>
+        <a id="header_link" href="about.html">ABOUT</a>
+        <a id="header_link" href="press.html">PRESS</a>
+        <a id="header_link" href="http://medium.com/@konrad_it">BLOG</a>
+    </div>
+    <div id="content">
+        <h2>Projects</h2>
+
+        <div class="table table-hover table-condensed table-striped">
+
+            <div class="table-row">
+                <div class="table-cell">
+                    <img src="img/auxiliary/gopros.jpg"> <br><br>
+                    <h3><a href="https://github.com/konradit/goprowifihack" target="_blank">GoProWifiHack</a></h3><br>Wireless reverse engineering effort. Control your GoPro camera wirelessly, offload media, view the live feed, start/stop recording, take
+                    photos, change settings etc...<br>Maintained for ~8 years with updates whenever a new GoPro was released. Cameras supported: HERO2...HERO7 (WiFi, BLE optional), Fusion, HERO8, MAX, HERO9 - HERO11 (WiFi + BLE)
+                </div>
+
+                <div class="table-cell">
+                    <img src="img/auxiliary/hero5.jpg"><br><br>
+                    <h3><a href="https://github.com/konradit/gopro-py-api" target="_blank">GoPro Python API</a></h3><br>Most used implementation of the GoPro HTTP API spec in Python. Supports Python3.5+. HERO2..HERO7 supported, HERO8 and beyond need a BLE
+                    call hack before using.
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <img src="img/auxiliary/autoexechack.jpg"> <br><br>
+                    <h3><a href="https://github.com/konradit/autoexechack" target="_blank">AutoexecHack</a></h3><br>GoPro hacking effort. Autoexecutable scripts used to enhance the possibilities on off the shelf consumer hardware. Out of the box usecases
+                    such as: extending the timelapse functionality, getting longer exposure times, locking exposure to fixed setting.
+                </div>
+
+                <div class="table-cell">
+                    <img src="img/auxiliary/mmt.jpg"> <br><br>
+                    <h3><a href="https://github.com/KonradIT/mmt" target="_blank">Media Management Tool (MMT)</a></h3><br>Catch-all tool for importing, sorting and managing videos/photos from various action cameras and drones. Supports importing media from
+                    GoPro, DJI and Insta360 devices. Device manufacturers don't write the filenames in a way that's easy to sort when editing, so this tool will organize media by camera, date, location, importance, media type, resolution.
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <img src="img/auxiliary/bereal.jpg"><br><br>
+                    <h3><a href="https://github.com/KonradIT/bereal-timelapse" target="_blank">BeReal timelapse</a></h3><br>Generates a timelapse from your BeReal moments
+                </div>
+                <div class="table-cell">
+                    <img src="img/auxiliary/insight.jpg"> <br><br>
+                    <h3><a href="https://github.com/KonradIT/insight-api" target="_blank">NASA InSight Photo API</a></h3><br>Python library for downloading image dumps from NASA's InSight Mars Mission Photo dump. Reverse engineered from NASA's website.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

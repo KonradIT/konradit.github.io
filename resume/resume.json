@@ -1,0 +1,145 @@
+{
+    "details": {
+        "name": ["Konrad", "Iturbe"],
+        "dob": "1999",
+        "location": "Barcelona, Spain",
+        "github": "https://github.com/konradit",
+        "twitter": "https://twitter.com/konrad_it",
+        "email": "hi@konraditurbe.dev"
+    },
+    "skills": [{
+            "name": "GoLang",
+            "proficiency": "Reasonably proficient"
+        }, {
+            "name": "Python 3+",
+            "proficiency": "Reasonably proficient"
+        },
+        {
+            "name": "JavaScript+Node",
+            "proficiency": "Somewhat proficient"
+        },
+        {
+            "name": "PostgreSQL",
+            "proficiency": "Mid-level proficiency"
+        },
+        {
+            "name": "MongoDB",
+            "proficiency": "Mid-level proficiency"
+        },
+        {
+            "name": "Docker/Docker Compose/Kubernetes",
+            "proficiency": "Mid-level proficiency"
+        },
+        {
+            "name": "Binary reverse engineering",
+            "proficiency": "Mid-level proficiency"
+        },
+        {
+            "name": "API reverse engineering, web scraping, packer bypassing with open source tools (frida, radare...)",
+            "proficiency": "Reasonably proficient"
+        },
+        {
+            "name": "Linux usage, bash scripting",
+            "proficiency": "Reasonably proficient"
+        }
+    ],
+    "education": [
+        ["Secondary High School Education", "2012-2018"]
+    ],
+    "certificates": [
+        "Cambridge English Proficiency (C2)",
+        "Cambridge English Advanced (C1)",
+        "PADI Open Water Diver (20m depth license)"
+    ],
+    "work_experience": [{
+            "company": "Robonautica/NOAA",
+            "start_date": 1451653200,
+            "end_date": 1483275600,
+            "is_ongoing": false,
+            "skills_used": ["Python", "Reverse engineering"],
+            "tasks": "Developed a Python library for underwater robots to interface with the popular action camera GoPro. Later open sourced as gopro-py-api, the library has been used by governments, companies and NGOs to extend the use and functionality of their action cameras. It's even found on a NASA spacecraft.",
+            "type": "Part time / open source project"
+        },
+        {
+            "company": "Livestream",
+            "start_date": 1467378000,
+            "end_date": 1501592400,
+            "is_ongoing": false,
+            "skills_used": ["Reverse engineering "],
+            "tasks": "Made a security analysis for their live streaming camera Mevo",
+            "type": "Internship"
+        },
+        {
+            "company": "Steezycam",
+            "start_date": 1506862800,
+            "end_date": 1538398800,
+            "is_ongoing": false,
+            "skills_used": ["Android development", "GoLang"],
+            "tasks": "Developed prototypes, Android app, BT-LE interfaces, APIs.",
+            "type": "Part time"
+        },
+        {
+            "company": "GlobeKeeper",
+            "start_date": 1514811600,
+            "end_date": 1543669200,
+            "is_ongoing": false,
+            "skills_used": ["Android development"],
+            "tasks": "Developed an Android app MVP",
+            "type": "Part time"
+        },
+        {
+            "company": "Shasta",
+            "start_date": 1546347600,
+            "end_date": 1627822800,
+            "is_ongoing": false,
+            "skills_used": ["GoLang", "Docker", "PostgreSQL", "NodeJS", "React Native", "MongoDB"],
+            "tasks": "Full Stack experience:<br>- Front-end: React Native, Redux, Expo. <br>- Back-end: Golang, MongoDB, PostgresQL, Python scripting, some Kubernetes<br>Maintained and led the development of the main backend server, which was written in GoLang on top of Google Cloud Engine (GKE), here I planned, implemented and debugged new features, reverse engineered services to get inter connectivity between the server and unsupported websites, took responsibility of bug fixes and unplanned outages, troubleshooted deployment errors, worked on getting full coverage from testing tools, developed a cron job pipeline with automated error reporting, statistics and metadata injection to custom dashboards",
+            "type": "Full time"
+        },
+        {
+            "company": "Allread MLT",
+            "start_date": 1630501200,
+            "end_date": 1648818000,
+            "is_ongoing": false,
+            "skills_used": ["Python", "Cloud", "IP Cameras", "Docker", "DRF"],
+            "tasks": "Python server development. Django Rest Framework, MySQL, Linux, RTSP camera streams, Docker, container orchestration... Work related to cameras, streaming protocols, concurrency patterns.<br>Added new features to the on-prem and cloud codebase, maintained client scripts, reduced potential attack surface area, improved camera connectivity, image buffer pipeline",
+            "type": "Full time"
+        },
+        {
+            "company": "Polygon zkEVM",
+            "start_date": 1648818000,
+            "is_ongoing": false,
+            "end_date": 1669899600,
+            "skills_used": ["GoLang", "Cryptography", "Ethereum", "PostgreSQL", "GRPC", "Testing"],
+            "tasks": "GoLang, PostgresQL, End-To-End/Unit Testing, Ethereum interfaces (go-ethereum), Layer2 Scalability and work related to complex system deployments for the Polygon <a href=\"https://github.com/0xPolygonHermez/zkevm-node/commits?author=KonradIT\">ZKEVM Node</a>, primarily. First experience developing with Geth, go-ethereum, and smart contracts",
+            "type": "Full time"
+        },
+        {
+            "company": "Hubuc",
+            "start_date": 1680645600,
+            "is_ongoing": true,
+            "end_date": null,
+            "skills_used": ["GoLang", "PostgreSQL", "QLDB", "gRPC", "AWS CW", "ElasticSearch", "Kibana", "Sentry"],
+            "tasks": "Working primarily on the main legacy projects and P1, CI/CD infra, testing suite and Database connections.<br>Worked on database query optimization for the internal backoffice tooling, improved data reporting flows and contributed to the development of new dashboards and scheduled jobs. Made the overall internal tooling experience better by reducing database query response time, supported new features according to requirements and made a robust test suite<br>Improved supply chain security via automated dependency upgrade system",
+            "type": "Full time"
+        }
+    ],
+    "tidbits": [
+        "Reversed engineered several action cameras' wireless communication interfaces and APIs over the course of a decade, leading to several official and unofficial implementations",
+        "Developed libraries to connect with GoPro cameras via WiFi to extend their functionality and use",
+        "Made auto executable programs for Ambarella SoC based devices in order to automate tasks and add features (long exposures/larger interval for timelapse...)",
+        "Helped companies integrate off-the-shelf consumer devices into their business, products and services by reverse engineering websites, apps, TCP communications",
+        "Currently helping researchers, academics and journalists to parse data from the alternative social platform sphere",
+        "Interested in UAVs, cameras, mobile SDKs, state-backed disinformation efforts, alternative payment systems and deceiptful ads",
+        "Developed tools to make certain drones better",
+        "I'm a native Spanish speaker and I am fluent in English and German"
+    ],
+    "tidbits_for_pdf": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7
+    ]
+}

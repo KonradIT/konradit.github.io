@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+        }
+        
+        @media only screen and (min-width: 1000px) {
+            body {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>MMT: organize your camera media intelligently</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <h1 id="mmt">MMT</h1>
+    <p><strong>M</strong>edia <strong>M</strong>anagement <strong>T</strong>ool</p>
+    <p><a href="https://github.com/konradit/mmt">View source code</a></p>
+    <h2 id="backstory-">Backstory:</h2>
+    <p>I&#39;ve been using an assortment of scripts over the years to manage media from my different action cameras and drones, it&#39;s clear a centralized and unified solution is needed.</p>
+    <p>This tool draws inspiration from my <a href="https://github.com/KonradIT/djiutils/blob/master/offload.sh">dji-utils/offload.sh</a> script as well as the popular <a href="https://github.com/KonradIT/gopro-linux/blob/master/gopro#L262">gopro-linux tool</a>        and @deviantollam&#39;s <a href="https://github.com/deviantollam/dohpro">dohpro</a></p>
+    <p>Right now the script supports these cameras:</p>
+    <ul>
+        <li>GoPro:
+            <ul>
+                <li>HERO2 - HERO5</li>
+                <li>MAX</li>
+                <li>Fusion</li>
+                <li>HERO7 - HERO11</li>
+            </ul>
+        </li>
+        <li>Insta360: X2, GO2, X3</li>
+        <li>DJI: Osmo Pocket 1/2, Mavic (most of them)</li>
+        <li>Android: All, but with Pixel 6 (Google Camera) specific fixes</li>
+    </ul>
+    <p>Feel free to PR!</p>
+    <p>I plan have the tool read a directory, use a config file and act accordingly to offload media from any type of drive
+    </p>
+    <h2 id="installing-">Installing:</h2>
+    <p>Download from the releases tab, additionally, a github action will run for every push.</p>
+    <h2 id="running-">Running:</h2>
+    <ul>
+        <li>import - <strong>import camera footage</strong>
+            <ul>
+                <li><code>--input</code>: Either one of these:
+                    <ul>
+                        <li>A directory pointing to your SD card, on Windows it would be a letter (eg: <code>E:\</code>)
+                        </li>
+                        <li>USB Ethernet IP (v4) bound to a GoPro Connect connection (HERO8/9 Black)</li>
+                    </ul>
+                </li>
+                <li><code>--output</code>: Destination folder, a hard drive, etc...</li>
+                <li><code>--name</code>: Project name, eg: <code>Paragliding Weekend Winter 2021</code></li>
+                <li><code>--camera</code>: Type of device being imported. Values supported:
+                    <code>gopro, insta360, dji, android</code></li>
+                <li><code>--buffersize</code>: Buffer size for copying files. Default is <code>1000 bytes</code></li>
+                <li><code>--date</code>: Date format. Default is <code>dd-mm-yyyy</code></li>
+                <li><code>--range</code>: Date range, for example: <code>12-03-2021,15-03-2021</code></li>
+                <li>GoPro specific:
+                    <ul>
+                        <li><code>connection</code>: <code>sd_card</code>/<code>connect</code></li>
+                        <li><code>skip_aux</code>: Skips <code>.THM</code>, <code>.LRV</code> files</li>
+                        <li><code>sort_by</code>: Sort by: <code>camera</code>, <code>days</code> (defaults to both)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>update - <strong>updates your camera</strong>
+            <ul>
+                <li><code>--input</code>: A directory pointing to your SD card, MTP or GoPro Connect not supported</li>
+                <li><code>--camera</code>: Type of device being updated. Values supported: <code>gopro, insta360</code></li>
+            </ul>
+        </li>
+        <li>list: - <strong>list devices plugged in</strong></li>
+    </ul>
+    <h2 id="how-it-looks-">How it looks:</h2>
+    <p><img src="https://i.imgur.com/04m55zg.png" alt=""></p>
+    <h2 id="to-do-">To-do:</h2>
+    <p>Refer to <a href="https://github.com/KonradIT/mmt/issues">Issues</a></p>
+</body>

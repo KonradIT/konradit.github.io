@@ -1,0 +1,75 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Raw pictures with a GoPro Camera</h1>
+There is a hack to shoot pictures in <b>.raw</b> encoding using GoPro HERO3 Black camera.
+<br>In order the hack to work, the camera will take a picture 5 seconds after you turn the camera on and it will render a .raw that will take the camera around 14 seconds, it will stop rendering the .raw picture when it takes another photo. Then it turns off. See the list below for better understanding:
+<br><ol>
+  <li>You turn the camera on</li>
+  <li>The GoPro waits 5 seconds</li>
+  <li>The GoPro takes a picture (2 beeps)</li>
+  <li>The GoPro waits ~14 seconds (you will hear a beep, <br>the camera will take a picture when it finishes rendering the other image. The picture taken after the rendering of the first picture will NOT be in raw)</li>
+  <li>Then you can turn the camera off 5 seconds after the second picture is taken (the dummy one).</li>
+</ol>
+<br>So the camera acts as in One button mode.
+The GoPro will generate these files:
+<ul>
+<li>A .JPG image</li>
+<li>A .RAW image (the file is large, ~20MBs)</li>
+<li>A .txt text with information about the raw image such as tone curve, gray something, blah blah blah <b>used to generate a coherent raw image (the .RAW image on its own is dicoloured)</b></li>
+<li>And... It also generates .bin, .Y, .BIN and .UV files, listed below (the picture file id was GOPR2853 in my case:
+  <li> GOPR2853.UV (~12MB)</li>
+  <li> GOPR2853.Y (~12MB)</li>
+  <li> GOPR2853_cawarp_h.bin</li>
+  <li> GOPR2853_cawarp_v.bin</li>
+  <li> GOPR2853_cc_3d.bin</li>
+  <li> GOPR2853_cc_reg.bin</li>
+  <li> GOPR2853_dump0.BIN</li>
+  <li> GOPR2853_map_path.bin</li>
+  <li> GOPR2853_post0.BIN</li>
+  <li> GOPR2853_sec_cc.bin</li>
+  <li> GOPR2853_vignette_gain.bin</li>
+</li>
+</ul>
+<hr>
+<h3>Reddit</h3>
+This hack has been researched and corrected by users in <a href="http://www.reddit.com/r/gopro/comments/28q5w7/gopro_hacked_to_shoot_raw_photos/" target="_blank">reddit</a>. If you want to join the conversation, just drop your comment.
+<h3>Demo</h3>
+<table border="2">
+<tr><td>Normal JPG image</td><td>RAW image without text file post processing</td><td>RAW image with text file post processing <br>(done by /u/RarelyCoherent)</td></tr>
+<tr><td><img src="http://i.imgur.com/x85tMCu.jpg" width="300px" height="270px"></td><td><img src="http://i.imgur.com/hMCQTr1.png?1" width="300px" height="270px"></td><td><img src="http://i.imgur.com/iZoaz9h.jpg" width="300px" height="270px"></td></tr>
+<tr><td>See the image in full screen: <br><a href="http://i.imgur.com/x85tMCu.jpg" target="_blank">http://i.imgur.com/x85tMCu.jpg</a></td><td>See the image in full screen: <br><a href="http://i.imgur.com/hMCQTr1.png?1" target="_blank">http://i.imgur.com/hMCQTr1.png?1</a></td><td>See the image in full screen: <br><a href="http://i.imgur.com/iZoaz9h.jpg" target="_blank">http://i.imgur.com/iZoaz9h.jpg</a></td></tr>
+</table>
+<p>Download the RAW image <a href="https://drive.google.com/file/d/0B-CbH9Yv1OUWLW9YMnYydmE1SDQ/edit?usp=sharing" target="_blank">here</a></p>
+<p>Download the JPG without text post processing image <a href="https://drive.google.com/file/d/0B-CbH9Yv1OUWV3RaZWl0bWFtLTg/edit?usp=sharing" target="_blank">here</a></p>
+<p>Download the txt information <a href="https://docs.google.com/document/d/12uRMK5LTzRNYIFNffME75cXxF2Dv85sfQltZVnf47wI/edit?usp=sharing" target="_blank">here</a></p>
+<p>Download the .bin, .Y and .UV files: <a href="https://drive.google.com/folderview?id=0B-CbH9Yv1OUWX21DZGRxd2FwbUU&usp=sharing" target="_blank">here</a></p>
+<p>Download a zip file containing 3 pictures (1 picture is files .RAW, .JPG, .Y, .UV, .BIN, .bin): <a href="https://drive.google.com/file/d/0B-CbH9Yv1OUWWG9KNXYtRVJPd00/edit?usp=sharing" target="_blank">here</a></p>
+<hr>
+<h3>Download</h3>
+<br>Download the hack here: <a href="https://github.com/KonradIT/raw-gopro/blob/master/autoexec.ash" target="_blank">autoexec.ash</a>
+<br>Here are instructions on how to install the hack on your GoPro camera: <a href="https://gist.github.com/KonradIT/ce55b04ab4ad10592ebf/#file-autoexechack-md" target="_blank">instructions</a>
+<h3>Handling the raw pictures</h3>
+<br>If you are on linux, install <a href="http://ufraw.sourceforge.net/Install.html" target="_blank">UFRAW</a>, an easy way is <b>sudo apt-get install ufraw</b>
+<br>then open a shell and <code>$ ufraw</code>
+<br>
+<br>Click on the screenshot for full screen image:
+<br><a href="http://i.imgur.com/g48wgOZ.png" target="_blank"><img src="http://i.imgur.com/aXqUhJG.png?1"></a>
+<p></p>
+<br>You can use also Shotwell from Ubuntu.
+<h3>What about .Y file + .UV file = YUV!?</h3>
+<p>The GoPro generates certain files when taking a raw picture, listed below the table. The interesting files are the .RAW, the .Y, the .UV and the .txt information</p>
+<p>So, lets see this in action: The GoPro takes a picture, it generates <b>GOPR2853.JPG</b>, <b>GOPR2853.txt</b>, <b>GOPR2853.RAW (24MB)</b>, <b>GOPR2853.UV (12MB)</b>, <b>GOPR2853.Y (12MB)</b></p>
+<p>So, <b>GOPR2853.UV (12MB)</b> <b>+</b> <b>GOPR2853.Y (12MB)</b> = <b>GOPR2853.RAW (24MB)</b>! </p>
+<hr>
+<p>First of all, what is YUV? (<b>GOPR2853.UV 12MB</b> <b>+</b> <b>GOPR2853.Y 12MB</b>)</p>
+<p><a href="https://en.wikipedia.org/wiki/YUV" target="_blank">YUV</a> is a color space typically used as part of a color image pipeline.</p>
+<p>the .RAW file is a "neutral" file (I mean, no container such as .DNG and .CR2) so its a bit useless because the only program that can edit the picture is UFRAW or Shotwell. The .RAW is the sum of the .Y file and the .UV file.</p>
+<p>GoPro's Ambarella Shell command <b>t app yuv2jpg</b> seems to assemble the two 12MB files into a jpg.</p>
+<p></p>
+<h3>Video</h3>
+<p><iframe src="//player.vimeo.com/video/99074999" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+
+</body>
+</html>

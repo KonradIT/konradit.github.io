@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="dist/photoswipe.css">
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+            In the folder of skin CSS file there are also:
+            - .png and .svg icons sprite, 
+            - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="dist/default-skin/default-skin.css">
+
+    <!-- Core JS file -->
+    <script src="dist/photoswipe.min.js"></script>
+
+    <!-- UI JS file -->
+    <script src="dist/photoswipe-ui-default.min.js"></script>
+    <script src="images.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+            var items = instagramposts;
+            var options = {
+                index: 0
+            };
+            // Initializes and opens PhotoSwipe
+            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+            // your code here
+        }, false);
+    </script>
+    <title>Konrad Iturbe: Media</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <div id="header">
+        <a id="header_link" href="index.html">HOME</a>
+        <a id="header_link" href="media.html">MEDIA</a>
+        <a id="header_link" href="hacking.html">HACKING</a>
+        <a id="header_link" href="projects.html">PROJECTS</a>
+        <a id="header_link" href="about.html">ABOUT</a>
+        <a id="header_link" href="press.html">PRESS</a>
+        <a id="header_link" href="http://medium.com/@konrad_it">BLOG</a>
+    </div>
+
+    <div id="t_center">
+        <br />
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+
+
+        <b>Here's the content I produce using
+            <a id="custom_link" href="https://kit.co/konrad_it/travel-kit">this
+                equipment.</a></b>
+        <br />
+        <button id="main_btn_contact" onclick="window.open('https://instagram.com/konrad_iturbe',
+                '_self')">
+            INSTAGRAM
+        </button>
+        <button id="main_btn_resume" onclick="window.open('https://www.youtube.com/channel/UC5dWAuPiKMSy_WS3sjLqQyQ','_self')">
+            YOUTUBE
+        </button>
+        <button id="main_btn_about" onclick="window.open('https://500px.com/p/konraditurbe','_self')">
+            500PX
+        </button>
+    </div>
+    <br />
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+                It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden
+                        pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

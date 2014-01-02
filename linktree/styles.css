@@ -1,0 +1,39 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #33adff;
+    background-color: #1f2e2e;
+}
+
+@media only screen and (min-width: 700px) {
+    #content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+#content {
+    text-align: center;
+    width: max-content;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#site {
+    border-radius: 10px;
+    background-color: #0099cc;
+    padding: 10px;
+    margin: 10px;
+    width: max-content;
+    text-align: center;
+    margin-left: 5ch;
+}
+
+a,
+a:visited {
+    color: #001f33;
+    text-decoration: none;
+}

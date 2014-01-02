@@ -1,0 +1,159 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+#header {
+    position: fixed;
+    right: 10;
+    background-color: black;
+    z-index: 1;
+}
+
+#header_link:link,
+#header_link:visited,
+#header_link:hover,
+#header_link:active {
+    color: white;
+    text-decoration: none;
+    margin: 20px 10px 10px 10px;
+}
+
+#name {
+    font-size: 150%;
+}
+
+#t_center {
+    text-align: center;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position: absolute;
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+#fh_sign {
+    width: 100ex;
+}
+
+@media only screen and (max-width: 700px) {
+    #t_center {
+        width: 100%;
+    }
+}
+
+#title_center {
+    font-size: 300%;
+}
+
+#title_secondary {
+    font-size: 150%;
+}
+
+#main_btn_contact,
+#main_btn_resume,
+#main_btn_about {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main_btn_contact:hover,
+#main_btn_resume:hover,
+#main_btn_about:hover {
+    background-color: white;
+    color: #000;
+}
+
+#content a:link,
+#content a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+#content table,
+th,
+td {
+    border: 1px solid white;
+}
+
+#content table {
+    border-collapse: collapse;
+}
+
+#content a:link,
+#content a:visited {
+    text-decoration: underline;
+}
+
+#app_links a:link,
+#app_links a:visited {
+    text-decoration: underline;
+    margin: 1px 10px 10px 1px;
+}
+
+#custom_link {
+    color: white;
+    text-decoration: underline;
+}
+
+#content_about {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+}
+
+#me {
+    float: left;
+    width: 200px;
+    padding: 20px;
+}
+
+a:link,
+a:visited {
+    text-decoration: underline;
+    color: white;
+}
+
+.table {
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+@media screen and (max-width: 600px) {
+    .table,
+    .table-row,
+    .table-cell {
+        display: block;
+    }
+}
+
+
+/* Purely for clarity */
+
+.table-cell {
+    padding: 20px;
+}
