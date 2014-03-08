@@ -99,7 +99,12 @@ a.more{font-size:0.0em; text-decoration:underline; color:red}
 
 }
 a.more{font-size:0.0em; text-decoration:underline; color:red}
-.insta{margin:0px 0 0px 0;}
+.insta{width:75px; 
+heigh:12.5px;
+
+-webkit-transition:width 0.4s, height 0.4s, -webkit-transform 0.4s; /* For Safari 3.1 to 6.0 */
+transition:width 0.4s, height 0.4s, transform 0.4s;}
+
 .insta a{
 width:75px; 
 heigh:12.5px;
@@ -107,7 +112,12 @@ heigh:12.5px;
 -webkit-transition:width 0.4s, height 0.4s, -webkit-transform 0.4s; /* For Safari 3.1 to 6.0 */
 transition:width 0.4s, height 0.4s, transform 0.4s;
 }
-.insta a:hover{opacity:3;}
+.insta a:hover{
+width:200px;
+height:200px;
+-webkit-transform:rotate(360deg); /* Safari */
+transform:rotate(360deg);
+}
 /* post content and preview styling */
 .post-preview{
 width:200px;
