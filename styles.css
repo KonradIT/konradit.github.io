@@ -172,20 +172,12 @@ color: #f5f5f5;
 position:absolute;
 font-weight:bold;
 font-size:14px;
+float: left;
 display: block;
 float: left;
-margin-right: 0px;
-padding: 0px 0px;
--webkit-transition:-webkit-transform 0.2s,opacity 0.2s,background 0.2s,width 0.2s,height 0.2s,font-size 0.2s;
--webkit-border-radius:5px;
--o-transition-property:width,height,-o-transform,background,font-size,opacity;
--o-transition-duration:0.2s,0.2s,0.2s,0.2s,0.2s,0.2s;
--moz-transition-property:width,height,-o-transform,background,font-size,opacity;
--moz-transition-duration:0.2s,0.2s,0.2s,0.2s,0.2s,0.2s;
-transition-property:width,height,transform,background,font-size,opacity;
-transition-duration:0.2s,0.2s,0.2s,0.2s,0.2s,0.2s;
-border-radius:0px;
-opacity:0.9;
+margin-right: 5px;
+padding: 0px 15px;
+text-decoration: none;
 }
 
 nav .menu a:hover {
