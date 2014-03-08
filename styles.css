@@ -181,8 +181,7 @@ text-decoration: underline;
 
 /** HEADER */
 
-header>div
-{
+header>div {
 width:100px;
 height:70px;
 background: #46a6f4; /* Old browsers */
@@ -197,10 +196,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46a6f4', end
 transition:width 0.4s;
 }
  
-header>div:hover
-{
+header>div:hover {
 width:450px;
 }
+
 header>big {
 width: 100;
 align:center;
