@@ -258,7 +258,41 @@ h8 {
 
 <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black HDMI Settings (PIV)</h6><td style="background-color:#D8D8D8"></td></tr>
 <tr><td style="background-color:#2EFE9A"> t app hdmi_set_pib: 0mA/0.6mA/1.2mA/1.8mA</td>    <td style="background-color:#2EFE9A">Example: t app hdmi_set_piv 1.3mA</td></tr>
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus button status</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app btn_status: enable(1) / disable(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app btn_status 1</td></tr>
 
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus 3D Smarty Master</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app master_set_for_smarty: start(1) / stop(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app master_set_for_smarty 1</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus 3D Smarty Slave</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app slave_set_for_smarty: start(1) / stop(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app slave_set_for_smarty 1</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Heart beat for 3D</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t app heart_beat_3d: on(1) / off(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app heart_beat_3d 1</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Start/Stop recording (No idea why, if t app button shutter PR does the job)</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app test bacpac3d I2C SY: START_RECORD / STOP_RECORD
+</td>    <td style="background-color:#2EFE9A">Example: t app test bacpac3d I2C SY START RECORD</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus WB Gain Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t ia2 -awb: [set][][][]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -awb [788][][][]</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus ISO Still Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t ia2 -ae still_iso: [iso]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -ae still_iso 1200</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Shutter Still Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t ia2 -ae still_shutter: [shutter]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -ae still_shutter 126</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus ISO Still Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t ia2 -ae still_iris: [iris]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -ae still_iris 45</td></tr>
 <tr><td style="background-color:white"><h6>Video/Photo Digital Filters</h6><td style="background-color:white"></td></tr>
 <tr><td style="background-color:red">t cal -de: 1/2/3/4/5/6/7/8/9/10<ul>
 <br><li>1: Art effect</li>
