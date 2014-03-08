@@ -101,20 +101,20 @@ a.more{font-size:0.0em; text-decoration:underline; color:red}
 a.more{font-size:0.0em; text-decoration:underline; color:red}
 .insta{margin:0px 0 0px 0;}
 .insta a{
-	opacity:0.7;
-	transition: all 0.1s linear;
-	-webkit-transition: all 0.1s linear;
-	-moz-transition: all 0.1s linear;
+width:75px; 
+heigh:12.5px;
+
+-webkit-transition:width 0.4s, height 0.4s, -webkit-transform 0.4s; /* For Safari 3.1 to 6.0 */
+transition:width 0.4s, height 0.4s, transform 0.4s;
 }
-.insta a:hover{opacity:5;}
+.insta a:hover{opacity:3;}
 /* post content and preview styling */
 .post-preview{
-
-	width:57px;
-	height:57px;
-	padding:0 0px 0 0;
-    margin-bottom: 40px;
-    }
+width:200px;
+height:200px;
+-webkit-transform:rotate(360deg); /* Safari */
+transform:rotate(360deg);
+}
 footer {
 width: 940px;
 margin: 0 auto;
