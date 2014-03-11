@@ -104,8 +104,8 @@ a.more{font-size:0.0em; text-decoration:underline; color:red}
 width:75px; 
 heigh:12.5px;
 
--webkit-transition:width 0.4s, height 0.4s, -webkit-transform 0.4s; /* For Safari 3.1 to 6.0 */
-transition:width 0.4s, height 0.4s, transform 0.4s;
+-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s; /* For Safari 3.1 to 6.0 */
+transition:width 0.2s, height 0.2s, transform 0.2s;
 }
 
 #insta:hover
