@@ -121,6 +121,33 @@ margin: 0 auto;
 clear: both;
 }
 
+h1.vimeo
+{
+font-family:Arial,Helvetica,sans-serif;
+width:320px;
+text-align:center;
+height:30px;
+background:red;
+font-size:26px;
+-webkit-transition:width 0.3s;
+-webkit-transition:height 0.3s; 
+-webkit-transition:background 0.3s; 
+transition:width 0.3s;
+transition:height 0.3s;
+transition:background 0.3s;
+}
+
+h1.vimeo:hover
+{
+width:350px;
+height:40px;
+background:yellow;
+font-size:30px;
+}
+a.vimeo:link {color:black;}     
+a.vimeo:visited {color:black;}  
+a.vimeo:hover {color:blue;
+}
 /* basics */
 
 h1,h2,h3,h4,h5,h6 {
