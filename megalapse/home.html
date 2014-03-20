@@ -17,7 +17,8 @@
 <p><h2 style="color:black">How it works?</h2>
 <p><h5 style="color:black">MegaLapse is a file called autoexec.ash, GoPro cameras recognize autoexec.ash files as executable files.
 <p>It works because it repeats the file, infinite loop! 
-<p><big>Code:</big>
+<p><h2>Code:</h2>
+<h4>Hack for HERO3 Black / HERO3+ Black / HERO3+ Silver</h4>
 <p><table border="4">
 <tr><td>sleep 1
 <br>t app appmode photo
@@ -26,6 +27,19 @@
 <br>d:\autoexec.ash
 <br>REBOOT yes</td></tr>
 </table>
+<p><h4>Hack for HERO3 Silver / HERO2</h4></p>
+<p><table border="4">
+    <tr>
+        <td>
+t gpio 43 sw out0
+<br>sleep X
+<br>t gpio 43 sw out1
+<br>t gpio 43 sw out0
+<br>d:\autoexec.ash
+<br>reboot yes
+        </td>
+    </tr>
+</table></p>
 <p><i>X is the interval in seconds. In GitHub, there are folders with interval files, aditionally, you can set your own interval.</i>
 <p><p><h2>Download MegaLapse</h2></b>
 <p><h4>MegaLapse can be found in <a style="color:black"  href="https://github.com/KonradIT/autoexechack/tree/GoPro/MegaLapse" target="_blank">GitHub</a></h4>
