@@ -8,7 +8,7 @@ padding: 0;
 
 /* Menu of the hacking center */
 .hackindex {
-    position:absolute;
+    position:fixed;
     top:40%;
     left;
 border:0.7;
@@ -29,7 +29,7 @@ background:#33FF66;
  
 .menuhack {
 opacity:1.0;
- position:absolute;
+ position:fixed;
     top:39.1%;
     left;
 font-size:20px;
