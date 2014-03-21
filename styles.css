@@ -6,6 +6,41 @@ margin: 0;
 padding: 0;
 }
 
+/* Menu of the hacking center */
+.hackindex {
+    position:absolute;
+    top:40%;
+    left;
+border:0.7;
+font-family:Arial,Helvetica,sans-serif;
+opacity:0.0;
+-webkit-transition:opacity 0.3s; /* For Safari 3.1 to 6.0 */
+transition:opacity 0.3s;
+}
+.hackindex:hover {
+opacity:1.0;
+}
+a.bluehack {
+background:cyan;
+}
+a.redhack {
+background:#33FF66;
+}
+ 
+.menuhack {
+opacity:1.0;
+ position:absolute;
+    top:39.1%;
+    left;
+font-size:20px;
+border-style:solid;
+border-width:1px;
+background-color:white;
+}
+ 
+.menuhack:hover {
+background-color:cyan;
+}
 /* render html5 elements as block */
 header, footer, section, aside, nav, article {
 display: block;
@@ -149,41 +184,7 @@ a.vimeo:visited {color:black;}
 a.vimeo:hover {color:blue;
 }
 
-/* Menu of the hacking center */
-.hackindex {
-    position:absolute;
-    top:40%;
-    left;
-border:0.7;
-font-family:Arial,Helvetica,sans-serif;
-opacity:0.0;
--webkit-transition:opacity 0.3s; /* For Safari 3.1 to 6.0 */
-transition:opacity 0.3s;
-}
-.hackindex:hover {
-opacity:1.0;
-}
-a.bluehack {
-background:cyan;
-}
-a.redhack {
-background:#33FF66;
-}
- 
-.menuhack {
-opacity:1.0;
- position:absolute;
-    top:39.1%;
-    left;
-font-size:20px;
-border-style:solid;
-border-width:1px;
-background-color:white;
-}
- 
-.menuhack:hover {
-background-color:cyan;
-}
+
 /* basics */
 
 h1,h2,h3,h4,h5,h6 {
