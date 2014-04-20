@@ -253,7 +253,7 @@ float: left;
 nav .menu a {
 display: block;
 float: left;
-height: 30px;
+height: 16px;
 width: auto;
 background-color: #f5f5f5;
 border-top-left-radius: 9px;
@@ -270,7 +270,7 @@ padding: 0px 18px;
 nav .menu a:hover {
 display: block;
 float: left;
-height: 30px;
+height: 16px;
 width: auto;
 border-top-right-radius: 9px;
 border-bottom-left-radius: 9px;
