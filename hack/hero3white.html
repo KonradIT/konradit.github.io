@@ -1,0 +1,28 @@
+   <html>
+   <body>
+  <center><p><big style="background-color:red">HERO3 White</big></p>
+    <p>The HERO3 WHite has the same processor of the HERO1 1080, the commands from the HERO1 1080 work with the HERO3 White</p>
+    <p>  <table border="0.3"><tr><td style="background-color:#81F781"><h6>Key</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t app key: up/up_rel/down/down_rel/left/left_rel/right/right_rel/zoomin/zoomin_rel/<p>zoomout/zoomout_rel/set/focus/focus_rel/shutter/shutter_rel/record/<p>mode/menu/power/del/format/copydir/switchosd</td>  <td style="background-color:#F7BE81">Example: t app key zoomin</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Shutter button</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 43 sw out0 / 1</td>  <td style="background-color:#F7BE81">t gpio 43 sw out0<br>Note:<i>Start Recording: t gpio 43 sw out0<p>Stop Recording: t gpio 43 sw out1<br>t gpio 43 sw out0<br>Take Picture: t gpio 43 sw out0</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Turn Off</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 48 sw out0
+    <br>sleep 3
+    <br>t gpio 43 sw out0</td>  <td style="background-color:#F7BE81">Example: t gpio 48 sw out0
+    <br>sleep 3
+    <br>t gpio 43 sw out0</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Front-Back LEDs</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 37 sw out0/1, 0 = ON, 1 = OFF</td>  <td style="background-color:#F7BE81">Example: t gpio 37 sw out0<br>sleep 8<br>t gpio 37 sw out1</td></tr>
+    
+    <tr><td style="background-color:#81F781"><h6>Top-Bottom LEDs</h6><td style="background-color:#81F781"></td></tr>
+    <tr><td style="background-color:#F7BE81">t gpio 46 sw out0/1, 1 = ON, 0 = OFF</td>  <td style="background-color:#F7BE81">Example: t gpio 37 sw out1<br>sleep 8<br>t gpio 37 sw out0</td></tr>
+    
+    </table></p>
+    <p><iframe src="//player.vimeo.com/hubnut/album/2816690?color=44bbff&amp;background=f5f5f5&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
+  </center>
+  </body>
+    </html>
