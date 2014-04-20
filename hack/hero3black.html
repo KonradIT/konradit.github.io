@@ -1,0 +1,168 @@
+ <p><big style="background-color:red">HERO3 Black/HERO3Plus Black</big>
+    <table border="0.7">
+        <tr>
+            <td style="background-color:yellow"><h6>Button control</h6></td><td style="background-color:yellow"></tr><tr>
+                <td style="background-color:cyan">t app button: shutter/power/wifi -P = Press, R = Release PR = Press and Release (click)</td> <td style="background-color:cyan">Example: t app button shutter PR</td></tr>
+            <tr><td style="background-color:yellow"><h6>Time between actions</h6></td><td style="background-color:yellow"></tr>
+            <tr><td style="background-color:cyan">sleep: time in seconds</td>  <td style="background-color:cyan">Example: sleep 6</td></tr>
+            <tr><td style="background-color:yellow"><h6>Camera Modes</h6></td><td style="background-color:yellow"></tr>
+            <tr><td style="background-color:cyan">t app appmode: video/photo/photo_burst (Burst) /photo_pes (Timelapse) /settings</td> <td style="background-color:cyan">Example: t app appmode photo_burst</td></tr>
+            <tr><td style="background-color:yellow"><h6>Custom text on LCD</h6></td><td style="background-color:yellow"></tr>
+            <tr><td style="background-color:cyan">t app fp_show 4<p>sleep 2<p>t app fp_string 'custom text here'<p><small><i>t app fp_show 4 will show a blank screen before the text</i></small></td> <td style="background-color:cyan">Example: t app fp_show 4<p>sleep 2<p>t app fp_string 'i will kill you'</td></tr>
+
+            
+            <tr><td style="background-color:yellow"><h6>LEDs Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app led_count: 4/2/0</td>    <td style="background-color:cyan">Example: t app led_count 0</td></tr>
+            
+            
+            <tr><td style="background-color:yellow"><h6>LED control</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app led: red_front/red_top_bottom/red_back/ {on/off}</td>    <td style="background-color:cyan">Example: t app led red_front on </td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Video Format</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app video_format: ntsc/pal</td>    <td style="background-color:cyan">Example: t app video_format pal</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>One Button Mode</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app obm: on/off</td>    <td style="background-color:cyan">Example: t app obm on</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>White Balance</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app white_balance: auto/3000/5500/6500/camraw</td>    <td style="background-color:cyan">Example: t app white_balance 3000</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Loop</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">d:\autoexec.ash
+                <p>REBOOT yes</td>    <td style="background-color:cyan">Example: <p>sleep 1
+                    <br>t app appmode photo
+                    <br>sleep 120
+                    <br>t app button shutter PR
+                    <br>d:\autoexec.ash
+                    <br>REBOOT yes</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Protune</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app protune: on/off</td>    <td style="background-color:cyan">Example: t app protune on</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Video Loop</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app video_looping: off/max/5/20/60/120</td>    <td style="background-color:cyan">Example: t app video_looping max</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Video+Photo</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app video_photo: off/5/10/30/60</td>    <td style="background-color:cyan">Example: t app video_photo 5</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Spot Meter</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app spot_meter: on/off</td>    <td style="background-color:cyan">Example: t app spot_meter on</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Mirror Flip</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app flip_mirror: enable=1/disable=0</td>    <td style="background-color:cyan">Example: t app flip_mirror 1</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Timelapse Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app pes_settings: 0.5/1/2/5/10/20/60</td>    <td style="background-color:cyan">Example: t app pes_settings 5</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Burst Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app burst_settings: 3-1/5-1/10-1/10-2/30-1/30-2/30-3</td>    <td style="background-color:cyan">Example: t app burst_settings 30-2</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Continuous Photo Settings</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app sps_settings: single=1/3/5/10</td>    <td style="background-color:cyan">Example: t app sps_settings 10</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Photo Resoultion</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app photo_size: 12W/7M/7W/5M</td>    <td style="background-color:cyan">Example: t app photo_size 7W</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Rotation /basic/</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app test vin_rotate: 0/90/180/270</td>    <td style="background-color:cyan">Example: t app test vin_rotate 90</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Rotation /advanced/</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app test rec_fmt_rotate: Normal=0x01/Flip&Horizontal=0x02/<p>Rotate180=0x03/Flip&Vertical=0x04/Transpose=0x05/<p>Rotate90=0x06/Transverse=0x07/Rotate270=0x08</td>    <td style="background-color:cyan">Example: t app test rec_fmt_rotate 0x04</td></tr>
+
+<tr><td style="background-color:yellow"><h6>Key</h6><td style="background-color:yellow"></td></tr>
+<tr><td style="background-color:cyan">t app key: up/up_rel/down/down_rel/left/left_rel/right/right_rel/zoomin/zoomin_rel/<p>zoomout/zoomout_rel/set/focus/focus_rel/shutter/shutter_rel/record/<p>mode/menu/power/del/format/copydir/switchosd</td>  <td style="background-color:cyan">Example: t app key zoomin</td></tr>
+
+
+
+            <tr><td style="background-color:yellow"><h6>Default mode</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app default_mode: last/video/photo/photo_burst(Burst)/photo_pes (Timelapse)</td>  <td style="background-color:cyan">Example: t app default_mode photo</td></tr>
+            
+            <tr><td style="background-color:yellow"><h6>Auto-power off</h6><td style="background-color:yellow"></td></tr>
+            <tr><td style="background-color:cyan">t app shutdown_mode: manual/60/120/300<p></td>
+            <td style="background-color:cyan">Example: t app shutdown_mode 120<p></td></tr>
+          
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Power 0ff</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">poweroff yes reboot yes</td>    <td style="background-color:#2EFE9A">Example: poweroff yes reboot yes</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Boss Boot</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app test boss_boot: enable=1/disable=0</td>    <td style="background-color:#2EFE9A">Example: t app test boss_boot 1</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black SB sensor</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app sensor_sb: enable/disable</td>    <td style="background-color:#2EFE9A">Example: t app sensor_sb enable</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Photo Resolution</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app photo_size: 12W/10W/7M/7W/5M</td>    <td style="background-color:#2EFE9A">Example: t app photo_size 10W</td></tr>
+            
+            <tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black LCD Images</h6><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app test fp_display: splash_screen.bmp/video.bmp/photo.bmp/one_button.bmp/<p>blank.bmp/background.bmp
+</td>    <td style="background-color:#2EFE9A">Example: t app test fp_display video.bmp</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black Rotation</h6><td style="background-color:#D8D8D8"></td></tr>
+<tr><td style="background-color:#2EFE9A"> t app test vin_rotate: 0/90/180/270/flip_h/flip_v</td>    <td style="background-color:#2EFE9A">Example: t app test vin_rotate 270</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black HDMI Settings (PES)</h6><td style="background-color:#D8D8D8"></td></tr>
+<tr><td style="background-color:#2EFE9A"> t app hdmi_set_pes: none/10%/20%/30%</td>    <td style="background-color:#2EFE9A">Example: t app hdmi_set_pes 10%</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Black HDMI Settings (PIV)</h6><td style="background-color:#D8D8D8"></td></tr>
+<tr><td style="background-color:#2EFE9A"> t app hdmi_set_pib: 0mA/0.6mA/1.2mA/1.8mA</td>    <td style="background-color:#2EFE9A">Example: t app hdmi_set_piv 1.3mA</td></tr>
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus button status</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app btn_status: enable(1) / disable(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app btn_status 1</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus 3D Smarty Master</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app master_set_for_smarty: start(1) / stop(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app master_set_for_smarty 1</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus 3D Smarty Slave</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app slave_set_for_smarty: start(1) / stop(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app slave_set_for_smarty 1</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Heart beat for 3D</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t app heart_beat_3d: on(1) / off(0)
+</td>    <td style="background-color:#2EFE9A">Example: t app heart_beat_3d 1</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus 3D Video Start/Stop recording (?)</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t app test bacpac3d I2C SY: START_RECORD / STOP_RECORD
+</td>    <td style="background-color:#2EFE9A">Example: t app test bacpac3d I2C SY START RECORD</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus WB Gain Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A"> t ia2 -awb: [set][][][]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -awb [788][][][]</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus ISO Still Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t ia2 -ae still_iso: [iso]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -ae still_iso 1200</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus Shutter Still Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t ia2 -ae still_shutter: [shutter]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -ae still_shutter 126</td></tr>
+
+<tr><td style="background-color:#D8D8D8"><h6>HERO3Plus ISO Still Set</h6><small style="color:red">v2.0</small><td style="background-color:#D8D8D8"></td></tr>
+            <tr><td style="background-color:#2EFE9A">t ia2 -ae still_iris: [iris]
+</td>    <td style="background-color:#2EFE9A">Example: t ia2 -ae still_iris 45</td></tr>
+<tr><td><hr></td></tr>
+<tr><td><b style="color:black">The commands tagged with</b><b style="color:red"> v2.0</b> <b>ONLY work with GoPro HERO3 Plus Black cameras with the firmware 2.0 of 6 March 2014</b></td></tr>
+<tr><td><hr></td></tr>
+<tr><td style="background-color:yellow"><h6>Video/Photo Digital Filters</h6><small style="color:blue">For HERO3 Black / HERO3+ Black / HERO3+ Silver</small><td style="background-color:yellow"></td></tr>
+<tr><td style="background-color:red">t cal -de: 1/2/3/4/5/6/7/8/9/10<ul>
+<br><li>1: Art effect</li>
+<li>2: Sepia Effect</li>
+<li>3: Negative Effect</li>
+<li>4: Black White Effect</li>
+<li>5: Vivid Effect</li>
+<li>6: 70s Film Effect</li>
+<li>7: Punk Effect</li>
+<li>8: Popart Effect</li>
+<li>9: Wedding Effect</li>
+<li>10:Pinhole Effect</li>
+</ul>
+</td>
+<td style="background-color:red">Example: t cal -de 4</td></tr>
+
+    </table>
+     <p>Hero3 Black hacks</p>
+    <br><iframe src="//player.vimeo.com/hubnut/album/2611773?color=44bbff&amp;background=ffffff&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <p>Video Digital Filters Demo Videos</p>
+    <br><iframe src="//player.vimeo.com/hubnut/album/2660479?color=44bbff&amp;background=ffffff&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <br>
