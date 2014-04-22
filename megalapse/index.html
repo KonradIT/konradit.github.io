@@ -7,10 +7,21 @@ background-attachment:fixed;
 
        background-repeat:no-repeat;
        background-size:100%;}
+#content{
+       width:700;
+       border-top-left-radius:6px;
+       border-bottom-right-radius:6px;
+       height:auto;
+       background-color:white;
+       -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+       filter: alpha(opacity=50);
+       opacity:.5;
+}
 </style>
 </head>
 <body>
 <center>
+<div id="content">
 <font face="Arial" color="black">
 <h1>MegaLapse</h1>
 <h4 style="color:black">Hack for GoPro HERO cameras to use long intervals in timelapse</h4>
@@ -76,5 +87,6 @@ t gpio 43 sw out0
 <p><big><a style="color:black" href="mailto:mail@chernowii.com">MAIL ME</a></big>
 <p><br><small>MegaLapse is a creation of <a style="color:black" href="http://chernowii.com" target="_blank">Konrad Iturbe</a></small>
 </font>
+</div>
 </body>
 </html>
