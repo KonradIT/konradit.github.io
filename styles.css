@@ -26,14 +26,7 @@ background:cyan;
 a.redhack {
 background:#33FF66;
 }
-#vinebutton{
-border:4px dashed green; 
-background-color:yellow; 
-color:black;
-}
-.vinebutton:hover{
-border:2px dotted red; background-color:cyan; color:yellow;
-}
+
 .menuhack {
 opacity:1.0;
  position:fixed;
@@ -153,7 +146,14 @@ float: left;
 padding-left: 19px;
 width: 180px;
 }
-
+#vinebutton{
+border:4px dashed green; 
+background-color:yellow; 
+color:black;
+}
+#vinebutton:hover{
+border:2px dotted red; background-color:cyan; color:yellow;
+}
 #sidebar2 {
 float: right;
 padding-right: 30px;
