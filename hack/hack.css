@@ -1,0 +1,10 @@
+body{
+background-image:url('http://i.imgur.com/d9TI7cd.jpg');
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+td{
+width:400;
+height:auto;
+}
