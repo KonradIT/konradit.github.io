@@ -3,7 +3,17 @@ background-attachment:fixed;
 
        background-repeat:no-repeat;
        background-size:100% 100%;}
+#backdiv{
+       width:810;
+       height:auto;
+       padding-top:10;
+       padding-left:10;
+       padding-right:10;
+       padding-bottom:10;
+       background-color:yellow;
+}
 #content{
+       border-style:dashed; border-width:10px;
        width:800;
        height:auto;
        padding-top:10;
