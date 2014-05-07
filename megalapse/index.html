@@ -29,6 +29,9 @@ table{
        border-style:solid;
        border-radius:6px;
 }
+b{
+       color:red;
+}
 </style>
 </head>
 <body>
@@ -41,7 +44,7 @@ table{
 <h4 style="color:black">Hack for GoPro HERO cameras to use long intervals in timelapse</h4>
 <p><h2 style="color:black">What is MegaLapse?</h2>
 <p><h5 style="color:black">MegaLapse is a file that allows GoPro cameras to shoot longer timelapses with higher intervals (from 2 min to 45 min intervals!)
-    <p>It works with HERO3 Black cameras, HERO3 Plus Black cameras, HERO3 Plus Silver, HERO3 Silver, HERO3 White and HERO2. And if someone owns a HERO (The previous of HERO2) and wants to test megalapse, <a href="mailto:mail@chernowii.com">contact me.</a>
+    <p>It works with HERO3 Black cameras, HERO3 Plus Black cameras, HERO3 Plus Silver<b>*</b>, HERO3 Silver, HERO3 White and HERO2. And if someone owns a HERO (The previous of HERO2) and wants to test megalapse, <a href="mailto:mail@chernowii.com">contact me.</a>
 <p><h2 style="color:black">How it works?</h2>
 <p><h5 style="color:black">MegaLapse is a file called autoexec.ash, GoPro cameras recognize autoexec.ash files as executable files.
 <p>It works because it repeats the file, infinite loop! 
@@ -57,11 +60,11 @@ table{
 <br>REBOOT yes</td></tr>
 </table>
 <hr>
-<h4>MegaLapse for HERO3 + Silver</h4> <b>Thanks Jason!</b>
+<h4>MegaLapse for HERO3 + Silver</h4> Thanks Jason!
 <p><table border="4">
        <tr>
               <td>
-                     sleep 300
+                     sleep X
 <br>t app button shutter PR
 <br>d:\autoexec.ash
 <br>reboot yes
@@ -81,6 +84,7 @@ t gpio 43 sw out0
         </td>
     </tr>
 </table></p>
+<p><b>* The HERO3 + Silver needs to be set to Photo mode in default mode! <a href="https://www.youtube.com/watch?v=9RcMFSW7A7w" target="_blank">See how</a></p>
 <p><i>X is the interval in seconds. In GitHub, there are folders with interval files, aditionally, you can set your own interval.</i>
 <p><p><h2>Download MegaLapse</h2></b>
 <p><h4>MegaLapse can be found in <a style="color:black"  href="https://github.com/KonradIT/autoexechack/tree/GoPro/MegaLapse" target="_blank">GitHub</a></h4>
