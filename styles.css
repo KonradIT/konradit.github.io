@@ -152,6 +152,41 @@ background: cyan url(images/colbg.png) repeat-y;
 overflow: hidden;
 }
 
+#hero3bpbps{
+    width:400px;
+    height:auto;
+    border-style:solid;
+    border-color: #477;
+    border-radius: 7px;
+    background-color: white;
+}
+
+#hero3silver{
+    width:400px;
+    height:auto;
+    border-style:solid;
+    border-color: #477;
+    border-radius: 7px;
+    background-color: white;
+}
+
+#hero2{
+    width:400px;
+    height:auto;
+    border-style:solid;
+    border-color: #477;
+    border-radius: 7px;
+    background-color: white;
+}
+
+#hero3white{
+    width:400px;
+    height:auto;
+    border-style:solid;
+    border-color: #477;
+    border-radius: 7px;
+    background-color: white;
+}
 #content {
 float: left;
 width: 450px;
