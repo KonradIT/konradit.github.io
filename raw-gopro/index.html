@@ -4,12 +4,12 @@
 <body>
 <h1>Raw pictures with a GoPro Camera</h1>
 There is a hack to shoot pictures in <b>.raw</b> encoding using GoPro HERO3 Black camera.
-<br>In order the hack to work, the camera will take a picture 5 seconds after you turn the camera on and it will render a .raw that will take the camera around 40 seconds, it will stop rendering the .raw picture when it takes another photo. Then it turns off. See the list below for better understanding:
+<br>In order the hack to work, the camera will take a picture 5 seconds after you turn the camera on and it will render a .raw that will take the camera around 14 seconds, it will stop rendering the .raw picture when it takes another photo. Then it turns off. See the list below for better understanding:
 <br><ol>
   <li>You turn the camera on</li>
   <li>The GoPro waits 5 seconds</li>
   <li>The GoPro takes a picture (2 beeps)</li>
-  <li>The GoPro waits ~40 seconds (you will hear a beep, <br>the camera will take a picture when it finishes rendering the other image. The picture taken after the rendering of the first picture will NOT be in raw)</li>
+  <li>The GoPro waits ~14 seconds (you will hear a beep, <br>the camera will take a picture when it finishes rendering the other image. The picture taken after the rendering of the first picture will NOT be in raw)</li>
   <li>Then you can turn the camera off 5 seconds after the second picture is taken (the dummy one).</li>
 </ol>
 <br>So the camera acts as in One button mode.
@@ -45,10 +45,20 @@ This hack has been researched and corrected by users in <a href="http://www.redd
 <p>Download the JPG without text post processing image <a href="https://drive.google.com/file/d/0B-CbH9Yv1OUWV3RaZWl0bWFtLTg/edit?usp=sharing" target="_blank">here</a></p>
 <p>Download the txt information <a href="https://docs.google.com/document/d/12uRMK5LTzRNYIFNffME75cXxF2Dv85sfQltZVnf47wI/edit?usp=sharing" target="_blank">here</a></p>
 <p>Download the .bin, .Y and .UV files: <a href="https://drive.google.com/folderview?id=0B-CbH9Yv1OUWX21DZGRxd2FwbUU&usp=sharing" target="_blank">here</a></p>
+<p>Download a zip file containing 3 pictures (.RAW, .JPG, .Y, .UV, .BIN, .bin): <a href=""</p>
 <hr>
 <h3>Download</h3>
 <br>Download the hack here: <a href="https://github.com/KonradIT/raw-gopro/blob/master/autoexec.ash" target="_blank">autoexec.ash</a>
 <br>Here are instructions on how to install the hack on your GoPro camera: <a href="https://gist.github.com/KonradIT/ce55b04ab4ad10592ebf/#file-autoexechack-md" target="_blank">instructions</a>
+<h3>Handling the raw pictures</h3>
+<br>Use Linux! I am using Ubuntu OS, because Mac and Windows sucks (for hackers)!
+<br>If you are on linux, install <a href="http://ufraw.sourceforge.net/Install.html" target="_blank">UFRAW</a>, an easy way is <b>sudo apt-get install ufraw</b>
+<br><code>$ ufraw</code>
+<br>
+<br>Click on the screenshot for full screen image:
+<br><a href="http://i.imgur.com/g48wgOZ.png" target="_blank"><img src="http://i.imgur.com/aXqUhJG.png?1"></a>
+<p></p>
+<p>RarelyCoherent made a java app that merges the information of the txt and the .RAW picture to make a real raw picture (see table) </p>
 <p><h3>Donate</h3></p>
 <p>I am 15 years old, I did this hack on my free time<br>Support me by donating<br><br></p>
 <p><p>EUR<p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
