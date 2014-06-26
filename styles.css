@@ -95,6 +95,14 @@ border-bottom-left-radius: 20;
 border-top-right-radius: 20;
 border-style:inset;
 }
+#gopro-organizer{
+	width:300px;
+border-color: blue;
+height: auto;
+border-bottom-left-radius: 20;
+border-top-right-radius: 20;
+border-style:inset;
+}
 /* render html5 elements as block */
 header, footer, section, aside, nav, article {
 display: block;
