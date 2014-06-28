@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+body{
+body{background-image:url('http://i.imgur.com/bGf3BBF.jpg?1');
+background-attachment:fixed;
+
+       background-repeat:no-repeat;
+       background-size:100% 100%;
+       }
+#box{
+background-color:white;
+color:black;
+width:60%;
+height:auto;
+}
+</head>
+<body>
+<font face="Arial" color="black">
+<center>
+<di id="box">
+<h2>GoPro Long Exposure pictures/timelapse hack</h2>
+Get those awesome long exposure timelapses or pictures with your GoPro HERO3 Black or Plus Black using this hack.
+
+<br>To download it, change the parameters and save it to your gopro go to the github repo hack <a href="https://github.com/KonradIT/autoexechack/tree/GoPro/LongExpTimeLapse" target="_blank">here</a>
+
+The code looks like this
+<code>
+t app appmode photo
+sleep 1
+t ia2 -ae still_exp P X Y
+sleep 1
+t app button shutter PR
+sleep 2
+d:\autoexec.ash
+REBOOT yes
+</code>
+<p>Key: <br><b>P</b>: ISO <br><b>X</b>: Exposure time <br><b>Y</b>: Iris (exposure time also?)</p>
+<h3>Pictures</h3>
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/9ZJgg/embed"></iframe>
+<h3>Video</h3>
+coming soon
+</div>
+</center>
+</body>
+</html>
