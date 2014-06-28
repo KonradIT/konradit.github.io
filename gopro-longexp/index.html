@@ -23,17 +23,17 @@ height:auto;
 Get those awesome long exposure timelapses or pictures with your GoPro HERO3 Black or Plus Black using this hack.
 
 <br>To download it, change the parameters and save it to your gopro go to the github repo hack <a href="https://github.com/KonradIT/autoexechack/tree/GoPro/LongExpTimeLapse" target="_blank">here</a>
-
+The hack will take a picture every A (+2) seconds. Is a timelapse.
 The code looks like this
-<code>
-t app appmode photo
-sleep 1
-t ia2 -ae still_exp P X Y
-sleep 1
-t app button shutter PR
-sleep 2
-d:\autoexec.ash
-REBOOT yes
+<br><br><code>
+<br>t app appmode photo
+<br>sleep 1
+<br>t ia2 -ae still_exp P X Y
+<br>sleep 1
+<br>t app button shutter PR
+<br>sleep A
+<br>d:\autoexec.ash
+<br>REBOOT yes
 </code>
 <p>Key: <br><b>P</b>: ISO <br><b>X</b>: Exposure time <br><b>Y</b>: Iris (exposure time also?)</p>
 <h3>Pictures</h3>
