@@ -59,7 +59,15 @@ This hack has been researched and corrected by users in <a href="http://www.redd
 <br><a href="http://i.imgur.com/g48wgOZ.png" target="_blank"><img src="http://i.imgur.com/aXqUhJG.png?1"></a>
 <p></p>
 <br>You can use also Shotwell from Ubuntu.
-<p>RarelyCoherent made a java app that merges the information of the txt and the .RAW picture to make a real raw picture (see table) </p>
+<h3>What about .Y file + .UV file = YUV!?</h3>
+<p>The GoPro generates certain files when taking a raw picture, listed below the table. The interesting files are the .RAW, the .Y, the .UV and the .txt information</p>
+<p>So, lets see this in action: The GoPro takes a picture, it generates <b>GOPR2853.JPG</b>, <b>GOPR2853.txt</b>, <b>GOPR2853.RAW (24MB)</b>, <b>GOPR2853.UV (12MB)</b>, <b>GOPR2853.Y (12MB)</b></p>
+<p>So, <b>GOPR2853.UV (12MB)</b> <h4>+</h4> <b>GOPR2853.Y (12MB)</b> = <b>GOPR2853.RAW (24MB)</b>! </p>
+<p>First of all, what is YUV? (<b>GOPR2853.UV (12MB)</b> <h4>+</h4> <b>GOPR2853.Y (12MB)</b>)</p>
+<p><a href="https://en.wikipedia.org/wiki/YUV" target="_blank">YUV</a> is a color space typically used as part of a color image pipeline.</p>
+<p>the .RAW file is a "neutral" file (I mean, no container such as .DNG and .CR2) so its a bit useless because the only program that can edit the picture is UFRAW or Shotwell. The .RAW is the sum of the .Y file and the .UV file.</p>
+<p>GoPro's Ambarella Shell command <b>t app yuv2jpg</b> seems to assemble the two 12MB files into a jpg.</p>
+<p></p>
 <h3>Video</h3>
 <p><iframe src="//player.vimeo.com/video/99074999" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 <p><h3>Donate</h3></p>
