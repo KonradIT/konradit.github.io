@@ -64,7 +64,7 @@ This hack has been researched and corrected by users in <a href="http://www.redd
 <p>So, lets see this in action: The GoPro takes a picture, it generates <b>GOPR2853.JPG</b>, <b>GOPR2853.txt</b>, <b>GOPR2853.RAW (24MB)</b>, <b>GOPR2853.UV (12MB)</b>, <b>GOPR2853.Y (12MB)</b></p>
 <p>So, <b>GOPR2853.UV (12MB)</b> <b>+</b> <b>GOPR2853.Y (12MB)</b> = <b>GOPR2853.RAW (24MB)</b>! </p>
 <hr>
-<p>First of all, what is YUV? (<b>GOPR2853.UV (12MB)</b> <h4>+</h4> <b>GOPR2853.Y (12MB)</b></p>
+<p>First of all, what is YUV? (<b>GOPR2853.UV 12MB</b> <b>+</b> <b>GOPR2853.Y 12MB</b>)</p>
 <p><a href="https://en.wikipedia.org/wiki/YUV" target="_blank">YUV</a> is a color space typically used as part of a color image pipeline.</p>
 <p>the .RAW file is a "neutral" file (I mean, no container such as .DNG and .CR2) so its a bit useless because the only program that can edit the picture is UFRAW or Shotwell. The .RAW is the sum of the .Y file and the .UV file.</p>
 <p>GoPro's Ambarella Shell command <b>t app yuv2jpg</b> seems to assemble the two 12MB files into a jpg.</p>
