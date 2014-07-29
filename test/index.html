@@ -2,7 +2,7 @@
 <head>
 </head>
 <body>
-<input type="file" id="fileinput" />
+<input type="url" id="fileinput" />
 <script type="text/javascript">
   function readSingleFile(evt) {
     //Retrieve the first (and only!) File from the FileList object
@@ -12,16 +12,13 @@
       var r = new FileReader();
       r.onload = function(e) { 
 	      var contents = e.target.result;
-        alert( "Got the file.n" 
-              +"name: " + f.name + "n"
-              +"type: " + f.type + "n"
-              +"size: " + f.size + " bytesn"
+        alert( "Your camera name (version and model):.n" 
               + "starts with: " + contents.substr(1, contents.indexOf("n"))
         );  
       }
       r.readAsText(f);
     } else { 
-      alert("Failed to load file");
+      alert("Epic fail, sorry.");
     }
   }
 
