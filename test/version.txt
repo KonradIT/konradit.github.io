@@ -1,8 +1,0 @@
-{
-"info version":"1.1",
-"firmware version":"HD3.03.03.00",
-"wifi version":"3.4.2.18",
-"wifi bootloader version":"0.2.2",
-"wifi mac":"d89685262ccb",
-"camera type":"Hero3-Black Edition",
-}

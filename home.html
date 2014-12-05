@@ -1,226 +1,135 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="title" content="Chernowii.com - Konrad Iturbe - GoPro : ." /> 
-<meta name="description" content=";)" /> 
-<meta property="og:title" content="Chernowii.com - Konrad Iturbe - GoPro : ."/>
-	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="js/slider.min.js"></script>
-<script>
-    $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 200
-      });
-    });
-  </script>
+<style>
+body{
+background-image: url('http://i.imgur.com/dNWfUtXl.jpg');
+background-attachment: fixed;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+font-family: Arial;
+}
+#front{
+width:100%;
+height:6%;
+background-color:white;
+    position: fixed;
+    top:0;
+    right:0;
+}
+
+#dock{
+    width:5%;
+    height:94%;
+    background-color:black;
+    position:fixed;
+    left:0;
+    bottom:0;
+}
+    #link{
+        color:white;
+        text-decoration: none;
+    }
+    #stats{
+        position: fixed;
+        top:0;
+        right:0;
+        color:black;
+    }
+    #stats2{
+    position: fixed;
+        top:0;
+        left:0;
+        color:black;
+    }
+#dockitem{
+    width:100%;
+    height:16%;
+    border-radius:10px;
+background-color:grey;
+    position:absolute;
+    top:0;
+    left:0;
+}
+    #dockitem:hover{
+        background-color: red;
+    }
+    #dockitem2{
+    width:100%;
+    height:16%;
+    border-radius:10px;
+background-color:grey;
+    position:absolute;
+    top:18%;
+    left:0;
+}
+    #dockitem2:hover{
+        background-color: red;
+    }
+    #dockitem3{
+    width:100%;
+    height:16%;
+    border-radius:10px;
+background-color:grey;
+    position:absolute;
+    top:36%;
+    left:0;
+}
+    #dockitem3:hover{
+        background-color: red;
+    }
+    #dockitem4{
+    width:100%;
+    height:16%;
+    border-radius:10px;
+background-color:grey;
+    position:absolute;
+    top:54%;
+    left:0;
+}
+    #dockitem4:hover{
+        background-color: red;
+    }
+    #dockitem5{
+    width:100%;
+    height:16%;
+    border-radius:10px;
+background-color:grey;
+    position:absolute;
+    top:72%;
+    left:0;
+}
+    #dockitem5:hover{
+        background-color: red;
+    }
+    #gedit{
+        width:80%;
+        height:80%;
+        background-color:white;
+        position:absolute;
+        left:10%;
+        top:10%;
+    }
+</style>
 </head>
 <body>
-    <div id="fb-root"></div>
-
-    <script>(function(d, s, id) {
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) return;
-             js = d.createElement(s); js.id = id;
-             js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=577521748970366";
-             fjs.parentNode.insertBefore(js, fjs);
-             }(document, 'script', 'facebook-jssdk'));</script>
-<div id="wrapper"><!-- #wrapper -->
-   
-
-	<header><!-- header -->
-    
-<iframe src="logo.html" width="500px" height="80" scrolling="no" frameborder="no"></iframe>
-
-		<h2>Konrad Iturbe<p>TRUE GoPro Addict</p></h2>
-<p><a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.chernowii.com&media=http%3A%2F%2Fkonradit.github.io%2Fimages%2Fblackplus.jpg&description=chernowiidotcom%20Konrad%20Iturbe%20GoPro%20Hacking" data-pin-do="buttonPin" data-pin-config="beside">PIN IT</a>
-<!-- Please call pinit.js only once per page -->
-<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
-<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fchernowii.com&amp;width=200&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=577521748970366" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="konrad_it" data-lang="en">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                       <iframe src="slider/index.html" width="940" height="230" scrolling="no" frameborder="no"></iframe>
-<!-- header image -->
-	</header><!-- end of header -->
-	
-	<nav><!-- top nav -->
-		<div class="menu">
-			<ul>
-					<li><a href="home.html">Home</a></li>
-				<li><a href="videos.html">Videos</a></li>
-
-				<li><a href="photos.html">Photos</a></li>
-				<li><a href="app.html">App</a></li>
-                <li><a href="diy.html">DIY</a></li>
-                <li><a href="hack.html">GoPro Hack Center</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="aboutme.html">About me</a></li>
-		  </ul>
-		</div>
-	</nav><!-- end of top nav -->
-	
-	<section id="main"><!-- #main content and sidebar area -->
-
-			<section id="content"><!-- #content -->
-                
-               
-            
-        		<article>
-							<h2><a href="#">Konrad Iturbe</a></h2>
-							<img src="http://i.imgur.com/V4cGjiX.jpg" width="120" height="120" alt="ME! with my hacked GoPro camera" class="alignleft" /><p>Hey! Welcome to my website. I am Konrad Iturbe, I live in Spain and I am 14 years old. I like the gopro camera, HTML, CSS, JS, Python, Ruby, Nokia Lumia 520, Microsoft, Google, VLC, VideoLAN, GitHub, Stackedit.io, .io domains, XHR JS, Linux and <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank">FOSS (Free Open Source Software)</a>. You can watch my <a href="videos.html">videos</a>, hack your GoPro with the <a href="hack.html">GoPro Hack Center</a>, build some DIY GoPro mounts and accesories in the <a href="diy.html">DIY</a> page. Take a look to my <a href="http://github.com/konradit" target="_blank">GitHub profile</a>, to see my work.</p>
-                            
-                            <center><h2 style="background-color:red;">FEATURED:</h2></center>
-                            <p><ul><li><a href="http://chernowii.com/hero4.html" target="_blank">GoPro HERO4 Camera: Info, pics and more! </li>
-                            
-							<li><a href="http://chernowii.com/megalapse" target="_blank">MegaLapse, the tool to shoot long timelapses with the GoPro camera</a></li></ul>
-							</article>
-        		<article>
-							
-						
-			</section><!-- end of #content -->
-
-		<aside id="sidebar1"><!-- sidebar1 -->
-				<h3>Pages</h3>
-					<ul>
-					<li><a href="http://chernowii.com">Home</a></li>
-				<li><a href="videos.html">Videos</a></li>
-				<li><a href="photos.html">Photos</a></li>
-				<li><a href="app.html">App</a></li>
-                <li><a href="diy.html">DIY</a></li>
-                <li><a href="hack.html">GoPro Hack Center</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="aboutme.html">About me</a></li>
-					</ul>
-					
-				<h3>Ads</h3>
-                                
-					<a href="http://www.videolan.org" target="_blank"><img src="http://images.videolan.org/images/goodies/buttons_getVLC/GetVLC_150.png">
-			<p><a href="http://xsories.com" target="_blank"><img src="http://i.imgur.com/yGhzurl.jpg" width="130" height="134"></a></p>	
-
-		</aside><!-- end of sidebar1 -->
-
-		<aside id="sidebar2"><!-- sidebar2 -->
-				<h3>Social Networks</h3>
-					<ul>
-						<li><a href="https://www.facebook.com/konrad.iturbe" target="_blank">Facebook</a></li>
-                        <li><a href="https://vimeo.com/chernowiivvcc/" target="_blank">Vimeo</a></li>
-                       <li> <a href="http://instagram.com/konrad_iturbe_chernowii" target="_blank">Instagram</a></li>
-                        
-                       <li><a href="https://twitter.com/konrad_it" target="_blank">Twitter</a></li>
-                       <li> <a href="github.html">GitHub</a></li>
-                       <li><a href="http://www.pinterest.com/konraditurbe/" target="_blank">Pinterest</a></li>
-						
-				<li><a href="https://vine.co/u/1042174583757058048" target="_blank">Vine</a></li>
-				<li><a href="http://www.dvlup.com/konraditurbe" target="_blank">DVLUP</a></li>
-				<li><a href="https://plus.google.com/100301701208594191440/" target="_blank">Google Plus</a></li>
-				<li><a href="http://konraditurbe.imgur.com/all" target="_blank">Imgur</a></li>
-					</ul>
-
-				<h3>Connect With Me</h3>
-					<ul>
-						<li><a href="contact.html">Mail me</a></li>
-						
-					</ul>
-                    <p>
-                    <table border="2">
-                        <tr><td style="background-color:cyan">
-                            <br><iframe src="//www.facebook.com/plugins/follow.php?href=http%3A%2F%2Fwww.facebook.com%2Fkonrad.iturbe&amp;width=60&amp;height=21&amp;colorscheme=dark&amp;layout=button_count&amp;show_faces=true&amp;appId=577521748970366" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:21px;" allowTransparency="true"></iframe>
-                            
-                            <br><a href="https://twitter.com/konrad_it" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @konrad_it</a>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                            
-                            <br><a href="http://vimeo.com/chernowiivvcc">
-                            <img src="http://a.vimeocdn.com/images_v6/blogbadge_channels.png"  width="100" alt="Vimeo" /></a>
-                            
-                            <br><style>.ig-b- { display: inline-block; }
-.ig-b- img { visibility: hidden; }
-.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-.ig-b-v-24 { width: 137px; height: 24px; background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-.ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
-<a href="http://instagram.com/konrad_iturbe_chernowii?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
-
-                            
-                            <br><iframe src="http://ghbtns.com/github-btn.html?user=KonradIT&type=follow&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-		
-			<br><!-- Place this tag where you want the widget to render. -->
-<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/100301701208594191440" data-rel="author"></div>
-
-<!-- Place this tag after the last widget tag. -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-	<br><a data-pin-do="buttonFollow" href="http://www.pinterest.com/konraditurbe/">Konrad Iturbe</a>
-<!-- Please call pinit.js only once per page -->
-<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
-</td></tr></table>
-		</aside><!-- end of sidebar -->
-
-	</section><!-- end of #main content and sidebar-->
-	
-		<footer>
-		<section id="footer-area">
-
-			<section id="footer-outer-block">
-					<aside class="footer-segment">
-							<h4>GoPro Links</h4>
-								<ul>
-									<li><a href="http://gopro.com" target="_blank">GoPro.com</a></li>
-									<li><a href="http://cam-do.com" target="_blank">Unofficial GoPro Accesories</a></li>
-									<li><a href="http://camarush.com" target="_blank">Extreme GoPro Accesores page #1</a></li>
-                                    <li><a href="http://xsories.com" target="_blank">Extreme GoPro Accesores page #2</a></li>
-								</ul>
-					</aside><!-- end of #first footer segment -->
-
-					<aside class="footer-segment">
-							<h4>Other Interesting Links</h4>
-								<ul>
-									<li><a href="http://videolan.org" target="_blank">VideoLAN</a></li>
-									<li><a href="http://getawaymoments.com" target="_blank">GetawayMoments</a></li>
-									<li><a href="http://www.microsoft.com/" target="_blank">Microsoft</a></li>
-								<li><a href="http://www.ubuntu.com" target="_blank">Ubuntu</a></li></ul>
-					</aside><!-- end of #second footer segment -->
-
-					
-					
-					<aside class="footer-segment">
-							<h4>----</h4>
-                            <p>&copy; 2013 <a href="#">chernowii.com</a> Copyright 2013 Chernowii.com by Konrad Iturbe<br>Thanks to <a href="http://github.com/ajonauta" target="_blank">Ajonauta</a>
-<p>Source of this webpage available on <a href="http://github.com/KonradIT/konradit.github.io" target="_blank">GitHub</a></aside>
-
-                         
-                            <script src="js/jquery.min.js"></script>
-                            <script src="js/slider.min.js"></script>
-                            <script>
-                                $(function () {
-                                  
-                                  // Slideshow 1
-                                  $("#slider").responsiveSlides({
-                                                                maxwidth: 800,
-                                                                speed: 800
-                                                                });
-                                  
-                                  });
-                                </script>
-					</aside><!-- end of #fourth footer segment -->
-
-			</section><!-- end of footer-outer-block -->
-
-		</section><!-- end of footer-area -->
-	</footer>
-	
-</div><!-- #wrapper -->
-
-<!-- Free template created by http://freehtml5templates.com -->
-
+<center>
+<div id="front">
+         <b>
+      Konrad Iturbe - chernowii.com
+      </b>
+    <i id="stats">Battery:23% | User:konrad | Notifications:10</i>
+         <i id="stats2">Sublime Text 3 - index.html</i> 
+    </div>
+    </center>
+    <center>
+    <div id="dock">
+    <a id="link" href="http://chernowii.com/media.html" target="_top"><div id="dockitem"><br><br>Media</div></a>
+          <a id="link" href="http://chernowii.com/gopro.html" target="_top"><div id="dockitem2"><br><br>GoPro Hacking</div></a>
+          <a id="link" href="http://chernowii.com/hacking.html" target="_top"><div id="dockitem3"><br><br>Hacking / coding</div></a>
+          <a id="link" href="http://chernowii.com/contact.html" target="_top"><div id="dockitem4"><br><br>Contact</div></a>
+          <a id="link" href="http://chernowii.com/about.html" target="_top"><div id="dockitem5"><br><br>About - AFK Life</div></a>
+    </div>
+     </center>
+    <div id="gedit"><h1>Hello World!</h1><p>Looks like you arrived to my website, good!</p><p>My name is Konrad Iturbe, I was born in 1999 and I am from Madrid, Spain. To this date, I am 15 years old.</p><p><h4>What do I do?</h4>My hobbies are programming, reverse engineering sometimes, timelapse photography and biking</p></div>
 </body>
 </html>
