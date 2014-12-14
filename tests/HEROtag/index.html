@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+<title>HEROtag</title>
+<style>
+body{
+	background-color: black;
+}
+#tag{
+	width:65%;
+	height:40%;
+	position:absolute;
+	top:20%;
+	left:35%;
+left:0;
+	background-color: cyan;
+	font-size: xx-large;
+	font-family: sans-serif, Arial;
+}
+#start{
+	width:30%;
+	height:40%;
+	position: absolute;
+	bottom:0;
+	left:0;
+	/*font-size: xx-large;*/
+	font-family: sans-serif, Arial;
+	background-color: red;
+}
+#stop{
+	width:30%;
+	height:40%;
+	position: absolute;
+	bottom:0;
+	left:35%;
+	/*font-size: xx-large;*/
+	font-family: sans-serif, Arial;
+	background-color: blue;
+}
+#takepic{
+	width:30%;
+	height:40%;
+	position: absolute;
+	bottom:0;
+	right:0;
+	/*font-size: xx-large;*/
+	font-family: sans-serif, Arial;
+	background-color: yellow;
+}
+#wifioff{
+width:30%;
+height:20%;
+background-color:green;
+position:absolute;
+top:0;
+left:0;
+}
+#camoff{
+width:30%;
+height:20%;
+background-color:grey;
+position:absolute;
+top:0;
+left:35%;
+}
+#videomode{
+width:30%;
+height:20%;
+background-color:purple;
+position:absolute;
+top:0;
+right:0;
+}
+#offall{
+	width:30%;
+	height:40%;
+	background-color: #FF9000;
+	position:absolute;
+	right:0;
+	top:20%;
+}
+</style>
+<script src="gopro.js"></script>
+</head>
+<body onLoad="onLoad();">
+<button id="wifioff" onclick="command('setting','63','0')"><h3>Turn WiFi OFF</h3></button><button id="camoff" onclick="command('command','system','sleep')"><h3>Turn Camera OFF</h3></button><button id="videomode" onclick="commandTwo('command','mode','0')">Go to Video MODE</button>
+<button onclick="command('command','storage','tag_moment')" id="tag"><h1>Tag!</h1></button>
+<button onclick="offall()" id="offall"><h3>Cam+<br>WiFi OFF</h3></button>
+<br><br>
+<button onclick="commandTwo('command','shutter','1')" id="start"><h3>Rec / shutter</h3></button>&nbsp;<button onclick="commandTwo('command','shutter','0')" id="stop"><h3>Stop rec</h3></button>&nbsp;<button onclick="takepic()" id="takepic"><h2>Take Picture</h2></button><br><br>
+</body>
+</html>
