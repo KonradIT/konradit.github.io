@@ -1,0 +1,716 @@
+info it worked if it ends with ok
+verbose cli [ '/usr/bin/nodejs',
+verbose cli   '/usr/bin/npm',
+verbose cli   'install',
+verbose cli   'mozilla-apk-cli' ]
+info using npm@1.1.4
+info using node@v0.6.19
+verbose config file /home/konrad/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose cache add [ 'mozilla-apk-cli', null ]
+silly cache add: name, spec, args [ undefined, 'mozilla-apk-cli', [ 'mozilla-apk-cli', null ] ]
+verbose parsed url { pathname: 'mozilla-apk-cli',
+verbose parsed url   path: 'mozilla-apk-cli',
+verbose parsed url   href: 'mozilla-apk-cli' }
+verbose addNamed [ 'mozilla-apk-cli', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'mozilla-apk-cli', '', false ]
+verbose raw, before any munging mozilla-apk-cli
+verbose url resolving [ 'https://registry.npmjs.org/', './mozilla-apk-cli' ]
+verbose url resolved https://registry.npmjs.org/mozilla-apk-cli
+verbose etag "EE6PW3CB8DL0GQ7UIHYEZI8EO"
+http GET https://registry.npmjs.org/mozilla-apk-cli
+http 304 https://registry.npmjs.org/mozilla-apk-cli
+silly get cb [ 304,
+silly get cb   { date: 'Sun, 14 Dec 2014 16:12:54 GMT',
+silly get cb     server: 'Apache',
+silly get cb     via: '1.1 varnish',
+silly get cb     'last-modified': 'Sun, 14 Dec 2014 16:12:54 GMT',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     etag: '"EE6PW3CB8DL0GQ7UIHYEZI8EO"',
+silly get cb     age: '0',
+silly get cb     'x-served-by': 'cache-fra1240-FRA',
+silly get cb     'x-cache': 'MISS',
+silly get cb     'x-cache-hits': '0',
+silly get cb     'x-timer': 'S1418573574.154210,VS0,VE344',
+silly get cb     vary: 'Accept',
+silly get cb     'content-length': '0',
+silly get cb     'keep-alive': 'timeout=10, max=50',
+silly get cb     connection: 'Keep-Alive' } ]
+verbose etag mozilla-apk-cli from cache
+silly name, range, hasData 2 [ 'mozilla-apk-cli', '', true ]
+silly versions [ 'mozilla-apk-cli',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.4',
+silly versions     '0.0.4-a',
+silly versions     '0.0.4-b',
+silly versions     '0.0.4-c',
+silly versions     '0.0.4-d',
+silly versions     '0.0.4-e',
+silly versions     '0.0.5',
+silly versions     '0.0.6',
+silly versions     '0.0.7',
+silly versions     '0.0.8',
+silly versions     '0.0.9' ] ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'fc69a7aa271b3707acbe44a472e29ba63869727b',
+verbose bin dist     tarball: 'http://registry.npmjs.org/mozilla-apk-cli/-/mozilla-apk-cli-0.0.9.tgz' } ]
+verbose caching /home/konrad/.npm/mozilla-apk-cli/0.0.9/package/package.json
+verbose loadDefaults mozilla-apk-cli@0.0.9
+silly resolved [ { name: 'mozilla-apk-cli',
+silly resolved     version: '0.0.9',
+silly resolved     description: 'A Command Line Inteface for generating Android native apps from open webapps',
+silly resolved     developer: [ { name: 'ozten', email: 'shout@ozten.com' } ],
+silly resolved     bin: { 'mozilla-apk-cli': './bin/cli.js' },
+silly resolved     dependencies: 
+silly resolved      { 'fs.extra': '1.2.1',
+silly resolved        optimist: '0.6.1',
+silly resolved        'path-extra': '0.2.0',
+silly resolved        request: '2.34.0',
+silly resolved        underscore: '1.6.0' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/mozilla/apk-cli.git' },
+silly resolved     _id: 'mozilla-apk-cli@0.0.9',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'mozilla-apk-cli',
+silly resolved     scripts: {} } ]
+info into /home/konrad/konradit.github.io mozilla-apk-cli@0.0.9
+info installOne mozilla-apk-cli@0.0.9
+verbose from cache /home/konrad/.npm/mozilla-apk-cli/0.0.9/package/package.json
+info unbuild /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm'
+verbose mkdir done: /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm 755
+verbose unpack_ uid, gid [ 1001, 1001 ]
+verbose unpackTarget /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/t3
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/messageme.apk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/README.md~
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/#t#
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/package.json~
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/t
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/#t3#
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/package.json
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test.apk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/t2
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/README.md
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/packged.apk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/lib
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/lib/owa_downloader.js~
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/lib/owa_downloader.js
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/lib/owa_validator.js
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/lib/file_loader.js
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/lib/fs_util.js
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/bin
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/bin/cli.js~
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/bin/cli.js
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/docs
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/docs/WINDOWS.md
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/docs/WINDOWS.md~
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/apktool.yml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/AndroidManifest.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable-xhdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable-xhdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values-v11
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values-v11/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable-mdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable-mdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/raw
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/raw/mini.json
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/raw/application.zip
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/raw/manifest.json
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable/background_color.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values-v14
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values-v14/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/layout
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/layout/activity_installer.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/layout/activity_launcher.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values/ids.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values/colors.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values/public.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values/strings.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/values/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable-hdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/res/drawable-hdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$raw.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$drawable.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$color.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/BuildConfig.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$attr.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$string.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$layout.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$id.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/com/example/pa9b9f04336ce0181a08e774e01113b31/R$style.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/C.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/InstallRuntimeActivity.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/R.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/R$drawable.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/R$color.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/InstallRuntimeActivity$2.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/Logger.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/R$string.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/LauncherActivity$TaskListenerService.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/R$layout.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/R$id.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/R$style.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/LauncherActivity.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/test_apk/smali/org/mozilla/android/synthapk/InstallRuntimeActivity$1.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman.apk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/apktool.yml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/AndroidManifest.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable-xhdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable-xhdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values-v11
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values-v11/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable-mdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable-mdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/raw
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/raw/manifest.json
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable/background_color.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values-v14
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values-v14/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/layout
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/layout/activity_installer.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/layout/activity_launcher.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values/ids.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values/colors.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values/public.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values/strings.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/values/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable-hdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/res/drawable-hdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$raw.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$drawable.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$color.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/BuildConfig.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$attr.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$string.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$layout.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$id.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/ch/platzh1rsch/pacman/p5f04290f046592d693f82b3612dec8cc/R$style.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/C.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/InstallRuntimeActivity.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/R.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/R$drawable.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/R$color.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/Logger.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/R$string.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/R$layout.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/R$id.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/R$style.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Pacman/Pacman/smali/org/mozilla/android/synthapk/LauncherActivity.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343.apk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/apktool.yml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/AndroidManifest.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable-xhdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable-xhdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values-v11
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values-v11/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable-mdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable-mdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/raw
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/raw/manifest.json
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable/background_color.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values-v14
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values-v14/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/layout
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/layout/activity_installer.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/layout/activity_launcher.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values/ids.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values/colors.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values/public.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values/strings.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/values/styles.xml
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable-hdpi
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/res/drawable-hdpi/ic_launcher.png
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/C.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/InstallRuntimeActivity.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/R.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/R$drawable.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/R$color.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/InstallRuntimeActivity$2.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/Logger.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/R$string.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/LauncherActivity$TaskListenerService.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/R$layout.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/R$id.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/R$style.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/LauncherActivity.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/org/mozilla/android/synthapk/InstallRuntimeActivity$1.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$raw.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$drawable.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$color.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/BuildConfig.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$attr.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$string.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$layout.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$id.smali
+silly asyncMap in gTP /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package/Deltron2343343/Deltron2343343/smali/com/testmanifest/deltron234311/pcdc7fe7f963b87548c8771f591e3e0c9/R$style.smali
+verbose gunzed /home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package
+verbose rm'ed /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli
+verbose renamed [ '/home/konrad/konradit.github.io/node_modules/___mozilla-apk-cli.npm/package',
+verbose renamed   '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli' ]
+verbose caching /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/package.json
+verbose loadDefaults mozilla-apk-cli@0.0.9
+info preinstall mozilla-apk-cli@0.0.9
+verbose from cache /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'fs.extra@1.2.1', null ]
+silly cache add: name, spec, args [ undefined, 'fs.extra@1.2.1', [ 'fs.extra@1.2.1', null ] ]
+verbose parsed url { pathname: 'fs.extra@1.2.1',
+verbose parsed url   path: 'fs.extra@1.2.1',
+verbose parsed url   href: 'fs.extra@1.2.1' }
+silly cache add: name, spec, args [ 'fs.extra', '1.2.1', [ 'fs.extra', '1.2.1' ] ]
+verbose parsed url { pathname: '1.2.1', path: '1.2.1', href: '1.2.1' }
+verbose addNamed [ 'fs.extra', '1.2.1' ]
+verbose addNamed [ '1.2.1', '1.2.1' ]
+verbose cache add [ 'optimist@0.6.1', null ]
+silly cache add: name, spec, args [ undefined, 'optimist@0.6.1', [ 'optimist@0.6.1', null ] ]
+verbose parsed url { pathname: 'optimist@0.6.1',
+verbose parsed url   path: 'optimist@0.6.1',
+verbose parsed url   href: 'optimist@0.6.1' }
+silly cache add: name, spec, args [ 'optimist', '0.6.1', [ 'optimist', '0.6.1' ] ]
+verbose parsed url { pathname: '0.6.1', path: '0.6.1', href: '0.6.1' }
+verbose addNamed [ 'optimist', '0.6.1' ]
+verbose addNamed [ '0.6.1', '0.6.1' ]
+verbose cache add [ 'path-extra@0.2.0', null ]
+silly cache add: name, spec, args [ undefined, 'path-extra@0.2.0', [ 'path-extra@0.2.0', null ] ]
+verbose parsed url { pathname: 'path-extra@0.2.0',
+verbose parsed url   path: 'path-extra@0.2.0',
+verbose parsed url   href: 'path-extra@0.2.0' }
+silly cache add: name, spec, args [ 'path-extra', '0.2.0', [ 'path-extra', '0.2.0' ] ]
+verbose parsed url { pathname: '0.2.0', path: '0.2.0', href: '0.2.0' }
+verbose addNamed [ 'path-extra', '0.2.0' ]
+verbose addNamed [ '0.2.0', '0.2.0' ]
+verbose cache add [ 'request@2.34.0', null ]
+silly cache add: name, spec, args [ undefined, 'request@2.34.0', [ 'request@2.34.0', null ] ]
+verbose parsed url { pathname: 'request@2.34.0',
+verbose parsed url   path: 'request@2.34.0',
+verbose parsed url   href: 'request@2.34.0' }
+silly cache add: name, spec, args [ 'request', '2.34.0', [ 'request', '2.34.0' ] ]
+verbose parsed url { pathname: '2.34.0', path: '2.34.0', href: '2.34.0' }
+verbose addNamed [ 'request', '2.34.0' ]
+verbose addNamed [ '2.34.0', '2.34.0' ]
+verbose cache add [ 'underscore@1.6.0', null ]
+silly cache add: name, spec, args [ undefined, 'underscore@1.6.0', [ 'underscore@1.6.0', null ] ]
+verbose parsed url { pathname: 'underscore@1.6.0',
+verbose parsed url   path: 'underscore@1.6.0',
+verbose parsed url   href: 'underscore@1.6.0' }
+silly cache add: name, spec, args [ 'underscore', '1.6.0', [ 'underscore', '1.6.0' ] ]
+verbose parsed url { pathname: '1.6.0', path: '1.6.0', href: '1.6.0' }
+verbose addNamed [ 'underscore', '1.6.0' ]
+verbose addNamed [ '1.6.0', '1.6.0' ]
+verbose raw, before any munging fs.extra/1.2.1
+verbose url resolving [ 'https://registry.npmjs.org/', './fs.extra/1.2.1' ]
+verbose url resolved https://registry.npmjs.org/fs.extra/1.2.1
+verbose etag "98MV11UX05JU1WUJCNCU5GGCI"
+http GET https://registry.npmjs.org/fs.extra/1.2.1
+verbose raw, before any munging optimist/0.6.1
+verbose url resolving [ 'https://registry.npmjs.org/', './optimist/0.6.1' ]
+verbose url resolved https://registry.npmjs.org/optimist/0.6.1
+verbose etag "7K21K48G8H95RHFYCMQAUC9XM"
+http GET https://registry.npmjs.org/optimist/0.6.1
+verbose raw, before any munging path-extra/0.2.0
+verbose url resolving [ 'https://registry.npmjs.org/', './path-extra/0.2.0' ]
+verbose url resolved https://registry.npmjs.org/path-extra/0.2.0
+verbose etag "3EF5APG9WRFTOUBC18VO2UQ2D"
+http GET https://registry.npmjs.org/path-extra/0.2.0
+verbose raw, before any munging request/2.34.0
+verbose url resolving [ 'https://registry.npmjs.org/', './request/2.34.0' ]
+verbose url resolved https://registry.npmjs.org/request/2.34.0
+verbose etag "D12CH2K90S1P4QPIRIQQRBVZQ"
+http GET https://registry.npmjs.org/request/2.34.0
+verbose raw, before any munging underscore/1.6.0
+verbose url resolving [ 'https://registry.npmjs.org/', './underscore/1.6.0' ]
+verbose url resolved https://registry.npmjs.org/underscore/1.6.0
+verbose etag "CSGSTGTIKSN6VHJ8BJ23BYAOQ"
+http GET https://registry.npmjs.org/underscore/1.6.0
+http 304 https://registry.npmjs.org/optimist/0.6.1
+silly get cb [ 304,
+silly get cb   { date: 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     server: 'Apache',
+silly get cb     via: '1.1 varnish',
+silly get cb     'last-modified': 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     etag: '"7K21K48G8H95RHFYCMQAUC9XM"',
+silly get cb     age: '0',
+silly get cb     'x-served-by': 'cache-fra1227-FRA',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '1',
+silly get cb     'x-timer': 'S1418573577.351645,VS0,VE101',
+silly get cb     vary: 'Accept',
+silly get cb     'content-length': '0',
+silly get cb     'keep-alive': 'timeout=10, max=50',
+silly get cb     connection: 'Keep-Alive' } ]
+verbose etag optimist/0.6.1 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'da3ea74686fa21a19a111c326e90eb15a0196686',
+verbose bin dist     tarball: 'http://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz' } ]
+verbose caching /home/konrad/.npm/optimist/0.6.1/package/package.json
+verbose loadDefaults optimist@0.6.1
+http 304 https://registry.npmjs.org/path-extra/0.2.0
+silly get cb [ 304,
+silly get cb   { date: 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     server: 'Apache',
+silly get cb     via: '1.1 varnish',
+silly get cb     'last-modified': 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     etag: '"3EF5APG9WRFTOUBC18VO2UQ2D"',
+silly get cb     age: '0',
+silly get cb     'x-served-by': 'cache-fra1238-FRA',
+silly get cb     'x-cache': 'MISS',
+silly get cb     'x-cache-hits': '0',
+silly get cb     'x-timer': 'S1418573577.353430,VS0,VE107',
+silly get cb     vary: 'Accept',
+silly get cb     'content-length': '0',
+silly get cb     'keep-alive': 'timeout=10, max=50',
+silly get cb     connection: 'Keep-Alive' } ]
+verbose etag path-extra/0.2.0 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'cb79c4f4c27f685c5e2e44af7e753cc2f03884cb',
+verbose bin dist     tarball: 'http://registry.npmjs.org/path-extra/-/path-extra-0.2.0.tgz' } ]
+verbose caching /home/konrad/.npm/path-extra/0.2.0/package/package.json
+verbose loadDefaults path-extra@0.2.0
+http 304 https://registry.npmjs.org/underscore/1.6.0
+silly get cb [ 304,
+silly get cb   { date: 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     server: 'Apache',
+silly get cb     via: '1.1 varnish',
+silly get cb     'last-modified': 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     etag: '"CSGSTGTIKSN6VHJ8BJ23BYAOQ"',
+silly get cb     age: '0',
+silly get cb     'x-served-by': 'cache-fra1233-FRA',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '1',
+silly get cb     'x-timer': 'S1418573577.369148,VS0,VE423',
+silly get cb     vary: 'Accept',
+silly get cb     'content-length': '0',
+silly get cb     'keep-alive': 'timeout=10, max=50',
+silly get cb     connection: 'Keep-Alive' } ]
+verbose etag underscore/1.6.0 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '8b38b10cacdef63337b8b24e4ff86d45aea529a8',
+verbose bin dist     tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz' } ]
+verbose caching /home/konrad/.npm/underscore/1.6.0/package/package.json
+verbose loadDefaults underscore@1.6.0
+http 304 https://registry.npmjs.org/request/2.34.0
+silly get cb [ 304,
+silly get cb   { date: 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     server: 'Apache',
+silly get cb     via: '1.1 varnish',
+silly get cb     'last-modified': 'Sun, 14 Dec 2014 16:12:58 GMT',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     etag: '"D12CH2K90S1P4QPIRIQQRBVZQ"',
+silly get cb     age: '0',
+silly get cb     'x-served-by': 'cache-fra1221-FRA',
+silly get cb     'x-cache': 'MISS',
+silly get cb     'x-cache-hits': '0',
+silly get cb     'x-timer': 'S1418573577.360169,VS0,VE704',
+silly get cb     vary: 'Accept',
+silly get cb     'content-length': '0',
+silly get cb     'keep-alive': 'timeout=10, max=50',
+silly get cb     connection: 'Keep-Alive' } ]
+verbose etag request/2.34.0 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'b5d8b9526add4a2d4629f4d417124573996445ae',
+verbose bin dist     tarball: 'http://registry.npmjs.org/request/-/request-2.34.0.tgz' } ]
+verbose caching /home/konrad/.npm/request/2.34.0/package/package.json
+verbose loadDefaults request@2.34.0
+http 304 https://registry.npmjs.org/fs.extra/1.2.1
+silly get cb [ 304,
+silly get cb   { date: 'Sun, 14 Dec 2014 16:12:57 GMT',
+silly get cb     server: 'Apache',
+silly get cb     via: '1.1 varnish',
+silly get cb     'last-modified': 'Sun, 14 Dec 2014 16:12:58 GMT',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     etag: '"98MV11UX05JU1WUJCNCU5GGCI"',
+silly get cb     age: '0',
+silly get cb     'x-served-by': 'cache-fra1226-FRA',
+silly get cb     'x-cache': 'MISS',
+silly get cb     'x-cache-hits': '0',
+silly get cb     'x-timer': 'S1418573577.335536,VS0,VE733',
+silly get cb     vary: 'Accept',
+silly get cb     'content-length': '0',
+silly get cb     'keep-alive': 'timeout=10, max=50',
+silly get cb     connection: 'Keep-Alive' } ]
+verbose etag fs.extra/1.2.1 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '060bf20264f35e39ad247e5e9d2121a2a75a1733',
+verbose bin dist     tarball: 'http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz' } ]
+verbose caching /home/konrad/.npm/fs.extra/1.2.1/package/package.json
+verbose loadDefaults fs.extra@1.2.1
+silly resolved [ { name: 'optimist',
+silly resolved     version: '0.6.1',
+silly resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+silly resolved     main: './index.js',
+silly resolved     dependencies: { wordwrap: '~0.0.2', minimist: '~0.0.1' },
+silly resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.4.0' },
+silly resolved     scripts: { test: 'tap ./test/*.js' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/substack/node-optimist.git' },
+silly resolved     keywords: 
+silly resolved      [ 'argument',
+silly resolved        'args',
+silly resolved        'option',
+silly resolved        'parser',
+silly resolved        'parsing',
+silly resolved        'cli',
+silly resolved        'command' ],
+silly resolved     author: 
+silly resolved      { name: 'James Halliday',
+silly resolved        email: 'mail@substack.net',
+silly resolved        url: 'http://substack.net' },
+silly resolved     license: 'MIT/X11',
+silly resolved     engine: { node: '>=0.4' },
+silly resolved     _id: 'optimist@0.6.1',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'optimist@0.6.1' },
+silly resolved   { name: 'path-extra',
+silly resolved     version: '0.2.0',
+silly resolved     description: 'path-extra contains methods that aren\'t included in the vanilla Node.js path package.',
+silly resolved     homepage: [ 'https://github.com/jprichardson/node-path-extra' ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/jprichardson/node-path-extra.git' },
+silly resolved     keywords: [ 'fs', 'file', 'file system', 'path' ],
+silly resolved     author: { name: 'JP Richardson', email: 'jprichardson@gmail.com' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/jprichardson/node-path-extra/raw/master/LICENSE' } ],
+silly resolved     devDependencies: { mocha: '*' },
+silly resolved     main: './lib/path.js',
+silly resolved     _id: 'path-extra@0.2.0',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'path-extra@0.2.0' },
+silly resolved   { name: 'underscore',
+silly resolved     description: 'JavaScript\'s functional programming helper library.',
+silly resolved     homepage: 'http://underscorejs.org',
+silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/jashkenas/underscore.git' },
+silly resolved     main: 'underscore.js',
+silly resolved     version: '1.6.0',
+silly resolved     devDependencies: { docco: '0.6.x', phantomjs: '1.9.0-1', 'uglify-js': '2.4.x' },
+silly resolved     scripts: 
+silly resolved      { test: 'phantomjs test/vendor/runner.js test/index.html?noglobals=true',
+silly resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+silly resolved        doc: 'docco underscore.js' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'https://raw.github.com/jashkenas/underscore/master/LICENSE' } ],
+silly resolved     files: [ 'underscore.js', 'underscore-min.js', 'LICENSE' ],
+silly resolved     _id: 'underscore@1.6.0',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'underscore@1.6.0' },
+silly resolved   { name: 'request',
+silly resolved     description: 'Simplified HTTP request client.',
+silly resolved     tags: [ 'http', 'simple', 'util', 'utility' ],
+silly resolved     version: '2.34.0',
+silly resolved     author: { name: 'Mikeal Rogers', email: 'mikeal.rogers@gmail.com' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/mikeal/request.git' },
+silly resolved     bugs: { url: 'http://github.com/mikeal/request/issues' },
+silly resolved     license: 'Apache, Version 2.0',
+silly resolved     engines: [ 'node >= 0.8.0', node: ' >= 0.8.0' ],
+silly resolved     main: 'index.js',
+silly resolved     dependencies: 
+silly resolved      { qs: '~0.6.0',
+silly resolved        'json-stringify-safe': '~5.0.0',
+silly resolved        'forever-agent': '~0.5.0',
+silly resolved        'node-uuid': '~1.4.0',
+silly resolved        mime: '~1.2.9',
+silly resolved        'tough-cookie': '>=0.12.0',
+silly resolved        'form-data': '~0.1.0',
+silly resolved        'tunnel-agent': '~0.3.0',
+silly resolved        'http-signature': '~0.10.0',
+silly resolved        'oauth-sign': '~0.3.0',
+silly resolved        hawk: '~1.0.0',
+silly resolved        'aws-sign2': '~0.5.0' },
+silly resolved     optionalDependencies: 
+silly resolved      { 'tough-cookie': '>=0.12.0',
+silly resolved        'form-data': '~0.1.0',
+silly resolved        'tunnel-agent': '~0.3.0',
+silly resolved        'http-signature': '~0.10.0',
+silly resolved        'oauth-sign': '~0.3.0',
+silly resolved        hawk: '~1.0.0',
+silly resolved        'aws-sign2': '~0.5.0' },
+silly resolved     scripts: { test: 'node tests/run.js' },
+silly resolved     _id: 'request@2.34.0',
+silly resolved     devDependencies: {},
+silly resolved     _engineSupported: false,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'request@2.34.0' },
+silly resolved   { author: 
+silly resolved      { name: 'AJ ONeal',
+silly resolved        email: 'coolaj86@gmail.com',
+silly resolved        url: 'http://coolaj86.info/' },
+silly resolved     name: 'fs.extra',
+silly resolved     description: 'fs.move and fs.copy for Node.JS',
+silly resolved     version: '1.2.1',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/coolaj86/node-examples-js.git' },
+silly resolved     main: 'fs.extra',
+silly resolved     scripts: { test: 'node test.js' },
+silly resolved     engines: { node: '*' },
+silly resolved     dependencies: { mkdirp: '~0.3.5', 'fs-extra': '~0.6.1', walk: '~2.2.1' },
+silly resolved     devDependencies: { sequence: '~2.2.1' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://www.opensource.org/licenses/mit-license.php' },
+silly resolved        { type: 'Apache License, Version 2.0',
+silly resolved          url: 'http://www.apache.org/licenses/LICENSE-2.0' } ],
+silly resolved     _id: 'fs.extra@1.2.1',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'fs.extra@1.2.1' } ]
+info into /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli optimist@0.6.1
+info into /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli path-extra@0.2.0
+info into /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli underscore@1.6.0
+info into /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli request@2.34.0
+info into /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli fs.extra@1.2.1
+info installOne optimist@0.6.1
+info installOne path-extra@0.2.0
+info installOne underscore@1.6.0
+info installOne request@2.34.0
+verbose installOne cb request@2.34.0
+verbose about to build /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli
+ERR! error installing mozilla-apk-cli@0.0.9
+info unbuild /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli
+verbose from cache /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/package.json
+info preuninstall mozilla-apk-cli@0.0.9
+info installOne fs.extra@1.2.1
+verbose from cache /home/konrad/.npm/optimist/0.6.1/package/package.json
+info unbuild /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/optimist
+verbose from cache /home/konrad/.npm/path-extra/0.2.0/package/package.json
+info unbuild /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/path-extra
+verbose from cache /home/konrad/.npm/underscore/1.6.0/package/package.json
+info unbuild /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/underscore
+verbose from cache /home/konrad/.npm/fs.extra/1.2.1/package/package.json
+info unbuild /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/fs.extra
+info uninstall mozilla-apk-cli@0.0.9
+verbose unbuild mozilla-apk-cli@0.0.9 [ true,
+verbose unbuild mozilla-apk-cli@0.0.9   '/home/konrad/konradit.github.io/node_modules',
+verbose unbuild mozilla-apk-cli@0.0.9   '/home/konrad/konradit.github.io/node_modules' ]
+verbose binRoot [ '/home/konrad/konradit.github.io/node_modules/.bin',
+verbose binRoot   { 'mozilla-apk-cli': './bin/cli.js' } ]
+info postuninstall mozilla-apk-cli@0.0.9
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___optimist.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___path-extra.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___underscore.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___fs.extra.npm'
+verbose mkdir done: /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___optimist.npm 755
+verbose mkdir done: /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___path-extra.npm 755
+verbose mkdir done: /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___underscore.npm 755
+verbose mkdir done: /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/___fs.extra.npm 755
+verbose unpack_ uid, gid [ 1001, 1001 ]
+verbose unpackTarget /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/optimist
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1001, 1001 ]
+verbose unpackTarget /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/path-extra
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1001, 1001 ]
+verbose unpackTarget /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/underscore
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1001, 1001 ]
+verbose unpackTarget /home/konrad/konradit.github.io/node_modules/mozilla-apk-cli/node_modules/fs.extra
+silly gunzTarPerm modes [ '755', '644' ]
+ERR! error rolling back mozilla-apk-cli@0.0.9 Error: ENOTEMPTY, rmdir '/home/konrad/konradit.github.io/node_modules/mozilla-apk-cli'
+verbose installOne cb mozilla-apk-cli@0.0.9
+ERR! Unsupported
+ERR! Not compatible with your version of node/npm: request@2.34.0
+ERR! Required: ["node >= 0.8.0"]
+ERR! Actual:   {"npm":"1.1.4","node":"0.6.19"}
+ERR! 
+ERR! System Linux 3.5.0-17-generic
+ERR! command "/usr/bin/nodejs" "/usr/bin/npm" "install" "mozilla-apk-cli"
+ERR! cwd /home/konrad/konradit.github.io
+ERR! node -v v0.6.19
+ERR! npm -v 1.1.4
+ERR! code ENOTSUP
+ERR! message Unsupported
+ERR! errno {}
+verbose exit [ 1, true ]
