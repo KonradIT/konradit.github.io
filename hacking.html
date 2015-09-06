@@ -1,147 +1,172 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <style>
 body{
-background-image: url('http://i.imgur.com/dNWfUtXl.jpg');
+background-image: url('http://i.imgur.com/YQP5Ubg.jpg');
 background-attachment: fixed;
 background-size: 100% 100%;
 background-repeat: no-repeat;
-font-family: Arial;
+font-family: 'Roboto', sans-serif;
 }
-#front{
-width:100%;
-height:6%;
-background-color:white;
-    position: fixed;
-    top:0;
-    right:0;
-}
-
-#dock{
-    width:5%;
-    height:94%;
-    background-color:black;
+#navbar-background{
+    width:100%;
+    height:54px;
+    background-color: black;
     position:fixed;
+    bottom:0;
     left:0;
+    z-index: 10;
+}
+#back{
+    width:auto;
+    height:100%;
+    position:absolute;
+    left:30%;
     bottom:0;
 }
-    #link{
-        color:white;
-        text-decoration: none;
-    }
-    #stats{
-        position: fixed;
-        top:0;
-        right:0;
-        color:black;
-    }
-    #stats2{
-    position: fixed;
-        top:0;
-        left:0;
-        color:black;
-    }
-#dockitem{
-    width:100%;
-    height:16%;
-    border-radius:10px;
-background-color:grey;
+    #home{
+    width:auto;
+    height:100%;
     position:absolute;
-    top:0;
-    left:0;
+    left:45%;
+    bottom:0;
 }
-    #dockitem:hover{
-        background-color: red;
-    }
-    #dockitem2{
-    width:100%;
-    height:16%;
-    border-radius:10px;
-background-color:grey;
-    position:absolute;
-    top:18%;
-    left:0;
-}
-    #dockitem2:hover{
-        background-color: red;
-    }
-    #dockitem3{
-    width:100%;
-    height:16%;
-    border-radius:10px;
-background-color:red;
-    position:absolute;
-    top:36%;
-    left:0;
-}
-    #dockitem3:hover{
-        background-color: grey;
-    }
-    #dockitem4{
-    width:100%;
-    height:16%;
-    border-radius:10px;
-background-color:grey;
-    position:absolute;
-    top:54%;
-    left:0;
-}
-    #dockitem4:hover{
-        background-color: red;
-    }
-    #dockitem5{
-    width:100%;
-    height:16%;
-    border-radius:10px;
-background-color:grey;
-    position:absolute;
-    top:72%;
-    left:0;
-}
-    #dockitem5:hover{
-        background-color: red;
-    }
-    #gedit{
-        width:80%;
-        height:80%;
+    #header{
+        width:65%;
+        height:15%;
         background-color:white;
-        position:absolute;
-        left:10%;
-        top:10%;
+        border-radius: 3px;
+        position:fixed;
+        top:5px;
+        box-shadow: 2px 2px 5px #888888;
+        left:17.5%;
+        z-index: 10;
     }
+    #htext1{
+        position: relative;
+        left:15%;
+        top:7px;
+        font-size: xx-large;
+    }
+        #htext2{
+        position: absolute;
+        left:15%;
+            top:25%;
+        font-size: large;
+    }
+    #keys{
+        position:absolute;
+        bottom:5px;
+        left:20px;
+    }
+    .demo-card-wide.mdl-card {
+  width: 50%;
+        position:absolute;
+        top:20%;
+        left:25%;
+
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 240px;
+  background: url('http://i.imgur.com/gsO7R51.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+#space{
+  width: 54px;
+  height:54px;
+}
 </style>
 </head>
 <body>
-<center>
-<div id="front">
-         <b>
-      Konrad Iturbe - chernowii.com
-      </b>
-    <i id="stats">Battery:23% | User:konrad | Notifications:10</i>
-         <i id="stats2">Sublime Text 3 - hacking.html</i> 
+<div id="navbar-background">
+    <a href="#mdl-card__title"><img id="back" src="images/back.png"></a>
+    <a href="index.html"><img id="home" src="images/home.png"></a>
     </div>
-    </center>
-    <center>
-    <div id="dock">
-    <a id="link" href="http://chernowii.com/media.html" target="_top"><div id="dockitem"><br><br>Media</div></a>
-          <a id="link" href="http://chernowii.com/gopro.html" target="_top"><div id="dockitem2"><br><br>GoPro Hacking</div></a>
-          <a id="link" href="http://chernowii.com/hacking.html" target="_top"><div id="dockitem3"><br><br>Hacking / coding</div></a>
-          <a id="link" href="http://chernowii.com/contact.html" target="_top"><div id="dockitem4"><br><br>Contact</div></a>
-          <a id="link" href="http://chernowii.com/about.html" target="_top"><div id="dockitem5"><br><br>About - AFK Life</div></a>
+    <div id="header">
+    <b id="htext1">chernowii.com</b>
+        <br>
+        <p id="htext2">Konrad Iturbe website.</p>
+        <br>
+        <hr>
+        <br>
+        <div id="keys">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='media.html';">
+  Photos/videos
+</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='gopro.html';">
+GoPro Hacks
+</button>
+
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='apps.html';">
+Android apps
+</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='hacking.html';">
+Misc hacking
+</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
+Contact
+</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='about.html';">
+About / AFK cycle
+</button>
+        </div>
     </div>
-     </center>
-    <div id="gedit"><h1>Hacking and coding</h1>
-    Here are some projects I code:
-    <ul>
-    <li><a href="http://git.io/missile" target="_blank">Missile, a linux Pushbullet client</a></li>
-    <li><a href="http://git.io/timelapse" target="_blank">GoPro Timelapse Calculator</a></li>
-    <li><a href="https://gist.github.com/KonradIT/7fe754fb7629821ffe79" target="_blank">GoProxy, bash script to convert to proxy the GoPro videos</a></li>
-    <li><a href="https://gist.github.com/KonradIT/ee685aee15ba1c3c44b4" target="_blank">GoPro Studio for Linux</a></li>
-    <li><a href="https://github.com/KonradIT/gopro-control" target="_blank">GoPro Wifi webapp</a></li>
-    <li><a href="https://github.com/KonradIT/gowifi" target="_blank">GoWifi - GoPro command line app</a></li>
-    <li><a href="https://github.com/KonradIT/goprotools" target="_blank">GoProTools, GoPro bash tools for media management</a></li>
-    <li><a href="https://github.com/KonradIT/gopro-upload" target="_blank">Bash script to upload GoPro pictures to the net</a></li>
-    <li><a href="https://github.com/KonradIT/gopro-herobus-sdk" target="_blank">GoPro HERO bus unofficial SDK</a></li>
-    </ul></div>
+
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title" id="mdl-card__title">
+    <h2 class="mdl-card__title-text">Hacking</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+<h4>Some of my projects</h4>
+    <table class="mdl-data-table mdl-js-data-table">
+
+    <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="http://git.io/missile" target="_blank">Missile, a linux Pushbullet client</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="http://git.io/timelapse" target="_blank">GoPro Timelapse Calculator</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://gist.github.com/KonradIT/7fe754fb7629821ffe79" target="_blank">GoProxy, bash script to convert to proxy the GoPro videos</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://gist.github.com/KonradIT/ee685aee15ba1c3c44b4" target="_blank">GoPro Studio for Linux</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gopro-control" target="_blank">GoPro Wifi webapp</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gowifi" target="_blank">GoWifi - GoPro command line app</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/goprotools" target="_blank">GoProTools, GoPro bash tools for media management</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gopro-upload" target="_blank">Bash script to upload GoPro pictures to the net</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gopro-herobus-sdk" target="_blank">GoPro HERO bus unofficial SDK</a></td>
+      </tr>
+
+    </table>
+    <br>
+    <br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='http://github.com/konradit';">Visit my GitHub profile</button>
+    <div id="space"></div>
+  <div class="mdl-card__actions mdl-card--border">
+
+  </div>
+
+</div>
+
 </body>
 </html>

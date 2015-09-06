@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />
+ <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />  
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -69,7 +69,7 @@ font-family: 'Roboto', sans-serif;
         position:absolute;
         top:20%;
         left:25%;
-
+        
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
@@ -79,10 +79,37 @@ font-family: 'Roboto', sans-serif;
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
-#space{
-  width: 54px;
-  height:54px;
+#camera{
+ width:200px;
+height:auto;
+border-style:solid;
+border-color: #477;
+border-radius: 7px;
+background-color: white;
 }
+        .app-card-wide.app-card {
+  width: 50%;
+background-color: gray;
+        
+}
+.app-card-wide > .app-card__title {
+  color: #fff;
+    background-color: gray;
+  height: 176px;
+  background: url('http://i.imgur.com/NVT5oUN.jpg') center / cover;
+}
+.app-card-wide > .app-card__menu {
+  color: #fff;
+    background-color: gray;
+}
+    .app-card-wide{
+        background-color: lightgrey;
+    }
+    
+    #space{
+        width:54px;
+        height:54px;
+    }
 </style>
 </head>
 <body>
@@ -104,14 +131,14 @@ font-family: 'Roboto', sans-serif;
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='gopro.html';">
 GoPro Hacks
 </button>
-
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='apps.html';">
+        
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='apps.html';">
 Android apps
 </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='hacking.html';">
 Misc hacking
 </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='contact.html';">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
 Contact
 </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='about.html';">
@@ -123,24 +150,38 @@ About / AFK cycle
 
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title" id="mdl-card__title">
-    <h2 class="mdl-card__title-text">Contact/Hire</h2>
+    <h2 class="mdl-card__title-text">Android app development</h2>
   </div>
   <div class="mdl-card__supporting-text">
+As an android fan, I like to develop apps for it. Since android is now a platform for not only phones and tablets but watches, cars and more. I am also an IoT aficionado.
+      Also RRO layers themes and wear apps coming!
+      <br>
+      My first public android app: CamControl.
+      
 
-If you want to contact me for work opportunity, GoPro stuff or anything else:
-<br>
-<br>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" onclick="location.href='mailto:mail@chernowii.com';">
-  Contact me via Email
-</button>
-<br>
-<br>
-<br>
   <div class="mdl-card__actions mdl-card--border">
-
+   <div class="app-card-wide mdl-card mdl-shadow--2dp">
+  <div class="app-card__title">
+    <h2 class="app-card__title-text">CamControl</h2>
   </div>
-
+  <div class="app-card__supporting-text">
+     CamControl allows the user to capture content with a GoPro camera in a more interactive way with more resources, such as Android Wear integration and much more.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a href="https://play.google.com/store/apps/details?id=com.chernowii.hero4" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View in Play Store
+    </a>
+          <a href="https://github.com/konradit/goprohero" target="_blank" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+      View source code
+    </a>
+  </div>
+     <div id="space"></div>
 </div>
-
+      
+  </div>
+  
+</div>
+    </div>
+ 
 </body>
 </html>
