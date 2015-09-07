@@ -18,7 +18,7 @@ body{
      your background is light. */
   color: white;
 }
-#fab{
+#demo-menu-top-right{
   position:fixed;
   bottom:5px;
   right:5px
@@ -32,7 +32,7 @@ body{
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">Title</span>
+        <span class="mdl-layout-title">chernowii</span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation. We hide it in small screens. -->
@@ -45,12 +45,13 @@ body{
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout-title">Chernowii</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">Media</a>
+        <a class="mdl-navigation__link" href="">Hacks</a>
+        <a class="mdl-navigation__link" href="">Contact</a>
+        <a class="mdl-navigation__link" href="">About</a>
       </nav>
     </div>
     <main class="mdl-layout__content">
@@ -58,9 +59,20 @@ body{
     </main>
   </div>
   <!-- Colored FAB button -->
-  <button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+  <!-- Right aligned menu on top of button  -->
+  <button id="demo-menu-top-right"
+          class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
     <i class="material-icons">add</i>
   </button>
+
+  <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+      for="demo-menu-top-right">
+    <li class="mdl-menu__item">Some Action</li>
+    <li class="mdl-menu__item">Another Action</li>
+    <li disabled class="mdl-menu__item">Disabled Action</li>
+    <li class="mdl-menu__item">Yet Another Action</li>
+  </ul>
+
 
 </body>
 </html>
