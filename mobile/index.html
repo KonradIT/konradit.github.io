@@ -18,11 +18,7 @@ body{
      your background is light. */
   color: white;
 }
-#fab{
-  position:fixed;
-  bottom:5px;
-  right:5px;
-}
+
 </style>
 </head>
 <body>
@@ -58,9 +54,16 @@ body{
     </main>
   </div>
   <!-- Colored FAB button -->
-  <button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+  <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-button mdl-js-button mdl-button--icon">
     <i class="material-icons">add</i>
   </button>
 
+  <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+      for="demo-menu-lower-left">
+    <li class="mdl-menu__item">Some Action</li>
+    <li class="mdl-menu__item">Another Action</li>
+    <li disabled class="mdl-menu__item">Disabled Action</li>
+    <li class="mdl-menu__item">Yet Another Action</li>
+  </ul>
 </body>
 </html>
