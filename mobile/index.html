@@ -5,6 +5,10 @@
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
+body{
+  background: url('http://i.imgur.com/YQP5Ubg.jpg') center / cover;
+  font-family: 'Roboto', sans-serif;
+}
 .demo-layout-transparent {
   background: url('http://i.imgur.com/YQP5Ubg.jpg') center / cover;
 }
@@ -13,6 +17,11 @@
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
+}
+#fab{
+  position:fixed;
+  bottom:5px;
+  right:5px;
 }
 </style>
 </head>
@@ -48,6 +57,10 @@
       <div class="page-content"><!-- Your content goes here --></div>
     </main>
   </div>
+  <!-- Colored FAB button -->
+  <button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+    <i class="material-icons">add</i>
+  </button>
 
 </body>
 </html>
