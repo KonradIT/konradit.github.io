@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />
+ <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" /> 
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -69,7 +69,7 @@ font-family: 'Roboto', sans-serif;
         position:absolute;
         top:20%;
         left:25%;
-
+        
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
@@ -78,10 +78,6 @@ font-family: 'Roboto', sans-serif;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
-}
-#space{
-  width: 54px;
-  height:54px;
 }
 </style>
 </head>
@@ -92,16 +88,16 @@ font-family: 'Roboto', sans-serif;
         <br>
         <p id="htext2">Konrad Iturbe website.</p>
         <br>
-        
+        <hr>
         <br>
         <div id="keys">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='media.html';">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='media.html';">
   Photos/videos
 </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='gopro.html';">
 GoPro Hacks
 </button>
-
+        
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='apps.html';">
 Android apps
 </button>
@@ -111,7 +107,7 @@ Misc hacking
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
 Contact
 </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='about.html';">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='about.html';">
 About / AFK cycle
 </button>
         </div>
@@ -120,27 +116,14 @@ About / AFK cycle
 
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title" id="mdl-card__title">
-    <h2 class="mdl-card__title-text">About / AFK life</h2>
+    <h2 class="mdl-card__title-text">Photos/videos</h2>
   </div>
   <div class="mdl-card__supporting-text">
-
-<b>Social networks</b>
-<br>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://twitter.com/konrad_it','_blank');">Twitter</button>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://instagram.com/konrad_iturbe_chernowii','_blank');">Instagram</button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://vimeo.com/chernowiivvcc','_blank');">Vimeo</button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://github.com/konradit','_blank');">GitHub</button>
-<br>
-<br>
-<br>
-<h3>Who I am IRL?</h3>
-I am a 16 year old teenager, who loves coding, GoPros, android and linux. I live in Madrid, Spain. I have a Nexus 6 as a main android phone (ROM: Chroma 5.1.1, Android M3), Nexus 7 2013 as a NetHunter/Dev tablet. I also own a G watch for Android Wear development and several GoPros. My goal is to make apps for IoT and what will be the next big thing: wearables.
-<br>But... In the future I want to be a security researcher, to find exploits in large platforms.
-<div id="space"></div>
+<p>As a GoPro enthusiast, I film a lot and take pictures, these are shown below. My editing rig is a i5, 16GBRam, 960gtx. <br>Cameras: GoPro H3 Black, GoPro H4 Black, GoPro H4 Session, Nexus 6<hr><p></p><p><h4>Vimeo</h4><iframe id="iframe"  src="http://player.vimeo.com/hubnut/user/chernowiivvcc/uploaded_videos?color=000000&amp;background=ffffff&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br><br><h4>Instagram</h4><iframe id="iframe"  src="http://widget.websta.me/in/konrad_iturbe_chernowii/?s=100&w=4&h=5&b=0&p=0" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:400px; height: 500px" ></iframe></p>
   <div class="mdl-card__actions mdl-card--border">
-
+   
   </div>
-
+  
 </div>
 
 </body>

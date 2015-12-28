@@ -92,7 +92,7 @@ font-family: 'Roboto', sans-serif;
         <br>
         <p id="htext2">Konrad Iturbe website.</p>
         <br>
-        
+        <hr>
         <br>
         <div id="keys">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='media.html';">
@@ -105,13 +105,13 @@ GoPro Hacks
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='apps.html';">
 Android apps
 </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='hacking.html';">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='hacking.html';">
 Misc hacking
 </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
 Contact
 </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='about.html';">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='about.html';">
 About / AFK cycle
 </button>
         </div>
@@ -120,23 +120,45 @@ About / AFK cycle
 
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title" id="mdl-card__title">
-    <h2 class="mdl-card__title-text">About / AFK life</h2>
+    <h2 class="mdl-card__title-text">Hacking</h2>
   </div>
   <div class="mdl-card__supporting-text">
+<h4>Some of my projects</h4>
+    <table class="mdl-data-table mdl-js-data-table">
 
-<b>Social networks</b>
-<br>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://twitter.com/konrad_it','_blank');">Twitter</button>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://instagram.com/konrad_iturbe_chernowii','_blank');">Instagram</button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://vimeo.com/chernowiivvcc','_blank');">Vimeo</button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://github.com/konradit','_blank');">GitHub</button>
-<br>
-<br>
-<br>
-<h3>Who I am IRL?</h3>
-I am a 16 year old teenager, who loves coding, GoPros, android and linux. I live in Madrid, Spain. I have a Nexus 6 as a main android phone (ROM: Chroma 5.1.1, Android M3), Nexus 7 2013 as a NetHunter/Dev tablet. I also own a G watch for Android Wear development and several GoPros. My goal is to make apps for IoT and what will be the next big thing: wearables.
-<br>But... In the future I want to be a security researcher, to find exploits in large platforms.
-<div id="space"></div>
+    <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="http://git.io/missile" target="_blank">Missile, a linux Pushbullet client</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="http://git.io/timelapse" target="_blank">GoPro Timelapse Calculator</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://gist.github.com/KonradIT/7fe754fb7629821ffe79" target="_blank">GoProxy, bash script to convert to proxy the GoPro videos</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://gist.github.com/KonradIT/ee685aee15ba1c3c44b4" target="_blank">GoPro Studio for Linux</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gopro-control" target="_blank">GoPro Wifi webapp</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gowifi" target="_blank">GoWifi - GoPro command line app</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/goprotools" target="_blank">GoProTools, GoPro bash tools for media management</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gopro-upload" target="_blank">Bash script to upload GoPro pictures to the net</a></td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><a href="https://github.com/KonradIT/gopro-herobus-sdk" target="_blank">GoPro HERO bus unofficial SDK</a></td>
+      </tr>
+
+    </table>
+    <br>
+    <br>
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="http://github.com/konradit" target="_blank">Visit my GitHub profile</button>
+    <div id="space"></div>
   <div class="mdl-card__actions mdl-card--border">
 
   </div>

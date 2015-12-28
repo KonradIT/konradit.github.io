@@ -92,7 +92,7 @@ font-family: 'Roboto', sans-serif;
         <br>
         <p id="htext2">Konrad Iturbe website.</p>
         <br>
-        
+        <hr>
         <br>
         <div id="keys">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='media.html';">
