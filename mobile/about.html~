@@ -1,18 +1,15 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#3366FF">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue-teal.min.css" />
+   <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#336666">
+ <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-cyan.min.css" />
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 body{
   background: url('http://i.imgur.com/YQP5Ubg.jpg') center / cover;
   font-family: 'Roboto', sans-serif;
-}
-.demo-layout-transparent {
-  background: url('http://i.imgur.com/YQP5Ubg.jpg') center / cover;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
@@ -40,24 +37,10 @@ body{
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('http://i.imgur.com/gsO7R51.jpg') center / cover;
-}
-.demo-card-wide > .media-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('images/media_header.jpg') center / cover;
+  background: url('http://i.imgur.com/27fAu8i.png') center / cover;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
-}
-.mdl-layout__drawer-button{
-margin-left: auto;
-	margin-right: auto;
-
-}
-.material-icons{
-position:absolute;
-  top:30%;
 }
 #media{
   position:absolute:
@@ -97,13 +80,10 @@ position:absolute;
 <br>
   <div class="media-card-wide media-card mdl-shadow--2dp">
     <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">Welcome!</h2>
+      <h2 class="mdl-card__title-text">Media</h2>
     </div>
     <div class="mdl-card__supporting-text">
-Hi, I am Konrad Iturbe, a tinkerer, hacker or whatever you call it, addicted to GoPro shooting and hacking, Android programming and coding in general.
-<br>
-<b>How to use this site</b>
-Use the header navigantion slider to scroll to different sections.
+
     </div>
 <!--
     <div class="mdl-card__actions mdl-card--border">
@@ -122,13 +102,22 @@ Use the header navigantion slider to scroll to different sections.
 <br>
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome!</h2>
+    <h2 class="mdl-card__title-text">About</h2>
   </div>
   <div class="mdl-card__supporting-text">
-Hi, I am Konrad Iturbe, a tinkerer, hacker or whatever you call it, addicted to GoPro shooting and hacking, Android programming and coding in general.
-<br>
-<b>How to use this site</b>
-Use the header navigantion slider to scroll to different sections.
+    <b>Social networks</b>
+    <br>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://twitter.com/konrad_it','_blank');">Twitter</button>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://instagram.com/konrad_iturbe','_blank');">Instagram</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://vimeo.com/chernowiivvcc','_blank');">Vimeo</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://github.com/konradit','_blank');">GitHub</button>
+    <br>
+    <br>
+    <br>
+    <h3>Who I am IRL?</h3>
+    I am a 16 year old teenager, who loves coding, GoPros, android and linux. I live in Madrid, Spain. I have a Nexus 6 as a main android phone (ROM: Chroma 6.0), Nexus 7 2013 as a NetHunter/Dev tablet. I also own a G watch for Android Wear development and several GoPros. My goal is to make apps for IoT and what will be the next big thing: wearables.
+    <br>But... In the future I want to be a security researcher, to find exploits in large platforms.
+    
   </div>
 <!--
   <div class="mdl-card__actions mdl-card--border">

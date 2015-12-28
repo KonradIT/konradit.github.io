@@ -42,15 +42,6 @@ body{
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
-.mdl-layout__drawer-button{
-margin-left: auto;
-	margin-right: auto;
-
-}
-.material-icons{
-position:absolute;
-  top:30%;
-}
 #media{
   position:absolute:
   left:0;

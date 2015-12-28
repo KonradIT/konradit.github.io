@@ -56,8 +56,6 @@ margin-left: auto;
 
 }
 .material-icons{
-position:absolute;
-  top:30%;
 }
 #media{
   position:absolute:
