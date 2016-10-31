@@ -1,86 +1,128 @@
 <html>
 <head>
+</head>
 <style>
+body{
+       font-family: Ubuntu, sans-serif;
+       color:black;}
+a{
+       color:black;
+       transition:color 0.5s;
+transition:text-decoration 0.5s;
 
-#logo {
-    width: 100px;
-    height: 100px;
-    border-radius:100px;
-    background: cyan;
-    border-style:solid;
-    border-color:black;
-    border-width:4px;
-    text-align: center;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:auto;
-    display: table-cell;
-    -webkit-animation-name: logoAnimation;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-direction: alternate;
-    animation-name: logoAnimation;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 1s;
-    animation-direction: alternate;
 }
-@-webkit-keyframes logoAnimation {
-    0% {background:yellow; border-style:solid; border-color:red; border-width:5px;
+a:link {
+text-decoration:underline;
+transition:color 0.5s;
+transition:text-decoration 0.5s;
 }
-    25% {background:red; border-style:solid; border-color:yellow; border-width:20px;
+a:visited {
+text-decoration:underline;
+transition:color 0.5s;
+transition:text-decoration 0.5s;
 }
-    50% {background:blue; border-style:solid; border-color:cyan; border-width:6px;
+a:hover {color:red;
+text-decoration:overline;
+transition:color 0.5s;
+transition:text-decoration 0.5s;
 }
-    75% {background:black; border-style:solid; border-color:blue; border-width:15px;
+a:active {color:blue;
+text-decoration:none;
+transition:color 0.5s;
+transition:text-decoration 0.5s;
 }
-    100% {background:cyan; border-style:solid; border-color:black; border-width:4px;
-}
-}
+#content{
+       width:80%;
 
-@keyframes logoAnimation {
-    0% {background:yellow; border-style:solid; border-color:red; border-width:5px;
-}
-    25% {background:red; border-style:solid; border-color:yellow; border-width:20px;
-}
-    50% {background:blue; border-style:solid; border-color:cyan; border-width:6px;
-}
-    75% {background:black; border-style:solid; border-color:blue; border-width:15px;
-}
-    100% {background:cyan; border-style:solid; border-color:black; border-width:4px;
-}
-}
+       height:auto;
+       padding-top:7px;
+       padding-bottom:7px;
+       background-color:white;
 
-#rounded-img{
-border-radius: 40px 40px 40px 40px;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:auto;
+}
+#top{
+       width:700;
+       height:28;
+}
+#bottom{
+       width:700;
+       height:28;
+}
+table{
+       border-style:solid;
+       border-radius:6px;
+}
+b{
+       color:red;
 }
 </style>
-<meta http-equiv="refresh" content="3.8; url=home.html">
 </head>
 <body>
+<a href="https://github.com/konradit/autoexechack/tree/GoPro/MegaLapse" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 <center>
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<div id="logo"><img id="rounded-img" src="http://i.imgur.com/gzQnTca.png?1"></div>
-</center>
+<div id="top"></div>
+<div id="content">
+<h1>MegaLapse</h1>
+<h4 style="color:black">Hack for GoPro HERO cameras to use long intervals in timelapse</h4>
+<p><h2 style="color:black">What is MegaLapse?</h2>
+<p>MegaLapse is a file that allows GoPro cameras to shoot longer timelapses with higher intervals (from 2 min to 45 min intervals!)
+    <p>It works with HERO3 Black cameras, HERO3 Plus Black cameras, HERO3 Plus Silver<b>*</b>, HERO3 Silver<b>*</b>, HERO3 White<b>*</b> and HERO2<b>*</b>. And if someone owns a HERO (The previous of HERO2) and wants to test megalapse, <a href="mailto:mail@chernowii.com">contact me.</a>
+<p><h2 style="color:black">How it works?</h2>
+<p>MegaLapse is a file called autoexec.ash, GoPro cameras recognize autoexec.ash files as executable files.
+<p>It works because it repeats the file, infinite loop!
+<p>I recommend to use a modified USB cable to charge the gopro during the time is shooting when is in its housing. Or buy a <a href="http://cam-do.com/GoProBatteryEliminator.html" target="_blank">GoPro HERO3 Battery Eliminator</a> (ONLY for HERO3 Plus and HERO3 cameras, NOT HERO2)</p>
+<br>Also, to calculate the interval for your custom setup check out the <a href="http://git.io/timelapse" target="_blank">the GoPro Calculator for Timelapse</a>
+<p><h2>Code:</h2>
+<h4>MegaLapse for HERO3 Black / HERO3+ Black</h4>
+<p><table border="4">
+<tr><td>sleep 1
+<br>t app appmode photo
+<br>sleep X
+<br>t app button shutter PR
+<br>d:\autoexec.ash
+<br>REBOOT yes</td></tr>
+</table>
+<hr>
+<h4>MegaLapse for HERO3 + Silver</h4> Thanks Jason!
+<p><table border="4">
+       <tr>
+              <td>
+                     sleep X
+<br>t app button shutter PR
+<br>d:\autoexec.ash
+<br>reboot yes
+              </td>
+       </tr>
+</table></p>
+<hr>
+<h4>MegaLapse for HERO3 Silver / HERO3 White / HERO2</h4></p>
+<p><table border="4">
+    <tr>
+        <td>
+t gpio 43 sw out0
+<br>sleep X
+<br>t gpio 43 sw out1
+<br>t gpio 43 sw out0
+<br>d:\autoexec.ash
+<br>reboot yes
+        </td>
+    </tr>
+</table></p>
+<h3>HERO4 hack coming soon!</h3>
+<p><b>* HERO3 + Silver, HERO3 Silver, HERO3 White and HERO2 need to be set to Photo mode in default mode! <a href="https://www.youtube.com/watch?v=9RcMFSW7A7w" target="_blank">See how</a></b></p>
+<p><i>X is the interval in seconds. In GitHub, there are folders with interval files, aditionally, you can set your own interval.</i>
+<p><p><h2>Download MegaLapse</h2></b>
+<p>MegaLapse can be found in <a   href="https://github.com/KonradIT/autoexechack/tree/GoPro/MegaLapse" target="_blank">GitHub</a>
+<p><h2>Installation</h2>
+<p>When you have downloaded the file from GitHub, just drag it to the root level of the sd, where DCIM and MISC are. Need more help? <a href="https://gist.github.com/KonradIT/ce55b04ab4ad10592ebf#file-autoexechack-md" target="_blank">check out this howto.</a>
+<p><br><p><h2>VIDEOS</h2><table border="4">
+    <tr><td><iframe src="//player.vimeo.com/hubnut/album/2649104?color=ffffff&amp;background=000000&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></td></tr></table>
+
+<br><p><p><h3>Contact</h3>
+<p><big><a  href="mailto:mail@chernowii.com">MAIL ME</a></big>
+<p><br><small>MegaLapse is a creation of <a  href="http://chernowii.com" target="_blank">Konrad Iturbe</a></small>
+</font>
+</div>
+<div id="bottom"></div>
 </body>
 </html>
