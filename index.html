@@ -1,122 +1,30 @@
 <html>
 <head>
-  <script type="text/javascript">
-    <!--
-    if (screen.width <= 800) {
-    window.open('mobile/index.html','_top');
-    }
-    //-->
-  </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<style>
-body{
-  background-color: grey;
-background-attachment: fixed;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-font-family: 'Roboto', sans-serif;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 
-
-    #header{
-        width:65%;
-        height:15%;
-        background-color:white;
-        border-radius: 3px;
-        position:fixed;
-        box-shadow: 2px 2px 5px #888888;
-        top:5px;
-        left:17.5%;
-    }
-    #htext1{
-        position: relative;
-        left:15%;
-        top:7px;
-        font-size: xx-large;
-    }
-        #htext2{
-        position: absolute;
-        left:15%;
-            top:25%;
-        font-size: large;
-    }
-    #keys{
-        position:absolute;
-        bottom:5px;
- left:10%;
-    }
-    .demo-card-wide.mdl-card {
-  width: 50%;
-        position:absolute;
-        top:20%;
-        left:25%;
-
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 240px;
-  background: url('http://i.imgur.com/gsO7R51.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-</style>
 </head>
 <body>
-
-    <div id="header">
-    <b id="htext1">chernowii.com</b>
-        <br>
-        <p id="htext2">Konrad Iturbe website.</p>
-        <br>
-        <br>
-        <div id="keys">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='http://medium.com/@konrad_it';">
-      Blog
-      </button>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='media.html';">
-      Media
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='gopro.html';">
-      GoPro
-      </button>
-
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='apps.html';">
-      App dev
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='hacking.html';">
-      Programming
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
-      Contact
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='about.html';">
-      About
-      </button>
-        </div>
-    </div>
-
-
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome to my site!</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Hi, I am Konrad Iturbe, a tinkerer, hacker or whatever you call it, addicted to GoPro shooting and hacking, Android programming and coding in general.
-      <br><br><b>How to use this site?</b>
-<br>    If you are an android user, you may have noticed a familiar layout. The circle at the bottom in the center returns to Home (this site), and the back button returns to top of the site.
-      <hr>
-      You can browse my work, try out my code/apps and contact me for  your enquiry, read more about who I am in the header above, using the buttons.
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-
-  </div>
-
+<div id="header">
+	<a id="header_link" href="index.html">HOME</a>
+	<a id="header_link" href="media.html">MEDIA</a>
+	<a id="header_link" href="hacking.html">HACKING</a>
+	<a id="header_link" href="apps.html">APPS</a>
+	<a id="header_link" href="about.html">ABOUT</a>
+	<a id="header_link" href="http://medium.com/@konrad_it">BLOG</a>
 </div>
+	
+<div id="t_center">
+	<b id="name">Konrad Iturbe</b>
+	<br>
+<b id="title_center">HELLO, WORLD!</b>	
+	<br>
+	<button id="main_btn_contact" onclick="window.open('mailto:mail@chernowii.com', '_self')">CONTACT</button>
+	<button id="main_btn_resume" onclick="window.open('resume/index.html','_self')">RESUME</button>
+	<button id="main_btn_about" onclick="window.open('about.html','_self')">ABOUT</button>
+	</div>
+	<br>
 
 </body>
 </html>

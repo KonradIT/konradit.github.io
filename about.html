@@ -1,148 +1,41 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<style>
-body{
-  background-color: grey;
-background-attachment: fixed;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-font-family: 'Roboto', sans-serif;
-}
-#navbar-background{
-    width:100%;
-    height:54px;
-    background-color: black;
-    position:fixed;
-    bottom:0;
-    left:0;
-    z-index: 10;
-}
-#back{
-    width:auto;
-    height:100%;
-    position:absolute;
-    left:30%;
-    bottom:0;
-}
-    #home{
-    width:auto;
-    height:100%;
-    position:absolute;
-    left:45%;
-    bottom:0;
-}
-    #header{
-        width:65%;
-        height:15%;
-        background-color:white;
-        border-radius: 3px;
-        position:fixed;
-        top:5px;
-        box-shadow: 2px 2px 5px #888888;
-        left:17.5%;
-        z-index: 10;
-    }
-    #htext1{
-        position: relative;
-        left:15%;
-        top:7px;
-        font-size: xx-large;
-    }
-        #htext2{
-        position: absolute;
-        left:15%;
-            top:25%;
-        font-size: large;
-    }
-    #keys{
-        position:absolute;
-        bottom:5px;
- left:10%;
-    }
-    .demo-card-wide.mdl-card {
-  width: 50%;
-        position:absolute;
-        top:20%;
-        left:25%;
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	</head>
+	<body>
+		<div id="header">
+	<a id="header_link" href="index.html">HOME</a>
+	<a id="header_link" href="media.html">MEDIA</a>
+	<a id="header_link" href="hacking.html">HACKING</a>
+	<a id="header_link" href="apps.html">APPS</a>
+	<a id="header_link" href="about.html">ABOUT</a>
+	<a id="header_link" href="http://medium.com/@konrad_it">BLOG</a>
+	</div>
+<div id="content">
+	<h2>About</h2>
+	Hi, I am Konrad Iturbe.
+	<br>
+I am a developer, I program apps in my free time or when I am not busy with a pile of homework, I've had various devices on my hands through the years and that shaped my programming skills. I started writing bash scripts in 2012 which optimized my computer use and then went onto writing scripts for GoPro action cameras and other Ambarella powered cameras, then got a decent android phone, learned Java and published numerous apps in the Google Play Store, then in 2014 I was introduced to the world of wearable devices and Internet of Things with an android wear smartwatch, naturally my curious instinct kicked in and I maximized the utlitity, use and flexibility of such android wearable, I made a GoPro Remote for Android Wear (I am also a huge GoPro addict if you haven't noticed), an app to dim the watch on command and several others, at this point you might have realized that I am hooked to action cameras, Android/Linux in general, good, keep reading.
 
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 240px;
-  background: url('http://i.imgur.com/gsO7R51.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-#space{
-  width: 54px;
-  height:54px;
-}
-</style>
-</head>
-<body>
+<br>In the future I plan to do something related to network security or IoT.
 
-    <div id="header">
-    <b id="htext1">chernowii.com</b>
-        <br>
-        <p id="htext2">Konrad Iturbe website.</p>
-        <br>
-
-        <br>
-        <div id="keys">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='http://medium.com/@konrad_it';">
-      Blog
-      </button>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='media.html';">
-      Media
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='gopro.html';">
-      GoPro
-      </button>
-
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='apps.html';">
-      App dev
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='hacking.html';">
-      Programming
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
-      Contact
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='about.html';">
-      About
-      </button>
-        </div>
-    </div>
-
-
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title" id="mdl-card__title">
-    <h2 class="mdl-card__title-text">About / AFK life</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-
-<b>Social networks</b>
+<br>My full time desktop OS is Arch and my phone OS is Android, I program in Java, JavaScript, C and I know how to compile an Android image.
 <br>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://twitter.com/konrad_it','_blank');">Twitter</button>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://instagram.com/konrad_iturbe_chernowii','_blank');">Instagram</button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://vimeo.com/chernowiivvcc','_blank');">Vimeo</button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="window.open('http://github.com/konradit','_blank');">GitHub</button>
-<br>
-<br>
-<br>
-<h3>Who I am IRL?</h3>
-I am Konrad Iturbe Berz, a high school student in Madrid, I enjoy making Android apps, shooting video, searching for loopholes/exploits and everything in between. My main work has been centered around GoPro action cameras, how do they work and how to extend its capabilities (such as shoot longer timelapses, get long exposure). This has opened more possibilities for people to use these cheap mountable cameras. I also maintain an unofficial GoPro HTTP API with all the HTTP commands for controlling, getting the camera status (num. of videos, battery available...) and hacking the WiFi live feed.<br>Since freedom and customizability is a must for all the technology I own, I use an Android smartphone (Nexus 6 for those wondering), I have experience flashing ROMs/kernels, building AOSP source. <br>For leisures I lile riding bikes, scuba diving and watching films.<br><br><a href="http://chernowii.com/resume">View my resume</a><div id="space"></div>
-  <div class="mdl-card__actions mdl-card--border">
-
-  </div>
-
-</div>
-
+	<br>
+	<br>
+	<a href="resume/index.html"><b>You can view my resume</b></a>
+	<br>
+	<br>
+	<br>
+	<b>Follow me on social media</b><br><ul>
+	<li><a href="http://twitter.com/konrad_it" target="_blank">Twitter</a></li>
+	<li><a href="http://instagram.com/konrad_iturbe">Instagram</a></li>
+	<li><a href="http://medium.com/@konrad_it">Medium</a></li>
+	<li><a href="http://github.com/konradit">GitHub</a></li>
+	</ul>
+	
+		</div>
 </body>
 </html>

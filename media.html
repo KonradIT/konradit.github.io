@@ -1,133 +1,24 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<style>
-body{
-  background-color: grey;
-background-attachment: fixed;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-font-family: 'Roboto', sans-serif;
-}
-#navbar-background{
-    width:100%;
-    height:54px;
-    background-color: black;
-    position:fixed;
-    bottom:0;
-    left:0;
-    z-index: 10;
-}
-#back{
-    width:auto;
-    height:100%;
-    position:absolute;
-    left:30%;
-    bottom:0;
-}
-    #home{
-    width:auto;
-    height:100%;
-    position:absolute;
-    left:45%;
-    bottom:0;
-}
-    #header{
-        width:65%;
-        height:15%;
-        background-color:white;
-        border-radius: 3px;
-        position:fixed;
-        top:5px;
-        box-shadow: 2px 2px 5px #888888;
-        left:17.5%;
-        z-index: 10;
-    }
-    #htext1{
-        position: relative;
-        left:15%;
-        top:7px;
-        font-size: xx-large;
-    }
-        #htext2{
-        position: absolute;
-        left:15%;
-            top:25%;
-        font-size: large;
-    }
-    #keys{
-        position:absolute;
-        bottom:5px;
- left:10%;
-    }
-    .demo-card-wide.mdl-card {
-  width: 50%;
-        position:absolute;
-        top:20%;
-        left:25%;
-
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 240px;
-  background: url('http://i.imgur.com/gsO7R51.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-</style>
-</head>
-<body>
-
-    <div id="header">
-    <b id="htext1">chernowii.com</b>
-        <br>
-        <p id="htext2">Konrad Iturbe website.</p>
-        <br>
-
-        <br>
-        <div id="keys">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='hhttp://medium.com/@konrad_it';">
-Blog
-</button>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='media.html';">
-  Media
-</button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='gopro.html';">
-GoPro
-</button>
-
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='apps.html';">
-App dev
-</button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='hacking.html';">
-Programming
-</button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
-Contact
-</button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='about.html';">
-About
-</button>
-        </div>
-    </div>
-
-
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title" id="mdl-card__title">
-    <h2 class="mdl-card__title-text">Photos/videos</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-<p><h4>Vimeo</h4><iframe id="iframe"  src="http://player.vimeo.com/hubnut/user/chernowiivvcc/uploaded_videos?color=000000&amp;background=ffffff&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br><br><h4>Instagram</h4><iframe id="iframe"  src="http://widget.websta.me/in/konrad_iturbe_chernowii/?s=100&w=4&h=5&b=0&p=0" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:400px; height: 500px" ></iframe></p>
-  <div class="mdl-card__actions mdl-card--border">
-
-  </div>
-
-</div>
-
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	</head>
+	<body>
+		<div id="header">
+	<a id="header_link" href="index.html">HOME</a>
+	<a id="header_link" href="media.html">MEDIA</a>
+	<a id="header_link" href="hacking.html">HACKING</a>
+	<a id="header_link" href="apps.html">APPS</a>
+	<a id="header_link" href="about.html">ABOUT</a>
+	<a id="header_link" href="http://medium.com/@konrad_it">BLOG</a>
+	</div>
+<div id="content">
+	<h2>Media</h2>
+	Photos and videos I take!
+	<br>
+<iframe id="iframe"  src="http://player.vimeo.com/hubnut/user/chernowiivvcc/uploaded_videos?color=000000&amp;background=ffffff&amp;slideshow=0&amp;video_title=1&amp;video_byline=1" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br><br><iframe src="//widgets-code.websta.me/w/20a7fcc87249?ck=MjAxNy0wMS0yNFQyMDo0NjoyMi4wMDBa" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:auto;height:645px;width:780px;"></iframe> 
+	
+		</div>
 </body>
 </html>

@@ -1,259 +1,95 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-blue.min.css" />
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<style>
-body{
-background-color: grey;
-background-attachment: fixed;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-font-family: 'Roboto', sans-serif;
-}
-#navbar-background{
-    width:100%;
-    height:54px;
-    background-color: black;
-    position:fixed;
-    bottom:0;
-    left:0;
-    z-index: 10;
-}
-#back{
-    width:auto;
-    height:100%;
-    position:absolute;
-    left:30%;
-    bottom:0;
-}
-    #home{
-    width:auto;
-    height:100%;
-    position:absolute;
-    left:45%;
-    bottom:0;
-}
-    #header{
-        width:65%;
-        height:15%;
-        background-color:white;
-        border-radius: 3px;
-        position:fixed;
-        top:5px;
-        box-shadow: 2px 2px 5px #888888;
-        left:17.5%;
-        z-index: 10;
-    }
-    #htext1{
-        position: relative;
-        left:15%;
-        top:7px;
-        font-size: xx-large;
-    }
-        #htext2{
-        position: absolute;
-        left:15%;
-            top:25%;
-        font-size: large;
-    }
-    #keys{
-        position:absolute;
-        bottom:5px;
- left:10%;
-    }
-    .demo-card-wide.mdl-card {
-  width: 50%;
-        position:absolute;
-        top:20%;
-        left:25%;
-
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 240px;
-  background: url('http://i.imgur.com/gsO7R51.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-#camera{
- width:200px;
-height:auto;
-border-style:solid;
-border-color: #477;
-border-radius: 7px;
-background-color: white;
-}
-        .app-card-wide.app-card {
-  width: 50%;
-background-color: gray;
-
-}
-.app-card-wide > .app-card__title {
-  color: #fff;
-    background-color: gray;
-  height: 176px;
-  background: url('http://i.imgur.com/NVT5oUN.jpg') center / cover;
-}
-.app-card-wide > .app-card__title_2 {
-  color: #fff;
-    background-color: gray;
-  height: 155px;
-  background: url('http://i.imgur.com/j9taXZY.jpg?1') center / cover;
-}
-.app-card-wide > .app-card__title_3 {
-  color: #fff;
-    background-color: gray;
-  height: 155px;
-  background: url('https://i.imgur.com/parKLgq.png') center / cover;
-}
-.app-card-wide > .app-card__title_4 {
-  color: #fff;
-    background-color: gray;
-  height: 155px;
-  background: url('http://i.imgur.com/7NIHtf6.jpg?1') center / cover;
-}
-.app-card-wide > .app-card__menu {
-  color: #fff;
-    background-color: gray;
-}
-    .app-card-wide{
-        background-color: lightgrey;
-    }
-
-    #space{
-        width:54px;
-        height:54px;
-    }
-</style>
-</head>
-<body>
-
-    <div id="header">
-    <b id="htext1">chernowii.com</b>
-        <br>
-        <p id="htext2">Konrad Iturbe website.</p>
-        <br>
-
-        <br>
-        <div id="keys">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='http://medium.com/@konrad_it';">
-      Blog
-      </button>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='media.html';">
-      Media
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='gopro.html';">
-      GoPro
-      </button>
-
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='apps.html';">
-      App dev
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='hacking.html';">
-      Programming
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='contact.html';">
-      Contact
-      </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='about.html';">
-      About
-      </button>
-        </div>
-    </div>
-
-
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title" id="mdl-card__title">
-    <h2 class="mdl-card__title-text">Android app development</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-As an android fan, I like to develop apps for it. Since android is now a platform for not only phones and tablets but watches, cars and more. I am also an IoT aficionado.
-My apps are Android Wear focused and open source. Check out my <a href="https://github.com/konradit" target="_blank">GitHub profile</a> for apps and projects and also my <a href="http://play.google.com/store/search?q=pub:Konrad Iturbe" target="_blank">Play Store board</a>.
-      <br>
-    Check out some of my apps below.
-
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	</head>
+	<body>
+		<div id="header">
+	<a id="header_link" href="index.html">HOME</a>
+	<a id="header_link" href="media.html">MEDIA</a>
+	<a id="header_link" href="hacking.html">HACKING</a>
+	<a id="header_link" href="apps.html">APPS</a>
+	<a id="header_link" href="about.html">ABOUT</a>
+	<a id="header_link" href="http://medium.com/@konrad_it">BLOG</a>
+	</div>
+<div id="content">
+	<h2>Apps</h2>
 <table>
   <tr>
     <td>
-   <div class="app-card-wide mdl-card mdl-shadow--2dp">
-  <div class="app-card__title">
-    <h2 class="app-card__title-text">CamControl</h2>
+   
+  <div>
+    <h2 class="app-card_title_text">CamControl</h2>
   </div>
-  <div class="app-card__supporting-text">
+  <div>
      CamControl allows the user to capture content with a GoPro camera in a more interactive way with more resources, such as Android Wear integration and much more.
   </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a href="https://play.google.com/store/apps/details?id=com.chernowii.hero4" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+  <div id="app_links">
+    <a href="https://play.google.com/store/apps/details?id=com.chernowii.hero4" target="_blank" id="app_card_link">
       View in Play Store
     </a>
-          <a href="https://github.com/konradit/goprohero" target="_blank" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+          <a href="https://github.com/konradit/goprohero" target="_blank" id="app_card_link">
       View source code
     </a>
   </div>
 </td>
 <td>
 
-   <div class="app-card-wide mdl-card mdl-shadow--2dp">
-  <div class="app-card__title_2">
-    <h2 class="app-card__title-text">Theater Time</h2>
+   
+  <div>
+    <h2 class="app-card_title_text">Theater Time</h2>
   </div>
-  <div class="app-card__supporting-text">
+  <div>
 Theater Time is an automation tool for Theater Mode found in Android Wear devices, includes Intents, automatic timer, charging events and soon to include Tasker/AutomateIt!</div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a href="https://play.google.com/store/apps/details?id=com.chernowii.theatertime" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+  <div id="app_links">
+    <a href="https://play.google.com/store/apps/details?id=com.chernowii.theatertime" target="_blank" id="app_card_link">
       View in Play Store
     </a>
-          <a href="https://github.com/konradit/TheaterTime" target="_blank" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+          <a href="https://github.com/konradit/TheaterTime" target="_blank" id="app_card_link">
       View source code
     </a>
   </div>
-</td>
+		</td>
 </tr>
 <tr>
   <td>
-     <div class="app-card-wide mdl-card mdl-shadow--2dp">
-    <div class="app-card__title_3">
-      <h2 class="app-card__title-text">WearSlides</h2>
+     
+    <div>
+      <h2 class="app-card_title_text">WearSlides</h2>
     </div>
-    <div class="app-card__supporting-text">
+    <div>
   A simple presentation remote for Android Wear devices, inclused Previous slide, Next slide, and a timer. Uses a python script on the computer as a webserver, .exe portable available too </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a href="https://play.google.com/store/apps/details?id=com.chernowii.wearslides" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    <div id="app_links">
+      <a href="https://play.google.com/store/apps/details?id=com.chernowii.wearslides" target="_blank" id="app_card_link">
         View in Play Store
       </a>
-            <a href="https://github.com/konradit/WearSlides" target="_blank" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+            <a href="https://github.com/konradit/WearSlides" target="_blank" id="app_card_link">
         View source code
       </a>
     </div>
   </td>
   <td>
-     <div class="app-card-wide mdl-card mdl-shadow--2dp">
-    <div class="app-card__title_4">
-      <h2 class="app-card__title-text">Wear Battery Control</h2>
+     
+    <div>
+      <h2 class="app-card_title_text">Wear Battery Control</h2>
     </div>
-    <div class="app-card__supporting-text">
-Toggle your phone's battery saver status from your watch, root is required on the phone and the phone must be running Android Lollipop 5.0 or higher, OEM implementations currently not supported.<div class="mdl-card__actions mdl-card--border">
-      <a href="https://play.google.com/store/apps/details?id=com.chernowii.wearbatterycontrol" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    <div>
+Toggle your phone's battery saver status from your watch, root is required on the phone and the phone must be running Android Lollipop 5.0 or higher, OEM implementations currently not supported.<div id="app_links">
+      <a id="app_card_link" href="https://play.google.com/store/apps/details?id=com.chernowii.wearbatterycontrol" target="_blank">
         View in Play Store
       </a>
-            <a href="https://github.com/konradit/WearBatteryControl" target="_blank" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+            <a href="https://github.com/konradit/WearBatteryControl" target="_blank" id="app_card_link">
         View source code
       </a>
     </div>
-  </td>
+		</div>
+
+		
+	</td>
+	</tr>
 </table>
 
-     <div id="space"></div>
-</div>
-
-  </div>
-
-</div>
-    </div>
-
+		</div>
 </body>
 </html>
