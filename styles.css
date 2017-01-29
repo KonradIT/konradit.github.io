@@ -11,6 +11,8 @@ body {
 #header {
 	position: fixed;
 	right: 10;
+	background-color: black;
+
 }
 
 #header_link:link,
@@ -75,6 +77,7 @@ body {
 	top:10%;
 	left:10%;
 	right:10%;
+	z-index:-1;
 }
 
 #content table, th, td {
@@ -85,6 +88,11 @@ body {
     border-collapse: collapse;
 }
 
-#app_links a{
+#content a:link, #content a:visited {
+	text-decoration: underline;
+}
+
+#app_links a:link, #app_links a:visited {
 	text-decoration:underline;
+  margin: 1px 10px 10px 1px;
 }

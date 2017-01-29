@@ -37,12 +37,12 @@
       <td>t gpio A5 scripts</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/KonradIT/gopro-firmware/tree/master/HERO4Black" target="_blank">GoPro HERO4 Black/Silver</td>
+			<td><a href="https://github.com/KonradIT/gopro-firmware/tree/master/HERO4Black" target="_blank">GoPro HERO4 Black/Silver</a></td>
 
       <td>Not working, experimental</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/KonradIT/autoexechack/tree/GoPro/Session" target="_blank">GoPro Hero 2014</a></td>
+      <td><a href="https://github.com/KonradIT/autoexechack/tree/GoPro/Session" target="_blank">GoPro Hero4 Session</a></td>
 
       <td>Standard A7 scripts, beware of limited use</td>
     </tr>
@@ -58,9 +58,11 @@
 <b>Additional files to help creating autoexecutables for GoPro cameras can be found </b> <a href="http://github.com/konradit/gopro-firmware" target="_blank">here.</a>
       <br>
 <h2>How to hack GoPro cameras</h2>
-You may be thinking, what are these autoexecutables, or why are these codes useful?<br>GoPro cameras use a Ambarella chip, very often, GoPro refuses to use and include a GUI graphical menu in the firmware some of the resources the chip provides, an example of this: the GoPro HERO3/3+ use A7 chip from ambarella, this chip supports long exposure pictures. <a href="http://chernowii.com/gopro-longexp" target="_blank">I managed to hack the GoPro HERO3/3+ cameras to take long exposure pictures</a>. <br>These commands are obtained via a <a href="http://github.com/konradit/gopro-firmware" target="_blank">firmware reverse engineering research</a> or via linux scripting.<br>For user's facilities, I made a git repository with autoexecutable hacks for different GoPro camera models, most popular are the long exposure hack for the HERO3/3+ and the MegaLapse hack that allows GoPros to take long intervals for timelapse.
-<br><a href="http://github.com/konradit/autoexechack" target="_blank">Visit AutoexecHack repo</a>
-<br>The commands inside <b>autoexec.ash</b>, the file you put in the SD card for the GoPro to execute on start up is written in <b>Ambarella Shell</b>, ASH. The Ambarella Shell language is based on Linux, as it supports <b>mv</b>, <b>cp</b> and it has <b>lu_util exec</b>, a utility to execute commands in the GoPro's Linux side.
+You may be thinking, what are these autoexecutables, or why are these codes useful?<br>GoPro cameras use a Ambarella chip, very often, GoPro refuses to use and include a GUI graphical menu in the firmware some of the resources the chip provides, an example of this: the GoPro HERO3/3+ use A7 chip from ambarella, this chip supports long exposure pictures. <a href="http://chernowii.com/gopro-longexp" target="_blank">Here is an autoexec.ash that enables HERO3/3+ cameras to shoot long exposures</a>. <br>These commands are obtained via a <a href="http://github.com/konradit/gopro-firmware" target="_blank">firmware reverse engineering research</a> or via linux scripting.<br>For user's facilities, I made a git repository with autoexecutable hacks for different GoPro camera models, most popular are the long exposure hack for the HERO3/3+ and the MegaLapse hack that allows GoPros to take long intervals for timelapse.
+	<br>
+	<br><a href="http://github.com/konradit/autoexechack" target="_blank"><b>Visit AutoexecHack repo</b></a>
+	<br>
+<br>The commands inside <b>autoexec.ash</b>, the file you put in the SD card for the GoPro to execute on start up are written in <b>Ambarella Shell</b>, ASH. The Ambarella Shell language is based on Linux, as it supports <b>mv</b>, <b>cp</b> and it has <b>lu_util exec</b>, a utility to execute commands in the GoPro's Linux side.
 <br>To download, install and execute a GoPro AutoexecHack file:
 <ul>
     <li>Go to the code github page, should display some code</li>
@@ -74,8 +76,9 @@ You may be thinking, what are these autoexecutables, or why are these codes usef
     <li>Power on your GoPro</li>
 </ul>
 <b>If you want a custom hack, go to the contact section and contact me</b>
-<h2>This is not all! Wifi hacking</h2>
-GoPro cameras happen to have wifi connectivity to control, view and share content with your smartphone and tablet using the official app. Because I am a proud owner of a Lumia 520 the GoPro App didnt exist back in 2012, and I wanted to control, view and share in my computer too!. Everything started with the GoPro User Forum, some guys started to analyze the wifi connectivity between the phone app and the GoPro. Unfortunately there were loads of commands missing and camera models missing. Using the Archive decompiler in Ubuntu and the APK of the GoPro app and Wireshark I started to complete the list of commands, with the HERO2, HERO3 and HERO4. <a href="http://github.com/konradit/goprowifihack" target="_blank">Here is my Wifi research, part of it from the guys @ GPforum!</a>. From that list some tech savvy people made apps. I personally made a <a href="http://github.com/konradit/gopro-control" target="_blank">HTML5 cross operating system responsive web app to control GoPro cameras</a>, in conjunction with Shayan Eskandari.
+<h2>GoPro's WiFi API</h2>
+GoPro cameras happen to have wifi connectivity to control, view and share content with your smartphone and tablet using the official app. Thanks to reverse engineering efforts there's now a unofficial user maintained API for GoPro cameras. <a href="http://github.com/konradit/goprowifihack" target="_blank">Here is my Wifi research, part of it from the guys @ GPforum!</a>. From that list some tech savvy people made apps. <br>The API calls are in GET, HERO3, 2 and 3+ use a different API structure than HERO4 and 5.<br>In order to get a livestream from your GoPro camera use <a href="http://github.com/konradit/goprostream">this python tool.</a>
+	
 <h2>Beyond the firmware</h2>
 Cannot afford the new camera? Use the hacks to shoot with the new features on your camera:
 <ul>
