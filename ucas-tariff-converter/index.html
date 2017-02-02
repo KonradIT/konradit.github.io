@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<title>UCAS Tariff converter - Spain</title>
+	<style>
+		body{
+			font-family: 'Roboto', sans-serif;
+		}
+		table{
+			border: 2px black solid;
+		}
+		th{
+			border: 2px black solid;
+		}
+		td{
+			text-align:center; 
+    	vertical-align:middle;
+		}
+		#message{
+			visibility: hidden;
+		}
+	</style>
+	<script>
+	function getGrades(){
+		var sum = 0
+		var subject_1 = document.getElementById("subject_1");
+		var note_subject_1 = subject_1.options[subject_1.selectedIndex].value;
+		var subject_2 = document.getElementById("subject_2");
+		var note_subject_2 = subject_1.options[subject_2.selectedIndex].value;
+		var subject_3 = document.getElementById("subject_3");
+		var note_subject_3 = subject_3.options[subject_3.selectedIndex].value;
+		var subject_4 = document.getElementById("subject_4");
+		var note_subject_4 = subject_4.options[subject_4.selectedIndex].value;
+		i=0;
+		while (i < 4){
+			ie=i+1;
+		switch(eval('note_subject_' + ie)) {
+    case "grade_a":
+        sum = sum+20;
+        break;
+    case "grade_b":
+        sum = sum+16;
+        break;
+		case "grade_c":
+        sum = sum+12;
+        break;
+		case "grade_d":
+        sum = sum+10;
+        break;
+		case "grade_e":
+        sum = sum+6;
+        break;
+    default:
+        sum=sum+0
+}
+			i++
+		}
+		
+		//FORMULA
+		score=5 + ((sum - 48)*5/176)
+		rounded_score=Math.round(score * 100) / 100
+		document.getElementById('result').innerHTML = "UCAS Tariff grade sum: " + sum + "<br>" + "AFTER Conversion: " + rounded_score + " out of 10"; 
+		document.getElementById('message').style.visibility="visible"; 
+		
+	}
+	</script>
+	
+</head>
+	<body>
+	<center>
+	<h1>UCAS Tariff converter for Spanish Universities</h1>	
+		<h2>Choose your 4 best subjects and select the grade for each:</h2>
+
+		<table>
+  <tr>
+    <th>subject 1<br></th>
+    <th>subject 2<br></th>
+    <th>subject 3<br></th>
+    <th>subject 4<br></th>
+  </tr>
+  <tr>
+    <td>
+		<select id="subject_1">
+		<option value="grade_a">A</option>
+		<option value="grade_b">B</option>
+		<option value="grade_c">C</option>
+		<option value="grade_d">D</option>
+		<option value="grade_e">E</option></select>
+		</td>
+    <td>
+		<select id="subject_2">
+		<option value="grade_a">A</option>
+		<option value="grade_b">B</option>
+		<option value="grade_c">C</option>
+		<option value="grade_d">D</option>
+		<option value="grade_e">E</option></select>
+		</td>
+    <td><select id="subject_3">
+		<option value="grade_a">A</option>
+		<option value="grade_b">B</option>
+		<option value="grade_c">C</option>
+		<option value="grade_d">D</option>
+		<option value="grade_e">E</option></select></td>
+    <td><select id="subject_4">
+		<option value="grade_a">A</option>
+		<option value="grade_b">B</option>
+		<option value="grade_c">C</option>
+		<option value="grade_d">D</option>
+		<option value="grade_e">E</option></select></td>
+  </tr>
+</table>
+		<br><button id="grade_btn" onClick="getGrades();">Get UCAS Tariff sum</button>
+		<div id="result">
+		</div>
+		<div id="message">
+		<b>NOTE: Not including specific classes. To add those to your score simply multiply your grade in the specific class by the <i>weighing</i> of the specific class, to get the weighing go to <a href="http://emes.es">emes.es</a>.</b></div>
+	</center>
+	</body>
+</html>
