@@ -12,6 +12,7 @@ body {
 	position: fixed;
 	right: 10;
 	background-color: black;
+	z-index:1
 
 }
 
