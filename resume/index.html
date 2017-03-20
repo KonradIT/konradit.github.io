@@ -7,23 +7,61 @@
 			font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 		}
 		
-		#section {
-			padding-left: 20%;
+		/* mobile ui */
+		@media only screen and (max-device-width: 1000px) and (orientation: landscape) {
+			td{
+				width: 100%;
+			}
+			a{
+				color:black;
+			}
+			#header-text{
+				font-size: xx-large;
+			}
+			table{
+				width: 100%;
+				border-collapse:separate; 
+				border-spacing:1em;
+			}
+			#cell-text{
+				font-size: x-large;
+			}
+		}
+		@media only screen and (min-device-width: 1000px) {
+			#section {
+				padding-left: 20%;
+			}
+			td{
+				width: 30%;
+			}
+			a{
+				color:black;
+			}
+			#header-text{
+				font-size: xx-large;
+			}
+			table{
+				width: 100%;
+				border-collapse:separate; 
+				border-spacing:2em;
+			}
+			#cell-text{
+				font-size: x-large;
+			}
 		}
 	</style>
 	<script>
 		window.onload = function () {
 			if (new Date().getMonth() > 6) {
 				var age = Math.round(new Date().getFullYear() - 1999);
-				document.getElementById("age").innerHTML = "Age: " + age;
+				document.getElementById("age").innerHTML = age;
 			}
 			else {
 				var age = Math.round(new Date().getFullYear() - 2000);
-				document.getElementById("age").innerHTML = "Age: " + age;
+				document.getElementById("age").innerHTML = age;
 			}
 		}
 	</script>
-	<script src="script.js"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,82 +74,24 @@
 
 <body>
 	<div id="section">
-		<h1>Konrad Iturbe</h1> <i>1999, Madrid - Spain</i>
-		<br> <a href="http://twitter.com/konrad_it" target="_top">Twitter</a> | <a href="http://github.com/konradit" target="_top">GitHub</a>
-		<br>
-		<br><a href="resume.pdf">Download .pdf</a>
-		<br>
-		<h2>About</h2> I'm a <b>student</b>, <b>software developer</b> and <b>tech security enthusiast.</b>
-		<br>
-		<br> <b>Overview</b>
-		<ul>
-			<li id="age">Age: </li>
-			<li>Mail: mail@chernowii.com</li>
-			<li>Website: http://chernowii.com</li>
-			<li>Based in: Madrid, Spain</li>
-			<li>Occupation: Student</li>
-		</ul>
-		<h2>Work</h2> I still haven't got a proper job, although I programmed for several companies and clients as part of my hobby.
-		<h3>GoPro camera research</h3> <i>2013 - Present</i>
-		<br>
-		<br> I have been developing scripts for GoPro cameras and researching their WiFi API calls. I first got a GoPro in 2012, loved it and decided to extend the use by writing an shell script to extend the timelapse interval. Some of the highlights:
-		<ul>
-			<li>Successfully extend the timelapse interval on HERO2/HERO3 cameras, which was used by several companies and hobbyists.</li>
-			<li>Made the Ambarella Shell script that enabled the HERO3 Black camera to shoot long exposures.</li>
-			<li>Currently maintain the unofficial GoPro API (goprowifihack), a great resource for hobbyists and companies.</li>
-		</ul>
-		<br> <b>Links: </b>
-		<br>GoPro scripts collection: <a href="http://github.com/konradit/autoexechack" target="_top">konradit/autoexechack</a>
-		<br>Unofficial GoPro WiFi API: <a href="http://github.com/konradit/goprowifihack" target="_top">konradit/goprowifihack</a>
-		<h3>Freelance Software Developer</h3> <i>2014 - Present</i>
-		<br>I have experience developing apps for Android, Android Wear and Pebble smartwatch.
-		<br>My approach to app development is I develop apps I <i>need</i> and do not exist. I also want to put the <b>smart</b> in <b>smartwatch.</b>
-		<br> <b>Links:</b>
-		<ul>
-			<li><a href="https://play.google.com/store/apps/details?id=com.chernowii.hero4">CamControl for GoPro</a>: A unofficial GoPro WiFi client for Android, allows full control of the camera from the phone and Android Wear watch, also uses Material design. </li>
-			<li><a href="https://play.google.com/store/apps/details?id=com.chernowii.theatertime">Theater Time</a>: Automate Theater mode for Android Wear devices.</li>
-			<li><a href="https://apps.getpebble.com/en_US/application/57ef907a05e4b17e1c000186?section=watchapps">GoProRemote for Pebble</a>: Pebble app to control GoPro cameras. </ul>
-		<br> <a href="https://play.google.com/store/apps/dev?id=8327692895936242590">View my profile on Google Play Store</a>
-		<h2>Skills/tech used</h2>
-		<h4>Android:</h4>
-		<ul>
-			<li>Android App development</li>
-			<li>AOSP ROM knowledge</li>
-			<li>Android Wear/Auto/Cardboard VR development</li>
-		</ul>
-		<h4>Languages/Tech: </h4> Master - Advanced - Intermediate - Novice
-		<ul>
-			<li>Java - Level: Master</li>
-			<li>Swift - Level: Novice</li>
-			<li>Javascript - Level: Master</li>
-			<li>Python - Level: Master</li>
-			<li>C - Level: Advanced</li>
-			<li>GoLang - Level: Intermediate</li>
-			<li>Bash - Level: Master</li>
-			<li>Arch Linux - Level: Master</li>
-		</ul>
-		<h2>Open source contributions</h2>
-		<ul>
-			<li>Rebble (Pebble maintainance team)</li>
-		</ul>
-		<h2>Spoken Languages</h2>
-		<ul>
-			<li>Spanish - Native speaker</li>
-			<li>English - Bilingual</li>
-			<li>German - Fluent</li>
-		</ul>
-		<h2>Education:</h2>
-		<br>EPO (Primary Education): Waldorf School Madrid, 2008 - 2012
-		<br>ESO (Secondary Education): Montessori School, 2012 - Present
-		<br>Further Education: To Be Added.
-		<h2>Leisures/Hobbies</h2>
-		<ul>
-			<li>Hacking and researching security exploits</li>
-			<li>Programming</li>
-			<li>Mountain Biking</li>
-			<li>TimeLapse photography</li>
-		</ul>
-		<h2>References: </h2> </div>
+		<table>
+			<tr>
+				<td><b id='header-text'>Konrad Iturbe</b><br>1999 - Madrid, Spain<br><a href="http://twitter.com/konrad_it" target="_top">Twitter</a> | <a href="http://github.com/konradit" target="_top">GitHub</a></td>
+				<td id="right"><a href="mailto:mail@chernowii.com">mail@chernowii.com</a></td>
+			</tr>
+			<tr id="main">
+				<td><b id="cell-text">Main:</b><br><ul><li>Developed an unofficial WiFi API endpoint list for interfacing with GoPro cameras<li>Developed libraries to connect with GoPro cameras via WiFi to extend their functionality and use<li>Made auto executable programs for Ambarella SoC based devices in order to automate them and add features (long exposures/larger interval for timelapse...)</li><li>Made several apps for Android OS, Android Wear, Tizen, Pebble OS.</li> </ul></td>
+			</tr>
+			<tr>
+				<td><b id="cell-text">Skills:</b><ul><li>Java</li><li>JavaScript + Node</li><li>Python</li><li>GoLang</li><li>Reverse engineering</li><li>Android + Android Wear</li></ul></td>
+				<td><b id="cell-text">Education: </b><ul><li>Montessori <i>Secondary School:</i> 2012 - present</li><li>Currently studying Computer Science, Geography and German</li></ul></td>
+			</tr>
+			<tr>
+				<td><b id="cell-text">Work experience: </b><br>I do not have a full-time job - I develop solutions for the following companies: <ul><li><b>Robonautica // March 2016 - Present</b><br>Developed a Python library for underwater robots to interface with the popular action camera GoPro.</li><br><li><b>Livestream // 2016 - Present</b></li>Made a security analysis for their live streaming camera Mevo</ul></td>
+				<td><b id="cell-text">Other tidbits: </b><ul><li>I use Arch Linux as a daily driver</li><li>I'm a native Spanish speaker and I am fluent in Enlgish and German</li><li>I reverse engineer stuff and find vulnerabilities in systems as a hobby</li><li>I want to put the <b>smart</b> in <b>smartwatch.</b></li>I maintain an <a href="http://github.com/konradit/goprowifihack">open source GoPro API wiki</a></li></ul></td>
+			</tr>
+		</table>
+	</div>
 </body>
 
 </html>
