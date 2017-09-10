@@ -28,9 +28,7 @@
 			}
 		}
 		@media only screen and (min-device-width: 1000px) {
-			#section {
-				padding-left: 20%;
-			}
+
 			td{
 				width: 30%;
 			}
@@ -49,6 +47,7 @@
 				font-size: x-large;
 			}
 		}
+		@page { size: A4 }
 	</style>
 	<script>
 		window.onload = function () {
@@ -62,6 +61,7 @@
 			}
 		}
 	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -72,12 +72,15 @@
 	<meta name="google" content="nositelinkssearchbox">
 	<meta name="google-site-verification" content="verification_token"> </head>
 
-<body>
+<body class="A4">
+	<section class="sheet padding-10mm">
+
 	<div id="section">
+		<article>
 		<table>
 			<tr>
 				<td><b id='header-text'>Konrad Iturbe</b><br>1999 - Madrid, Spain<br><a href="http://twitter.com/konrad_it" target="_top">Twitter</a> | <a href="http://github.com/konradit" target="_top">GitHub</a></td>
-				<td id="right"><a href="mailto:mail@chernowii.com">mail@chernowii.com</a></td>
+				<td id="right"><a href="resume.pdf">See as PDF</a></td>
 			</tr>
 			<tr id="main">
 				<td><b id="cell-text">Main:</b><br><ul><li>Developed an unofficial WiFi API endpoint list for interfacing with GoPro cameras<li>Developed libraries to connect with GoPro cameras via WiFi to extend their functionality and use<li>Made auto executable programs for Ambarella SoC based devices in order to automate them and add features (long exposures/larger interval for timelapse...)</li><li>Made several apps for Android OS, Android Wear, Tizen, Pebble OS.</li> </ul></td>
@@ -91,7 +94,9 @@
 				<td><b id="cell-text">Other tidbits: </b><ul><li>I use Arch Linux as a daily driver</li><li>I'm a native Spanish speaker and I am fluent in English and German</li><li>I reverse engineer stuff and find vulnerabilities in systems as a hobby</li><li>I want to put the <b>smart</b> in <b>smartwatch.</b></li>I maintain an <a href="http://github.com/konradit/goprowifihack">open source GoPro API wiki</a></li></ul></td>
 			</tr>
 		</table>
+	</article>
 	</div>
+	</section>
 </body>
 
 </html>
