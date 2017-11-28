@@ -57,6 +57,6 @@ else{
 // Joins all the retrieved METARs into one string.
 $result_string = join('   |   ', $metars);
 $str=str_replace("\r\n","",$result_string);
- 
+ >
 //Echoes the actualy string, also adds an break at the end
 <?php echo $str; ?>
