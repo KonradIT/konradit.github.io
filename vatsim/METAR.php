@@ -59,3 +59,9 @@ $result_string = join('   |   ', $metars);
 $str=str_replace("\r\n","",$result_string);
 print $str
 ?>
+<?php $name = 'anyname'?>
+<html>
+<body>
+<p>My name is: <?php echo $name; ?></p>
+</body>
+</html>
