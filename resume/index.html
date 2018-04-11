@@ -6,97 +6,88 @@
 		body {
 			font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 		}
+		#skills-mobile{
+			display:none;
+		}
+		#workxp-mobile{
+			display:none;
+		}
+		@media only screen and (max-width: 999px) {
+
+			#skills-desktop{
+				display: none;
+
+			}
+			#skills-mobile{
+				display: block;
+			}
+			#workxp{
+				display: none;
+
+			}
+			#workxp-mobile{
+				display: block;
+			}
+
+		}
+
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+			#skills-desktop{
+				display: none;
+
+			}
+			#skills-mobile{
+				display: block;
+			}
+			#workxp{
+				display: none;
+
+			}
+			#workxp-mobile{
+				display: block;
+			}
+		}
 		
-		/* mobile ui */
-		@media only screen and (max-device-width: 1000px) and (orientation: landscape) {
-			td{
-				width: 100%;
-			}
-			a{
-				color:black;
-			}
-			#header-text{
-				font-size: xx-large;
-			}
-			table{
-				width: 100%;
-				border-collapse:separate; 
-				border-spacing:1em;
-			}
-			#cell-text{
-				font-size: x-large;
-			}
-		}
-		@media only screen and (min-device-width: 1000px) {
-
-			td{
-				width: 30%;
-			}
-			a{
-				color:black;
-			}
-			#header-text{
-				font-size: xx-large;
-			}
-			table{
-				width: 100%;
-				border-collapse:separate; 
-				border-spacing:2em;
-			}
-			#cell-text{
-				font-size: x-large;
-			}
-		}
-		@page { size: A4 }
 	</style>
-	<script>
-		window.onload = function () {
-			if (new Date().getMonth() > 6) {
-				var age = Math.round(new Date().getFullYear() - 1999);
-				document.getElementById("age").innerHTML = age;
-			}
-			else {
-				var age = Math.round(new Date().getFullYear() - 2000);
-				document.getElementById("age").innerHTML = age;
-			}
-		}
-	</script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="keywords" content="konrad,iturbe,resume">
-	<meta name="description" content="Konrad Iturbe's Resume">
-	<meta name="subject" content="chernowii.com">
-	<meta name="googlebot" content="index,follow">
-	<meta name="google" content="nositelinkssearchbox">
-	<meta name="google-site-verification" content="verification_token"> </head>
+	<meta name="viewport" content="width=device-width">
+</head>
 
-<body class="A4">
-	<section class="sheet padding-10mm">
+<body>
 
-	<div id="section">
-		<article>
 		<table>
 			<tr>
 				<td><b id='header-text'>Konrad Iturbe</b><br>1999 - Madrid, Spain<br><a href="http://twitter.com/konrad_it" target="_top">Twitter</a> | <a href="http://github.com/konradit" target="_top">GitHub</a></td>
-				<td id="right"><a href="resume.pdf">See as PDF</a></td>
 			</tr>
+
 			<tr id="main">
-				<td><b id="cell-text">Main:</b><br><ul><li>Developed an unofficial WiFi API endpoint list for interfacing with GoPro cameras<li>Developed libraries to connect with GoPro cameras via WiFi to extend their functionality and use<li>Made auto executable programs for Ambarella SoC based devices in order to automate them and add features (long exposures/larger interval for timelapse...)</li><li>Made several apps for Android OS, Android Wear, Tizen, Pebble OS.</li> </ul></td>
-			</tr>
-			<tr>
-				<td><b id="cell-text">Skills:</b><ul><li>Java</li><li>JavaScript + Node</li><li>Python</li><li>GoLang</li><li>Reverse engineering</li><li>Android + Android Wear</li></ul></td>
-				<td><b id="cell-text">Education: </b><ul><li>Montessori <i>Secondary School:</i> 2012 - present</li><li>Currently studying Computer Science, Geography and German</li></ul></td>
-			</tr>
-			<tr>
-				<td><b id="cell-text">Work experience: </b><br>I do not have a full-time job - I develop solutions for the following companies: <ul><li><b>Robonautica // March 2016 - Present</b><br>Developed a Python library for underwater robots to interface with the popular action camera GoPro.</li><br><li><b>Livestream // 2016 - Present</b></li>Made a security analysis for their live streaming camera Mevo</ul></td>
-				<td><b id="cell-text">Other tidbits: </b><ul><li>I use Arch Linux as a daily driver</li><li>I'm a native Spanish speaker and I am fluent in English and German</li><li>I reverse engineer stuff and find vulnerabilities in systems as a hobby</li><li>I want to put the <b>smart</b> in <b>smartwatch.</b></li>I maintain an <a href="http://github.com/konradit/goprowifihack">open source GoPro API wiki</a></li></ul></td>
+				<td><b id="cell-text">Main:</b><br><ul><li>Developed an unofficial WiFi API endpoint list for interfacing with GoPro cameras<li>Developed libraries to connect with GoPro cameras via WiFi to extend their functionality and use<li>Made auto executable programs for Ambarella SoC based devices in order to automate them and add features (long exposures/larger interval for timelapse...)</li><li>Made several apps for Android OS, Android Wear, Tizen, Pebble OS.</li> <li>Helped companies integrate off-the-shelf consumer devices into their business, products and services</li><li>Passionate about mobile interfaces, change, distributed systems and new technology available to the masses</li></ul></td>
 			</tr>
 		</table>
-	</article>
-	</div>
-	</section>
+		<table  id="skills-desktop">
+			<tr>
+				<td><b id="cell-text">Skills:</b><ul><li>Java</li><li>JavaScript + Node</li><li>Python</li><li>GoLang</li><li>Reverse engineering</li><li>Android development</li><li>Linux/UNIX computing and server maintainance</li></ul></td>
+				<td><b id="cell-text">Education: </b><ul><li>Montessori <i>Secondary School:</i> 2012 - 2018</li><li>Currently studying Computer Science, Geography and German</li></ul></td>
+				<td><b id="cell-text">Certificates: </b><ul><li>Cambridge English</li></ul></td>
+
+			</tr>
+		</table>
+		<div id="skills-mobile">
+			<br><b id="cell-text">Skills:</b><ul><li>Java</li><li>JavaScript + Node</li><li>Python</li><li>GoLang</li><li>Reverse engineering</li><li>Android development</li><li>Linux/UNIX computing and server maintainance</li></ul></td>
+			<br><b id="cell-text">Education: </b><ul><li>Montessori <i>Secondary School:</i> 2012 - 2018</li><li>Currently studying Computer Science, Geography and German</li></ul>
+			<br><b id="cell-text">Certificates: </b><ul><li>Cambridge English</li></ul>
+		</div>
+		<table id="workxp">
+			<tr>
+				<td><b id="cell-text">Work experience: </b><br>Due to my limited time I work as a freelance developer.<ul><li><b>Robonautica // March 2016 - Present</b><br>Developed a Python library for underwater robots to interface with the popular action camera GoPro.</li><br><li><b>Livestream // 2016 - Present</b></li>Made a security analysis for their live streaming camera Mevo</ul></td>
+				<td><b id="cell-text">Other tidbits: </b><ul><li>I'm a native Spanish speaker and I am fluent in English and German</li><li>I reverse engineer stuff and find vulnerabilities in systems as a hobby</li><li>I want to put the <b>smart</b> in <b>smartwatch.</b></li>I maintain an <a href="http://github.com/konradit/goprowifihack">open source GoPro API wiki</a></li><li>I never stop learning</li></ul></td>
+			</tr>
+		</table>
+		<div id="workxp-mobile">
+			<b id="cell-text">Work experience: </b><br>Due to my limited time I work as a freelance developer.<ul><li><b>Robonautica // March 2016 - Present</b><br>Developed a Python library for underwater robots to interface with the popular action camera GoPro.</li><br><li><b>Livestream // 2016 - Present</b></li>Made a security analysis for their live streaming camera Mevo</ul>
+				<br><b id="cell-text">Other tidbits: </b><ul><li>I'm a native Spanish speaker and I am fluent in English and German</li><li>I reverse engineer stuff and find vulnerabilities in systems as a hobby</li><li>I want to put the <b>smart</b> in <b>smartwatch.</b></li><li>I maintain an <a href="http://github.com/konradit/goprowifihack">open source GoPro API wiki</a></li><li>I never stop learning</li></ul>
+			
+		</div>
 </body>
 
 </html>
