@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/konraditurbe
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chernowii.com
+  * I am konraditurbe (https://keybase.io/konraditurbe) on keybase.
+  * I have a public key ASD9DgvHr5Aj7amFlPJiyg4eu5a_z8ImFWtSWp-kUmHptAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fd0e0bc7af9023eda98594f262ca0e1ebb96bfcfc226156b525a9fa45261e9b40a",
+      "host": "keybase.io",
+      "kid": "0120fd0e0bc7af9023eda98594f262ca0e1ebb96bfcfc226156b525a9fa45261e9b40a",
+      "uid": "c3fc9167208a930dc77a0647e0f0ea19",
+      "username": "konraditurbe"
+    },
+    "merkle_root": {
+      "ctime": 1550075796,
+      "hash": "a1d27ecbe6125666cb7f258db2601c6177190788a74c4472de495a81a5d7a8e66d35d85ae320f4272b8357618c699f493f63545cfc804315c97aba990c3f88ff",
+      "hash_meta": "c3383195cbe9dba0e797418bd4764f69698dc0fb2801aac39f243c88af1e8df1",
+      "seqno": 4757822
+    },
+    "service": {
+      "entropy": "+PckPkAbsy0Hcoakteha/y1+",
+      "hostname": "chernowii.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.1"
+  },
+  "ctime": 1550075828,
+  "expire_in": 504576000,
+  "prev": "15fbff9bd7d1cb6c804b61e60d6475b537703b968e4eaf54bfdac649cad4d1e9",
+  "seqno": 40,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/Q4Lx6+QI+2phZTyYsoOHruWv8/CJhVrUlqfpFJh6bQKp3BheWxvYWTESpcCKMQgFfv/m9fRy2yAS2HmDWR1tTdwO5aOTq9Uv9rGScrU0enEIHxpQsl+W63VtjNijrSP02oarGyPy4vhz8yg+27cE7IJAgHCo3NpZ8RA2ZeGfEd5uVDdJtevXYjtb6uggLxe15tzvOZ5VQ5HtiGzk+cdw7r997yW6ZV+G2vaAS3N/CTEkSDGOBwkQH4hDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEfDGovsnIys7wj1JyWqSqQ8c0q7Ox9VA16SgwMf0HC5o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/konraditurbe
+
+==================================================================
+
