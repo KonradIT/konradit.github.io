@@ -1,0 +1,104 @@
+{
+	"details": {
+		"name": ["Konrad", "Iturbe"],
+		"dob": "1999",
+		"location": "Barcelona",
+		"github": "github.com/konradit",
+		"twitter": "twitter.com/konrad_it"
+	},
+	"skills": [{
+			"name": "Kotlin",
+			"proficiency": "Mid"
+		},
+		{
+			"name": "Java",
+			"proficiency": "Very"
+		},
+		{
+			"name": "JavaScript+Node",
+			"proficiency": "Very"
+		},
+		{
+			"name": "React Native",
+			"proficiency": "Mid"
+		},
+		{
+			"name": "Python",
+			"proficiency": "Very"
+		},
+		{
+			"name": "GoLang",
+			"proficiency": "Mid"
+		},
+		{
+			"name": "Reverse engineering",
+			"proficiency": "Very"
+		},
+		{
+			"name": "Android app development",
+			"proficiency": "Very"
+		}
+	],
+	"education": [
+		["Secondary High School Education", "2012-2018"]
+	],
+	"certificates": [
+		"Cambridge English Proficiency",
+		"Cambridge English Advanced"
+	],
+	"work_experience": [{
+			"company": "Robonautica/NOAA",
+			"start_date": 2016,
+			"end_date": 2017,
+			"is_ongoing": false,
+			"skills_used": ["Python", "Reverse engineering"],
+			"tasks": "Developed a Python library for underwater robots to interface with the popular action camera GoPro."
+		},
+		{
+			"company": "Livestream",
+			"start_date": 2016,
+			"end_date": 2017,
+			"is_ongoing": false,
+			"skills_used": ["Android development", "Reverse engineering"],
+			"tasks": "Made a security analysis for their live streaming camera Mevo"
+		},
+		{
+			"company": "Steezycam",
+			"start_date": 2017,
+			"end_date": 2018,
+			"is_ongoing": false,
+			"skills_used": ["Android development", "GoLang"],
+			"tasks": "Develop prototypes, Android app, BT-LE interfaces, APIs."
+		},
+		{
+			"company": "GlobeKeeper",
+			"start_date": 2018,
+			"end_date": 2018,
+			"is_ongoing": false,
+			"skills_used": ["Android development"],
+			"tasks": "Developed an Android app MVP"
+		},
+		{
+			"company": "Shasta",
+			"start_date": 2019,
+			"end_date": null,
+			"is_ongoing": true,
+			"skills_used": ["NodeJS", "React Native", "MongoDB"],
+			"tasks": "Full Stack software developer using React Native, redux, mongodb and Expo"
+		}
+	],
+	"tidbits": [
+
+		"Developed an unofficial WiFi API endpoint list for interfacing with GoPro cameras",
+		"Developed libraries to connect with GoPro cameras via WiFi to extend their functionality and use",
+		"Made auto executable programs for Ambarella SoC based devices in order to automate them and add features (long exposures/larger interval for timelapse...)",
+		"Made several apps for Android OS, Android Wear, Tizen, Pebble OS.",
+		"Helped companies integrate off-the-shelf consumer devices into their business, products and services",
+		"Passionate about mobile interfaces, change, distributed systems and new technology available to the masses",
+		"I'm a native Spanish speaker and I am fluent in English and German",
+		"I reverse engineer stuff and find vulnerabilities in systems as a hobby",
+		"I want to put the smart in smartwatch.",
+		"I maintain an open source GoPro API wiki",
+		"I never stop learning"
+	]
+}
