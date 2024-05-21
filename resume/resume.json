@@ -15,7 +15,7 @@
             "proficiency": "Reasonably proficient"
         },
         {
-            "name": "JavaScript+Node",
+            "name": "Message queues (RabbitMQ)",
             "proficiency": "Somewhat proficient"
         },
         {
@@ -117,10 +117,19 @@
         {
             "company": "Hubuc",
             "start_date": 1680645600,
+            "is_ongoing": false,
+            "end_date": 1715724000,
+            "skills_used": ["GoLang", "PostgreSQL", "QLDB", "gRPC", "AWS CW", "ElasticSearch", "Kibana", "Sentry"],
+            "tasks": "Worked on maintaining, feature patching and archiving some legacy projects, as well as focused on development of the payment processor P1.<br>- Increased test coverage, developed new capabilities according to customer's needs<br>&nbsp&nbspEmphasis on expanding support to new regions and prepared the system for various legal and vendor certifications.<br>- Worked on database query optimization for the internal backoffice tooling, improved data reporting flows and contributed to the development of new dashboards and scheduled jobs.",
+            "type": "Full time"
+        },
+        {
+            "company": "Cross River Bank (CRT Spain)",
+            "start_date": 1716156000,
             "is_ongoing": true,
             "end_date": null,
-            "skills_used": ["GoLang", "PostgreSQL", "QLDB", "gRPC", "AWS CW", "ElasticSearch", "Kibana", "Sentry"],
-            "tasks": "Working primarily on the main legacy projects and P1, CI/CD infra, testing suite and Database connections.<br>Worked on database query optimization for the internal backoffice tooling, improved data reporting flows and contributed to the development of new dashboards and scheduled jobs. Made the overall internal tooling experience better by reducing database query response time, supported new features according to requirements and made a robust test suite<br>Improved supply chain security via automated dependency upgrade system",
+            "skills_used": ["GoLang", "PostgreSQL", "RabbitMQ", "gRPC", "AWS", "MasterCard", "ISO 8583", "PCI-DSS"],
+            "tasks": "Transition from Hubuc to Cross River Bank (acquisition)<br>Kept developing on P1 payment processor ensuring a smooth deployment on CRB's new infra and specific needs.<br>- Made the overall internal tooling experience better by reducing database query response time, supported new features according to company and regulatory requirements, and spun up a robust test suite<br>- Improved supply chain security via automated dependency upgrade system<br>- My main responsabilities were mainly getting our payment processor ready for new markets and regions, such as figuring out and patching US-specific intricacies, database migrations, GDPR/PCI-DSS matters<br>- Also reworked various aspect of the company's systems reducing overall tech debt, improving our dev experience, simplying existing flows and reducing active vulnerabilities.",
             "type": "Full time"
         }
     ],

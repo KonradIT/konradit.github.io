@@ -61,6 +61,9 @@ template_text = """
 			a:hover {
 				color: blue
 			}
+			#workxp {
+				line-height: 1.3;
+			}
 		</style>
 		<meta name="viewport" content="width=device-width" />
 	</head>
