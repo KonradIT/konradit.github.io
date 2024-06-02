@@ -2,7 +2,7 @@
     "details": {
         "name": ["Konrad", "Iturbe"],
         "dob": "1999",
-        "location": "Barcelona, Spain",
+        "location": "Madrid, Spain",
         "github": "https://github.com/konradit",
         "twitter": "https://twitter.com/konrad_it",
         "email": "hi@konraditurbe.dev"
