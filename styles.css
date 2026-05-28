@@ -53,7 +53,8 @@ body {
 
 #main_btn_contact,
 #main_btn_resume,
-#main_btn_about {
+#main_btn_projects,
+#main_btn_press {
     background-color: transparent;
     border: 3px solid #ffffff;
     display: inline-block;
@@ -67,7 +68,8 @@ body {
 
 #main_btn_contact:hover,
 #main_btn_resume:hover,
-#main_btn_about:hover {
+#main_btn_projects:hover,
+#main_btn_press:hover {
     background-color: white;
     color: #000;
 }
