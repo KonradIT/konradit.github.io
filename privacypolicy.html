@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Osmosis — Privacy Policy</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1a1f; --muted:#565663; --line:#e6e6ec;
+    --accent:#e0294a; --card:#f7f7f9; --code:#ececef;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0e0d10; --fg:#eceaee; --muted:#a4a0aa; --line:#26242b;
+      --accent:#ff466a; --card:#171519; --code:#201e24; }
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:760px; margin:0 auto; padding:56px 24px 96px; }
+  header{ border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:8px; }
+  .eyebrow{ color:var(--accent); font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:12.5px; }
+  h1{ font-size:34px; line-height:1.15; margin:.35em 0 .15em; letter-spacing:-.01em; }
+  .meta{ color:var(--muted); font-size:14.5px; }
+  h2{ font-size:20px; margin:2.2em 0 .5em; letter-spacing:-.01em; }
+  h3{ font-size:16px; margin:1.5em 0 .3em; }
+  p{ margin:.7em 0; }
+  ul{ margin:.6em 0; padding-left:1.25em; }
+  li{ margin:.4em 0; }
+  a{ color:var(--accent); }
+  code{ background:var(--code); padding:.1em .4em; border-radius:5px; font-size:.9em;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; }
+  .callout{ background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:18px 20px; margin:20px 0; }
+  .callout strong{ color:var(--fg); }
+  table{ width:100%; border-collapse:collapse; margin:1em 0; font-size:14.5px; }
+  th,td{ text-align:left; padding:11px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ color:var(--muted); font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.04em; }
+  .edit{ background:rgba(224,41,74,.10); border-radius:4px; padding:0 .25em; }
+  footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:13.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>Osmosis</h1>
+    <div class="meta">Last updated: 27 August 2026</div>
+  </header>
+
+  <div class="callout">
+    <strong>The short version.</strong> Osmosis does not collect, transmit, sell, or share any
+    personal data. It has no accounts, no analytics, no advertising, and no servers of its own.
+    Everything the app does happens on your phone and directly between your phone and your camera.
+  </div>
+
+  <p>Osmosis (“the app”, “we”) is an independent, third-party Android client for copying photos and
+  videos off DJI Osmo cameras and compatible devices. It is not affiliated with, authorized by, or
+  endorsed by SZ DJI Technology Co., Ltd. This policy explains what the app accesses on your device,
+  why, and what happens to that information.</p>
+
+  <h2>1. Data we collect</h2>
+  <p><strong>None.</strong> Osmosis has no backend service and no user accounts. We do not collect,
+  store, or receive any personal information, usage analytics, crash telemetry, advertising
+  identifiers, or device identifiers. No data is sent to us or to any third party.</p>
+
+  <h2>2. Information the app accesses on your device</h2>
+  <p>To do its job, the app reads and handles certain information locally on your device. This
+  information is processed only on your device and, where noted, sent only to the camera you connect
+  to. It is never sent to the developer or to any external server.</p>
+
+  <table>
+    <thead><tr><th>Information</th><th>Why it is used</th><th>Where it goes</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Photos &amp; videos on the camera</td>
+        <td>To browse, preview, trim, and download your media, and to mark or delete media on the camera.</td>
+        <td>Between your phone and your camera; downloads are saved to your phone’s gallery.</td>
+      </tr>
+      <tr>
+        <td>Camera status</td>
+        <td>To show battery, shooting mode, and storage use.</td>
+        <td>Read from the camera; shown on your phone only.</td>
+      </tr>
+      <tr>
+        <td>Device location (GPS)</td>
+        <td>Used for two purposes only, described in section 3.</td>
+        <td>Stays on your device, except during optional GPS Sync, when it is sent to your camera.</td>
+      </tr>
+      <tr>
+        <td>Nearby devices (Bluetooth &amp; Wi-Fi)</td>
+        <td>To discover, pair with, and connect to your camera.</td>
+        <td>Used on your device to establish the local connection.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Location permission</h2>
+  <p>Osmosis requests location permission for two specific reasons. It does not use your location for
+  advertising, profiling, or tracking, and it never transmits your location to the developer or any
+  server.</p>
+  <ul>
+    <li><strong>Bluetooth scanning.</strong> On some Android versions, the operating system requires
+    location permission before an app is allowed to scan for nearby Bluetooth Low Energy devices.
+    Osmosis needs to scan in order to find your camera.</li>
+    <li><strong>GPS Sync (optional feature).</strong> If you turn on GPS Sync, a foreground service
+    reads your phone’s current location and streams it to the connected camera, so your recordings
+    carry a GPS track that you can use later for telemetry overlays. This runs only while you enable
+    it, the location is sent only to your own camera over the local connection, and it is not stored
+    or transmitted anywhere else. A persistent notification is shown while the service is running.</li>
+  </ul>
+
+  <h2>4. Network access</h2>
+  <p>When connected, the app communicates only with your camera at its local address
+  (<code>192.168.2.1</code>). The app ships with a network security configuration that restricts its
+  cleartext traffic to that local camera address. Osmosis does not contact activation servers,
+  telemetry backends, or any cloud service.</p>
+
+  <h2>5. Storage</h2>
+  <p>Media you download is written to your phone’s gallery / shared storage so you can view and manage
+  it like any other photo or video. Those files remain on your device and under your control. The app
+  does not upload them anywhere.</p>
+
+  <h2>6. Sharing and third parties</h2>
+  <p>Osmosis contains no third-party analytics, advertising, or tracking SDKs. Because the app does
+  not collect any data, there is nothing to sell or share, and no data is disclosed to third parties.</p>
+
+  <h2>7. Data retention and deletion</h2>
+  <p>The app does not retain personal data on our side because it never receives any. Any settings and
+  the list of your saved cameras are stored locally on your device and are removed when you clear the
+  app’s data or uninstall it. Media you have downloaded stays in your gallery until you delete it.</p>
+
+  <h2>8. Children’s privacy</h2>
+  <p>Osmosis is a utility for camera owners and is not directed at children. It does not knowingly
+  collect any information from anyone, including children under the age of 13 (or the equivalent
+  minimum age in your jurisdiction).</p>
+
+  <h2>9. Security</h2>
+  <p>Because no personal data leaves your device or your camera, there is no server-side data store to
+  breach. Connections to the camera are made over its local network interface.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this policy if the app’s functionality changes. When we do, we will revise the
+  “Last updated” date above and post the new version at this URL. Continued use of the app after an
+  update means you accept the revised policy.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this policy or the app’s privacy practices can be sent to
+  <a href="mailto:mail@chernowii.com">mail@chernowii.com</a>. The source code is available at
+  <a href="https://github.com/KonradIT/osmosis">github.com/KonradIT/osmosis</a>.</p>
+
+  <footer>
+    Osmosis is an independent open-source project. “DJI”, “Osmo”, “Mavic”, “Xtra” and “Muse” are
+    trademarks of their respective owners.
+  </footer>
+</div>
+</body>
+</html>
